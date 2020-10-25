@@ -1,0 +1,13 @@
+
+
+
+
+
+
+StackQueue.java:429: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:423: ) in method QModulus
+		return (Q.getElem(Q.getRear() - 1)) == 0 ? 1 : 0; //return Q.getElem(Q.getRear() - 1);
+		^
+StackQueue.java:423: warning: Associated declaration: StackQueue.java:429: 
+          @ ensures \result == \old (Q.getElem(Q.front) % Q.getElem(Q.front + 1));
+            ^
+2 warnings

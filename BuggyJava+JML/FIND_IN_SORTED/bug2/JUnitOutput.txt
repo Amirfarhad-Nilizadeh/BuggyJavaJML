@@ -1,0 +1,6 @@
+test1(JUnitFIND_IN_SORTED): The value of array's location is not equal to the key value
+test3(JUnitFIND_IN_SORTED): The value of array's location is not equal to the key value
+test4(JUnitFIND_IN_SORTED): The value of array's location is not equal to the key value
+test7(JUnitFIND_IN_SORTED): The value of array's location is not equal to the key value
+test9(JUnitFIND_IN_SORTED): The value of array's location is not equal to the key value
+false

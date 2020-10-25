@@ -1,0 +1,7 @@
+CopyArray.java:19: warning: The prover cannot establish an assertion (LoopInvariant) in method CopyArray
+        //@ maintaining iBegin <= k && k <= iEnd;
+            ^
+CopyArray.java:23: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method CopyArray
+            a[k] = b[k];
+             ^
+2 warnings

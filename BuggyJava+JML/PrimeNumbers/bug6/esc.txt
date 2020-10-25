@@ -1,0 +1,22 @@
+
+
+PrimeNumbers.java:65: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Prime
+                primeArray[count - 1] = num;
+                          ^
+
+
+PrimeNumbers.java:78: warning: The prover cannot establish an assertion (Postcondition: PrimeNumbers.java:17: ) in method Prime
+	return primeArray; 
+	^
+PrimeNumbers.java:17: warning: Associated declaration: PrimeNumbers.java:78: 
+	//@ ensures (\forall int i,j; 0 <= i && i < primeArray.length && 0 <= j && j < primeArray.length && i != j; primeArray[i] != primeArray[j]);
+	    ^
+
+
+PrimeNumbers.java:78: warning: The prover cannot establish an assertion (Postcondition: PrimeNumbers.java:16: ) in method Prime
+	return primeArray; 
+	^
+PrimeNumbers.java:16: warning: Associated declaration: PrimeNumbers.java:78: 
+	//@ ensures \forall int i; 0 <= i && i < primeArray.length; \forall int j; 2 <= j && j <= primeArray[i]/2; !div(primeArray[i],j);
+	    ^
+5 warnings

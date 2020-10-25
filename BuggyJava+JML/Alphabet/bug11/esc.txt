@@ -1,0 +1,8 @@
+
+Alphabet.java:97: warning: The prover cannot establish an assertion (InvariantExit: Alphabet.java:4: ) in method setVowel
+    private /*@ spec_public @*/ void setVowel() 
+                                     ^
+Alphabet.java:4: warning: Associated declaration: Alphabet.java:97: 
+    /*@ private invariant vowel_set ==> 
+                ^
+2 warnings

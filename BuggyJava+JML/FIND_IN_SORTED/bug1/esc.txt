@@ -1,0 +1,25 @@
+FIND_IN_SORTED.java:23: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method binsearch
+        if (x < arr[mid]) {
+                   ^
+FIND_IN_SORTED.java:20: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:16: ) in method binsearch
+            return -1;
+            ^
+FIND_IN_SORTED.java:16: warning: Associated declaration: FIND_IN_SORTED.java:20: 
+    //@ ensures \result == -1 ==> (\forall int i; start <= i && i < end; arr[i] != x);
+        ^
+FIND_IN_SORTED.java:26: warning: The prover cannot establish an assertion (Precondition: FIND_IN_SORTED.java:18: ) in method binsearch
+            return binsearch(arr, x, mid+1, end);
+                            ^
+FIND_IN_SORTED.java:18: warning: Associated declaration: FIND_IN_SORTED.java:26: 
+    int binsearch(int[] arr, int x, int start, int end) {
+        ^
+FIND_IN_SORTED.java:5: warning: Precondition conjunct is false: start <= end
+    //@ requires start <= end;
+                       ^
+FIND_IN_SORTED.java:28: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:14: ) in method binsearch
+            return mid;
+            ^
+FIND_IN_SORTED.java:14: warning: Associated declaration: FIND_IN_SORTED.java:28: 
+    //@ ensures \result < end;
+        ^
+8 warnings

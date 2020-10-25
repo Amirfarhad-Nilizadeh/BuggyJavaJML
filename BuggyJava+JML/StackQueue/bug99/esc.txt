@@ -1,0 +1,19 @@
+StackQueue.java:502: warning: The prover cannot establish an assertion (UndefinedCalledMethodPrecondition: StackQueue.java:98: ) in method driverStack
+	  @ 	ensures stack.peek() == input && stack.top == \old (stack.top + 1) && \result == 0;
+	    	                  ^
+StackQueue.java:98: warning: Associated declaration: StackQueue.java:502: 
+    	   	public /*@ pure @*/ int peek() 
+    	   	                        ^
+StackQueue.java:89: warning: Precondition conjunct is false: !isEmpty()
+     	     	  @ 	requires !isEmpty();
+     	     	    	         ^
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:502: ) in method driverStack
+		return output;
+		^
+StackQueue.java:502: warning: Associated declaration: StackQueue.java:590: 
+	  @ 	ensures stack.peek() == input && stack.top == \old (stack.top + 1) && \result == 0;
+	    	^
+error: An internal JML error occurred, possibly recoverable.  Please report the bug with as much information as you can.
+  Reason: Unexpected result when querying SMT solver for reason for an unknown result: (error "Error writing to solver: (get-info :reason-unknown) java.io.IOException: Broken pipe")
+1 error
+5 warnings

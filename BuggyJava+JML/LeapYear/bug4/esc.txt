@@ -1,0 +1,13 @@
+LeapYear.java:45: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:18: ) in method LeapChecking
+	return leap;
+	^
+LeapYear.java:18: warning: Associated declaration: LeapYear.java:45: 
+   //@ ensures \result == false;
+       ^
+LeapYear.java:45: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:13: ) in method LeapChecking
+	return leap;
+	^
+LeapYear.java:13: warning: Associated declaration: LeapYear.java:45: 
+    //@ ensures \result == true;
+        ^
+4 warnings

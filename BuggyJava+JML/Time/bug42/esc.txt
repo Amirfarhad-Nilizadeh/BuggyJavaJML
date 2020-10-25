@@ -1,0 +1,7 @@
+Time.java:197: warning: The prover cannot establish an assertion (Postcondition: Time.java:187: ) in method later_than
+            return this.second <= start.second; //return this.second > start.second;
+            ^
+Time.java:187: warning: Associated declaration: Time.java:197: 
+    /*@ ensures \result == ((this.hour > start.hour) 
+        ^
+2 warnings

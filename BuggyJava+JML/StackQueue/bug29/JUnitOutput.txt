@@ -1,0 +1,27 @@
+test101(JUnitStackQueue): null
+test103(JUnitStackQueue): null
+test109(JUnitStackQueue): null
+test115(JUnitStackQueue): null
+test118(JUnitStackQueue): null
+test138(JUnitStackQueue): null
+test140(JUnitStackQueue): null
+test141(JUnitStackQueue): null
+test142(JUnitStackQueue): null
+test148(JUnitStackQueue): null
+test18(JUnitStackQueue): null
+test25(JUnitStackQueue): null
+test31(JUnitStackQueue): null
+test35(JUnitStackQueue): null
+test47(JUnitStackQueue): null
+test50(JUnitStackQueue): null
+test51(JUnitStackQueue): null
+test57(JUnitStackQueue): null
+test77(JUnitStackQueue): null
+test81(JUnitStackQueue): null
+test85(JUnitStackQueue): null
+test90(JUnitStackQueue): null
+test93(JUnitStackQueue): null
+test(JUnitStackQueue): null
+test4(JUnitStackQueue): null
+test7(JUnitStackQueue): null
+false

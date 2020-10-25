@@ -1,0 +1,7 @@
+StudentEnrollment.java:45: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:29: ) in method setTuitionBalance
+                throw new IllegalArgumentException();
+                ^
+StudentEnrollment.java:29: warning: Associated declaration: StudentEnrollment.java:45: 
+    //@ public normal_behavior
+               ^
+2 warnings

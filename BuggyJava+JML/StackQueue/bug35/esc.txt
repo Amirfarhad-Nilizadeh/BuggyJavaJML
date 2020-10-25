@@ -1,0 +1,15 @@
+
+StackQueue.java:221: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:196: ) in method delete
+            			return poll; 
+            			^
+StackQueue.java:196: warning: Associated declaration: StackQueue.java:221: 
+      		  @	ensures rear == \old (rear - 1);
+      		   	^
+
+StackQueue.java:221: warning: The prover cannot establish an assertion (InvariantExit: StackQueue.java:160: ) in method delete
+            			return poll; 
+            			^
+StackQueue.java:160: warning: Associated declaration: StackQueue.java:221: 
+    		//@ public invariant 0 <= rear && rear <= MAX;
+    		           ^
+4 warnings

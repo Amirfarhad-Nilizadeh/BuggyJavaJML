@@ -1,0 +1,4 @@
+FIND_FIRST_IN_SORTED.java:13: warning: The prover cannot establish an assertion (LoopInvariant) in method find_first_in_sorted
+	//@ maintaining 0 <= lo && lo <= arr.length; 
+	    ^
+1 warning

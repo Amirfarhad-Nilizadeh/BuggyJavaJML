@@ -1,0 +1,6 @@
+test(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
+test2(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
+test5(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
+test6(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
+test8(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
+false

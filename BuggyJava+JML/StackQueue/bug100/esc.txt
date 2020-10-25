@@ -1,0 +1,13 @@
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:515: ) in method driverStack
+		return output;
+		^
+StackQueue.java:515: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures \result == 0 ==> \forall int i; 0 <= i && i <= stack.top; stack.arr[i] != input;
+	   	^
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:514: ) in method driverStack
+		return output;
+		^
+StackQueue.java:514: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures \result == 1 ==> \exists int i; 0 <= i && i <= stack.top; stack.arr[i] == input;
+	   	^
+4 warnings

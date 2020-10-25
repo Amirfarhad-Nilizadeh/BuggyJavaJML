@@ -1,0 +1,7 @@
+TransposeMatrix.java:24: warning: The prover cannot establish an assertion (LoopInvariant) in method transposeMat
+          //@ maintaining \forall int i; 0 <= i && i < c; (\forall int j; 0 <= j && j < m ; transpose[i][j] == matrix[j][i]);
+              ^
+TransposeMatrix.java:31: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method transposeMat
+                  transpose[c][d] = matrix[d][c];
+                              ^
+2 warnings

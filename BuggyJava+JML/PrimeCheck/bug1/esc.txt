@@ -1,0 +1,4 @@
+PrimeCheck.java:8: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method div:  int multiply overflow
+   public static int div(int n, int d) { return n*d; }//return n%d; }
+                                                 ^
+1 warning

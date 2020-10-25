@@ -1,0 +1,7 @@
+BinarySearch.java:7: warning: The prover cannot establish an assertion (Postcondition: BinarySearch.java:3: ) in method Binary
+            return -1;
+            ^
+BinarySearch.java:3: warning: Associated declaration: BinarySearch.java:7: 
+    //@ ensures \result == -1 <==> (\forall int i; 0 <= i && i < arr.length; arr[i] != key);
+        ^
+2 warnings

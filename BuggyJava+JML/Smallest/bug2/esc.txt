@@ -1,0 +1,4 @@
+Smallest.java:16: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Smallest
+            if (a[index] < a[smallest]) {
+                 ^
+1 warning

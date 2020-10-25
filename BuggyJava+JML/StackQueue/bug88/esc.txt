@@ -1,0 +1,7 @@
+StackQueue.java:441: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:436: ) in method plusQStack
+		return (Q.peek() + stack.peek()) == 0 ? 1 : 0; //return Q.peek() + stack.peek();
+		^
+StackQueue.java:436: warning: Associated declaration: StackQueue.java:441: 
+          @ ensures \result == Q.peek() + stack.peek();
+            ^
+2 warnings

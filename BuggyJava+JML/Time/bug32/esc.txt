@@ -1,0 +1,6 @@
+
+
+Time.java:168: warning: The prover cannot establish an assertion (Assert) in method timer
+	//@ assert hour == h && minute == m && second == s;
+	    ^
+1 warning

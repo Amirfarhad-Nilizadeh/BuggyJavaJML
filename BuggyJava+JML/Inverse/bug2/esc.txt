@@ -1,0 +1,4 @@
+Inverse.java:16: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Inverse
+            if (x[index] != y[x.length - 1 - index]) {
+                 ^
+1 warning

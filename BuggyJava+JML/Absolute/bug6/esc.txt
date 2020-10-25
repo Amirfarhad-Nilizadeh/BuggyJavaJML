@@ -1,0 +1,7 @@
+Absolute.java:50: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:44: ) in method Absolute
+			return num;//return -num;	
+			^
+Absolute.java:44: warning: Associated declaration: Absolute.java:50: 
+	//@ ensures \result == -num; 
+	    ^
+2 warnings

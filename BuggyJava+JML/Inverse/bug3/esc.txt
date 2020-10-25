@@ -1,0 +1,10 @@
+Inverse.java:22: warning: The prover cannot establish an assertion (Postcondition: Inverse.java:7: ) in method Inverse
+        return true;
+        ^
+Inverse.java:7: warning: Associated declaration: Inverse.java:22: 
+    //@ ensures \result == true ==> x.length == y.length && (\forall int i; 0 <= i && i < x.length; x[i] == y[x.length - 1 - i]);
+        ^
+Inverse.java:16: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Inverse
+            if (x[index] != y[x.length - 1 - index]) {
+                 ^
+3 warnings

@@ -1,0 +1,6 @@
+test1(JUnitFIND_IN_SORTED): null
+test3(JUnitFIND_IN_SORTED): null
+test4(JUnitFIND_IN_SORTED): null
+test7(JUnitFIND_IN_SORTED): null
+test9(JUnitFIND_IN_SORTED): null
+false

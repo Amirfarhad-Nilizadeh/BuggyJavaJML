@@ -1,0 +1,11 @@
+
+
+PrimeNumbers.java:53: warning: The prover cannot establish an assertion (Assert) in method Prime
+                   //@ assert div(num,j);
+                       ^
+
+
+PrimeNumbers.java:57: warning: The prover cannot establish an assertion (Assert) in method Prime
+                //@ assert !div(num,j);
+                    ^
+2 warnings

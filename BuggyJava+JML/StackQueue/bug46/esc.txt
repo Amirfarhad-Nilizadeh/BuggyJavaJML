@@ -1,0 +1,13 @@
+StackQueue.java:277: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:265: ) in method search
+        	return -1;
+        	^
+StackQueue.java:265: warning: Associated declaration: StackQueue.java:277: 
+    		//@   ensures \result == -1 ==> \forall int i; 0 <= i && i < rear; queue[i] != key;
+    		      ^
+StackQueue.java:269: warning: The prover cannot establish an assertion (LoopInvariant) in method search
+        		//@ maintaining 0 <= index && index <= rear;
+        		    ^
+StackQueue.java:272: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method search
+            			if (key == queue[index]) {
+            			                ^
+4 warnings

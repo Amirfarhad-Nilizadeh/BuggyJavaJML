@@ -1,0 +1,15 @@
+
+StackQueue.java:82: warning: The prover cannot establish an assertion (InvariantExit: StackQueue.java:6: ) in method pop
+            			return arr[top++]; //return arr[top--]; 
+            			^
+StackQueue.java:6: warning: Associated declaration: StackQueue.java:82: 
+	   	 //@ public invariant -1 <= top && top < MAX;
+	   	            ^
+
+StackQueue.java:82: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:68: ) in method pop
+            			return arr[top++]; //return arr[top--]; 
+            			^
+StackQueue.java:68: warning: Associated declaration: StackQueue.java:82: 
+	      	   @ 	ensures top == \old (top - 1);
+	      	     	^
+4 warnings

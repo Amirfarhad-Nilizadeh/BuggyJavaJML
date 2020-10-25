@@ -1,0 +1,7 @@
+StackQueue.java:323: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:320: ) in method getElem
+        		return queue[i] == 0 ? 1 : 0; //return queue[i]; 
+        		^
+StackQueue.java:320: warning: Associated declaration: StackQueue.java:323: 
+    		//@   ensures \result == queue[i];
+    		      ^
+2 warnings

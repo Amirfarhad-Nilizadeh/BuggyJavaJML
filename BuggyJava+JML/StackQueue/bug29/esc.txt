@@ -1,0 +1,10 @@
+StackQueue.java:213: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method delete
+              		  	@ maintaining 0 <= i && i < rear;
+              		  	  ^
+StackQueue.java:223: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StackQueue.java:192: ) in method delete
+            			throw new IllegalArgumentException();
+            			^
+StackQueue.java:192: warning: Associated declaration: StackQueue.java:223: 
+    		/*@ public normal_behavior
+    		           ^
+3 warnings

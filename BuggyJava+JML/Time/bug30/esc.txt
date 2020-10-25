@@ -1,0 +1,14 @@
+Time.java:146: warning: The prover cannot establish an assertion (Postcondition: Time.java:145: ) in method timer
+    public void timer()
+                ^
+Time.java:145: warning: Associated declaration: Time.java:146: 
+    //@ ensures convertToSeconds() == 0;
+        ^
+
+Time.java:153: warning: The prover cannot establish an assertion (Assignable: Time.java:144: ) in method timer:  \everything
+            decr();
+                ^
+Time.java:144: warning: Associated declaration: Time.java:153: 
+    //@ assignable second, minute, hour;
+        ^
+4 warnings

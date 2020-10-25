@@ -1,0 +1,18 @@
+test10(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test11(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test12(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test13(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test14(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test15(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test16(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test1(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test2(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test3(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test4(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test5(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test6(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test7(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test8(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test9(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+false

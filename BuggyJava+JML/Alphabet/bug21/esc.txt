@@ -1,0 +1,8 @@
+
+Alphabet.java:133: warning: The prover cannot establish an assertion (InvariantExit: Alphabet.java:17: ) in method setUppercase
+   private /*@ spec_public @*/ void setUppercase() 
+                                    ^
+Alphabet.java:17: warning: Associated declaration: Alphabet.java:133: 
+   //@ private invariant uppercase_set ==> (uppercase == ('A' <= c && c <= 'Z'));
+               ^
+2 warnings

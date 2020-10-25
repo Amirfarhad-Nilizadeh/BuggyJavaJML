@@ -1,0 +1,10 @@
+Smallest.java:16: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Smallest
+            if (a[index] < a[smallest]) {
+                 ^
+Smallest.java:21: warning: The prover cannot establish an assertion (Postcondition: Smallest.java:5: ) in method Smallest
+        return smallest;
+        ^
+Smallest.java:5: warning: Associated declaration: Smallest.java:21: 
+    //@ ensures -1 < \result ==> (\forall int i; 0 <= i && i < a.length; a[\result] <= a[i]);
+        ^
+3 warnings

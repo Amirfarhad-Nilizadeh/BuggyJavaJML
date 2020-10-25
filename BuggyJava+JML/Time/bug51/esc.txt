@@ -1,0 +1,19 @@
+
+
+
+Time.java:248: warning: The prover cannot establish an assertion (Postcondition: Time.java:225: ) in method trustedDifference
+        return(diff);
+        ^
+Time.java:225: warning: Associated declaration: Time.java:248: 
+    //@ ensures diff_minutes == \result.minute;
+        ^
+
+
+
+Time.java:248: warning: The prover cannot establish an assertion (Postcondition: Time.java:224: ) in method trustedDifference
+        return(diff);
+        ^
+Time.java:224: warning: Associated declaration: Time.java:248: 
+    //@ ensures diff_hours == \result.hour;
+        ^
+4 warnings

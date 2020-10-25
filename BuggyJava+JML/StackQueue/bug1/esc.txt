@@ -1,0 +1,7 @@
+StackQueue.java:21: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:18: ) in method getTop
+	        	return top == 0 ? 1 : 0;//return top;
+	        	^
+StackQueue.java:18: warning: Associated declaration: StackQueue.java:21: 
+	    	//@   ensures top == \result;
+	    	      ^
+2 warnings

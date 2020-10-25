@@ -1,0 +1,7 @@
+Palindrome.java:17: warning: The prover cannot establish an assertion (LoopDecreasesNonNegative) in method palindromeCheck
+      //@ decreases i;
+          ^
+Palindrome.java:23: warning: The prover cannot establish an assertion (Assert) in method palindromeCheck
+      //@ assert i_counter == length; 
+          ^
+2 warnings

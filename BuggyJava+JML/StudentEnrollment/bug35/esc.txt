@@ -1,0 +1,12 @@
+
+StudentEnrollment.java:269: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method payTuitionWithCreditCard:  underflow in int difference
+            tuitionBalance -= payment;
+                           ^
+
+StudentEnrollment.java:263: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:253: ) in method payTuitionWithCreditCard
+    /*@ spec_public @*/ private void payTuitionWithCreditCard(int payment) 
+                                     ^
+StudentEnrollment.java:253: warning: Associated declaration: StudentEnrollment.java:263: 
+    //@   ensures tuitionBalance == \old(tuitionBalance - _payment);
+          ^
+3 warnings

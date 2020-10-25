@@ -1,0 +1,7 @@
+StackQueue.java:301: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:298: ) in method size
+    		    	return rear == 0 ? 1 : 0; //return rear;
+    		    	^
+StackQueue.java:298: warning: Associated declaration: StackQueue.java:301: 
+    		//@   ensures rear == \result;
+    		      ^
+2 warnings

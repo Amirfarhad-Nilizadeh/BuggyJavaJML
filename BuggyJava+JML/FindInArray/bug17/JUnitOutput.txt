@@ -1,0 +1,15 @@
+test10(JUnitFindInArray): There is a zero value but the method did not find it
+test11(JUnitFindInArray): There is a zero value but the method did not find it
+test12(JUnitFindInArray): There is a zero value but the method did not find it
+test13(JUnitFindInArray): There is a zero value but the method did not find it
+test(JUnitFindInArray): There is a zero value but the method did not find it
+test1(JUnitFindInArray): There is a zero value but the method did not find it
+test2(JUnitFindInArray): There is a zero value but the method did not find it
+test3(JUnitFindInArray): There is a zero value but the method did not find it
+test4(JUnitFindInArray): There is a zero value but the method did not find it
+test5(JUnitFindInArray): There is a zero value but the method did not find it
+test6(JUnitFindInArray): There is a zero value but the method did not find it
+test7(JUnitFindInArray): There is a zero value but the method did not find it
+test8(JUnitFindInArray): There is a zero value but the method did not find it
+test9(JUnitFindInArray): There is a zero value but the method did not find it
+false

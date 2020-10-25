@@ -1,0 +1,10 @@
+Fibonacci.java:39: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method getFib:  overflow in long sum
+		return (fib[index] + 1);//return fib[index];
+		                   ^
+Fibonacci.java:39: warning: The prover cannot establish an assertion (Postcondition: Fibonacci.java:36: ) in method getFib
+		return (fib[index] + 1);//return fib[index];
+		^
+Fibonacci.java:36: warning: Associated declaration: Fibonacci.java:39: 
+	//@ ensures \result == fib[index];
+	    ^
+3 warnings

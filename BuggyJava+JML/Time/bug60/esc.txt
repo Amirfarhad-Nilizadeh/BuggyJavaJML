@@ -1,0 +1,10 @@
+
+
+
+Time.java:249: warning: The prover cannot establish an assertion (Postcondition: Time.java:227: ) in method trustedDifference
+		return null; 
+		^
+Time.java:227: warning: Associated declaration: Time.java:249: 
+    private /*@ spec_public pure @*/ Time trustedDifference(Time start, Time stop) 
+                                          ^
+2 warnings

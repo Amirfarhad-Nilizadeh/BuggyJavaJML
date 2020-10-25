@@ -1,0 +1,13 @@
+GCDCalculator.java:62: warning: The prover cannot establish an assertion (Postcondition: GCDCalculator.java:41: ) in method GCD
+			return (num1 > num2) ? num1 : num2;
+			^
+GCDCalculator.java:41: warning: Associated declaration: GCDCalculator.java:62: 
+	//@ ensures \result == -1;
+	    ^
+GCDCalculator.java:58: warning: The prover cannot establish an assertion (Postcondition: GCDCalculator.java:36: ) in method GCD
+			return -1;	
+			^
+GCDCalculator.java:36: warning: Associated declaration: GCDCalculator.java:58: 
+	//@ ensures \result == tnum1;
+	    ^
+4 warnings

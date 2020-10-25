@@ -1,0 +1,7 @@
+test11(JUnitFindInArray): The value of array is not equal to key 
+test(JUnitFindInArray): The value of array is not equal to key 
+test2(JUnitFindInArray): The value of array is not equal to key 
+test3(JUnitFindInArray): The value of array is not equal to key 
+test5(JUnitFindInArray): The value of array is not equal to key 
+test7(JUnitFindInArray): The value of array is not equal to key 
+false

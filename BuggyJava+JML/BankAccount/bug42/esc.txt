@@ -1,0 +1,13 @@
+BankAccount.java:276: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method withdrawByCashBack:  overflow in int sum
+		amount = amount + cashback; //amount = amount - cashback;
+		                ^
+BankAccount.java:272: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:255: ) in method withdrawByCashBack
+	void withdrawByCashBack(int amount) 
+	     ^
+BankAccount.java:255: warning: Associated declaration: BankAccount.java:272: 
+	//@ ensures balance == \old (balance) - _amount;
+	    ^
+BankAccount.java:276: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method withdrawByCashBack:  underflow in int sum
+		amount = amount + cashback; //amount = amount - cashback;
+		                ^
+4 warnings

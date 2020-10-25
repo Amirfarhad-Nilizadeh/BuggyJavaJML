@@ -1,0 +1,11 @@
+test120(JUnitBankAccount): PreviousTransaction is not correct
+test131(JUnitBankAccount): PreviousTransaction is not correct
+test20(JUnitBankAccount): PreviousTransaction is not correct
+test23(JUnitBankAccount): PreviousTransaction is not correct
+test38(JUnitBankAccount): PreviousTransaction is not correct
+test50(JUnitBankAccount): PreviousTransaction is not correct
+test59(JUnitBankAccount): PreviousTransaction is not correct
+test70(JUnitBankAccount): PreviousTransaction is not correct
+test95(JUnitBankAccount): PreviousTransaction is not correct
+test97(JUnitBankAccount): PreviousTransaction is not correct
+false

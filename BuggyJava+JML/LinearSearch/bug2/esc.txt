@@ -1,0 +1,16 @@
+LinearSearch.java:19: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method LSearch
+          if (array[c] == search)     /* Searching element is present */
+                   ^
+LinearSearch.java:29: warning: The prover cannot establish an assertion (Postcondition: LinearSearch.java:9: ) in method LSearch
+     return location;
+     ^
+LinearSearch.java:9: warning: Associated declaration: LinearSearch.java:29: 
+      //@ ensures \result == -1 ==>  (\forall int i; 0 <= i && i < array.length; array[i] != search);
+          ^
+LinearSearch.java:29: warning: The prover cannot establish an assertion (Postcondition: LinearSearch.java:10: ) in method LSearch
+     return location;
+     ^
+LinearSearch.java:10: warning: Associated declaration: LinearSearch.java:29: 
+      //@ ensures 0 <= \result && \result < array.length ==>  array[\result] == search;
+          ^
+5 warnings

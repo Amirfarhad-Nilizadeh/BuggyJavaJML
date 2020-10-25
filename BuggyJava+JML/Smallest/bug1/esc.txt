@@ -1,0 +1,10 @@
+Smallest.java:12: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method Smallest
+        //@ maintaining 0 <= smallest && smallest < a.length;
+            ^
+Smallest.java:7: warning: The prover cannot establish an assertion (Postcondition: Smallest.java:4: ) in method Smallest
+        if (a.length != 0) return -1;//if (a.length == 0) return -1;
+                           ^
+Smallest.java:4: warning: Associated declaration: Smallest.java:7: 
+    //@ ensures \result == -1 ==> a.length == 0;
+        ^
+3 warnings

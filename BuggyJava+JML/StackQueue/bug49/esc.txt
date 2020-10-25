@@ -1,0 +1,4 @@
+StackQueue.java:269: warning: The prover cannot establish an assertion (LoopInvariant) in method search
+        		//@ maintaining 0 <= index && index <= rear;
+        		    ^
+1 warning

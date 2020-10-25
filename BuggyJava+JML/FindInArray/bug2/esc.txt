@@ -1,0 +1,7 @@
+FindInArray.java:34: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:31: ) in method getKey
+	return (this.key == 0 ? 1 : 0); //return this.key;
+	^
+FindInArray.java:31: warning: Associated declaration: FindInArray.java:34: 
+    //@ ensures \result == this.key;
+        ^
+2 warnings

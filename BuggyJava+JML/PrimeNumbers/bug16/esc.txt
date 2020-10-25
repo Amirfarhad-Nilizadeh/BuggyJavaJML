@@ -1,0 +1,7 @@
+PrimeNumbers.java:10: warning: The prover cannot establish an assertion (Postcondition: PrimeNumbers.java:8: ) in method div
+        public static boolean div(int n, int d) { return (n%d == 0 ? false : true);}//n%d == 0; }
+                                                  ^
+PrimeNumbers.java:8: warning: Associated declaration: PrimeNumbers.java:10: 
+	//@ ensures \result == true ==> n%d == 0;        // this post condition is time consuming.
+	    ^
+2 warnings

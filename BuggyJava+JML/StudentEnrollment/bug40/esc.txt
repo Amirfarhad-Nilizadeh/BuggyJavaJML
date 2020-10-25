@@ -1,0 +1,7 @@
+StudentEnrollment.java:292: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:280: ) in method pay
+    public void pay(int payment, boolean debit) 
+                ^
+StudentEnrollment.java:280: warning: Associated declaration: StudentEnrollment.java:292: 
+    //@   ensures tuitionBalance == \old (tuitionBalance - payment);
+          ^
+2 warnings

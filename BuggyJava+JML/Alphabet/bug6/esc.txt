@@ -1,0 +1,11 @@
+
+
+
+
+Alphabet.java:66: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:60: ) in method isUppercase
+	return !uppercase; //return uppercase;
+	^
+Alphabet.java:60: warning: Associated declaration: Alphabet.java:66: 
+     @   ensures uppercase_set && \result == uppercase; @*/
+         ^
+2 warnings

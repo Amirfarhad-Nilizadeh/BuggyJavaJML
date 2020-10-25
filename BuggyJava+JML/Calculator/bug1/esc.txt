@@ -1,0 +1,13 @@
+Calculator.java:79: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:10: ) in method calculate
+        return output;
+        ^
+Calculator.java:10: warning: Associated declaration: Calculator.java:79: 
+    //@ ensures \result == num1 + num2;
+        ^
+Calculator.java:57: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method calculate:  overflow in int difference
+            	output = num1 - num2;//output = num1 + num2;
+            	              ^
+Calculator.java:57: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method calculate:  underflow in int difference
+            	output = num1 - num2;//output = num1 + num2;
+            	              ^
+4 warnings

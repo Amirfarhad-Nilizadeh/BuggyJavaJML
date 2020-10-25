@@ -1,0 +1,7 @@
+Perimeter.java:50: warning: The prover cannot establish an assertion (Postcondition: Perimeter.java:46: ) in method Perimeter
+	return trianglePerimeter + 1;//trianglePerimeter;
+	^
+Perimeter.java:46: warning: Associated declaration: Perimeter.java:50: 
+   //@ ensures \result == x + y + z;
+       ^
+2 warnings

@@ -1,0 +1,10 @@
+GCDCalculator.java:65: warning: The prover cannot establish an assertion (LoopInvariant) in method GCD
+		//@ maintaining 0 < i && i <= num1 + 1 && i<= num2 + 1; 
+		    ^
+GCDCalculator.java:75: warning: The prover cannot establish an assertion (Postcondition: GCDCalculator.java:20: ) in method GCD
+		return gcd;
+		^
+GCDCalculator.java:20: warning: Associated declaration: GCDCalculator.java:75: 
+	//@ ensures (\forall int i; \result < i && i <= smaller; div(smaller,i) == 0 ==> div(greater,i) != 0);
+	    ^
+3 warnings

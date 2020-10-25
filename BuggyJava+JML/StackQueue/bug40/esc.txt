@@ -1,0 +1,19 @@
+StackQueue.java:260: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:248: ) in method isContain
+        	return false;
+        	^
+StackQueue.java:248: warning: Associated declaration: StackQueue.java:260: 
+    		//@   ensures !\result ==> \forall int i; 0 <= i && i < rear; queue[i] != key;
+    		      ^
+StackQueue.java:255: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method isContain
+        		 	if (key == queue[index]) {
+        		 	                ^
+StackQueue.java:256: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:247: ) in method isContain
+        		 	       return true;
+        		 	       ^
+StackQueue.java:247: warning: Associated declaration: StackQueue.java:256: 
+    		//@   ensures \result ==> \exists int i; 0 <= i && i < rear; queue[i] == key;
+    		      ^
+StackQueue.java:252: warning: The prover cannot establish an assertion (LoopInvariant) in method isContain
+        		//@ maintaining 0 <= index && index <= rear;
+        		    ^
+6 warnings

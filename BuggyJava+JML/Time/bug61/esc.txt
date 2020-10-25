@@ -1,0 +1,19 @@
+Time.java:259: warning: The prover cannot establish an assertion (Precondition: Time.java:227: ) in method difference
+            return trustedDifference(start, stop);
+                                    ^
+Time.java:227: warning: Associated declaration: Time.java:259: 
+    private /*@ spec_public pure @*/ Time trustedDifference(Time start, Time stop) 
+                                          ^
+Time.java:218: warning: Precondition conjunct is false: stop.later_than(start) || stop.equals(start)
+    //@ requires stop.later_than(start) || stop.equals(start);		
+                                        ^
+Time.java:261: warning: The prover cannot establish an assertion (Precondition: Time.java:227: ) in method difference
+            return trustedDifference(stop, start);
+                                    ^
+Time.java:227: warning: Associated declaration: Time.java:261: 
+    private /*@ spec_public pure @*/ Time trustedDifference(Time start, Time stop) 
+                                          ^
+Time.java:218: warning: Precondition conjunct is false: stop.later_than(start) || stop.equals(start)
+    //@ requires stop.later_than(start) || stop.equals(start);		
+                                        ^
+6 warnings

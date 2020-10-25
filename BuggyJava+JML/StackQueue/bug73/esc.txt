@@ -1,0 +1,16 @@
+
+
+
+
+
+
+StackQueue.java:390: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:321: ) in method QPlus
+		return Q.getElem(Q.getRear() + 1); //return Q.getElem(Q.getRear() - 1);
+		                ^
+StackQueue.java:321: warning: Associated declaration: StackQueue.java:390: 
+    		public /*@ pure @*/ int getElem(int i) 
+    		                        ^
+StackQueue.java:319: warning: Precondition conjunct is false: i < rear
+    		//@   requires 0 <= i && i < rear;
+    		                           ^
+3 warnings

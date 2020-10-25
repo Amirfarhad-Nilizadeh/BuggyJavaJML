@@ -1,0 +1,21 @@
+
+StudentEnrollment.java:47: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:38: ) in method setTuitionBalance:  this.tuitionBalance
+		this.tuitionBalance = tuitionBalance;
+		                    ^
+StudentEnrollment.java:38: warning: Associated declaration: StudentEnrollment.java:47: 
+    //@   assignable \nothing;
+          ^
+
+StudentEnrollment.java:41: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:12: ) in method setTuitionBalance
+    public void setTuitionBalance(int tuitionBalance)
+                ^
+StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:41: 
+    /*@ public invariant tuitionBalance <= 
+               ^
+StudentEnrollment.java:45: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:29: ) in method setTuitionBalance
+                throw new IllegalArgumentException();
+                ^
+StudentEnrollment.java:29: warning: Associated declaration: StudentEnrollment.java:45: 
+    //@ public normal_behavior
+               ^
+6 warnings

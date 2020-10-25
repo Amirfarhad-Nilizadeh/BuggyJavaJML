@@ -1,0 +1,27 @@
+test100(JUnitBankAccount): PreviousTransaction is not correct
+test106(JUnitBankAccount): PreviousTransaction is not correct
+test107(JUnitBankAccount): PreviousTransaction is not correct
+test124(JUnitBankAccount): PreviousTransaction is not correct
+test126(JUnitBankAccount): PreviousTransaction is not correct
+test129(JUnitBankAccount): PreviousTransaction is not correct
+test131(JUnitBankAccount): PreviousTransaction is not correct
+test133(JUnitBankAccount): PreviousTransaction is not correct
+test11(JUnitBankAccount): PreviousTransaction is not correct
+test14(JUnitBankAccount): PreviousTransaction is not correct
+test23(JUnitBankAccount): PreviousTransaction is not correct
+test46(JUnitBankAccount): PreviousTransaction is not correct
+test47(JUnitBankAccount): PreviousTransaction is not correct
+test50(JUnitBankAccount): PreviousTransaction is not correct
+test52(JUnitBankAccount): PreviousTransaction is not correct
+test53(JUnitBankAccount): PreviousTransaction is not correct
+test70(JUnitBankAccount): PreviousTransaction is not correct
+test75(JUnitBankAccount): PreviousTransaction is not correct
+test78(JUnitBankAccount): PreviousTransaction is not correct
+test79(JUnitBankAccount): PreviousTransaction is not correct
+test81(JUnitBankAccount): PreviousTransaction is not correct
+test91(JUnitBankAccount): PreviousTransaction is not correct
+test95(JUnitBankAccount): PreviousTransaction is not correct
+test1(JUnitBankAccount): PreviousTransaction is not correct
+test4(JUnitBankAccount): PreviousTransaction is not correct
+test6(JUnitBankAccount): PreviousTransaction is not correct
+false

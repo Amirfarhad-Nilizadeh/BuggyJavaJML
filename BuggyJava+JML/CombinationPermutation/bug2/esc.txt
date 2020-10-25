@@ -1,0 +1,16 @@
+
+
+
+CombinationPermutation.java:8: warning: The prover cannot establish an assertion (PossiblyDivideByZero) in method Combination
+		combin = fac.Facto(n) / (fac.Facto(r) / fac.Facto(n-r)); //combin = fac.Facto(n) / (fac.Facto(r) * fac.Facto(n-r));
+		                      ^
+
+
+
+CombinationPermutation.java:9: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:4: ) in method Combination
+		return combin;
+		^
+CombinationPermutation.java:4: warning: Associated declaration: CombinationPermutation.java:9: 
+	//@ ensures \result == fac_spec.spec_factorial(n)/(fac_spec.spec_factorial(r) * fac_spec.spec_factorial(n-r));
+	    ^
+3 warnings

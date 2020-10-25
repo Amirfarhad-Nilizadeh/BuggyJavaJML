@@ -1,0 +1,25 @@
+StudentEnrollment.java:345: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:302: ) in method enrollmentProcess
+	    throw new IllegalArgumentException();
+	    ^
+StudentEnrollment.java:302: warning: Associated declaration: StudentEnrollment.java:345: 
+    //@ public normal_behavior
+               ^
+StudentEnrollment.java:345: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:302: ) in method enrollmentProcess
+	    throw new IllegalArgumentException();
+	    ^
+StudentEnrollment.java:302: warning: Associated declaration: StudentEnrollment.java:345: 
+    //@ public normal_behavior
+               ^
+StudentEnrollment.java:345: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:302: ) in method enrollmentProcess
+	    throw new IllegalArgumentException();
+	    ^
+StudentEnrollment.java:302: warning: Associated declaration: StudentEnrollment.java:345: 
+    //@ public normal_behavior
+               ^
+StudentEnrollment.java:345: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:302: ) in method enrollmentProcess
+	    throw new IllegalArgumentException();
+	    ^
+StudentEnrollment.java:302: warning: Associated declaration: StudentEnrollment.java:345: 
+    //@ public normal_behavior
+               ^
+8 warnings

@@ -1,0 +1,7 @@
+Alphabet.java:191: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:188: ) in method getVowel_set
+	return !vowel_set; //return vowel_set;
+	^
+Alphabet.java:188: warning: Associated declaration: Alphabet.java:191: 
+   //@   ensures \result == vowel_set;
+         ^
+2 warnings

@@ -1,0 +1,7 @@
+Time.java:296: warning: The prover cannot establish an assertion (Postcondition: Time.java:276: ) in method timeOptions
+			return start.getTime();
+			^
+Time.java:276: warning: Associated declaration: Time.java:296: 
+      @		ensures  \result.hour == 0 && \result.minute == 0 && \result.second == 0;
+       		^
+2 warnings

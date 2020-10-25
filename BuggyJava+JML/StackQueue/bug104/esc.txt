@@ -1,0 +1,73 @@
+
+
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:599: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:599: warning: Associated declaration: StackQueue.java:688: 
+	   @	ensures q.queue[q.rear-1] == input && \result == 0;	
+	    	^
+
+
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:605: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:605: warning: Associated declaration: StackQueue.java:688: 
+	   @ 	ensures \result == \old (q.queue[q.front]);
+	     	^
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:645: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:645: warning: Associated declaration: StackQueue.java:688: 
+	   @	ensures \result == q.rear;	
+	    	^
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:609: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:609: warning: Associated declaration: StackQueue.java:688: 
+	   @ 	ensures 0 <= \result && \result < q.rear ==> q.queue[\result] == input;
+	     	^
+
+
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:627: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:627: warning: Associated declaration: StackQueue.java:688: 
+	   @ 	ensures \result == \old (q.getElem(q.front) - q.getElem(q.front + 1));
+	     	^
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:614: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:614: warning: Associated declaration: StackQueue.java:688: 
+	   @ 	ensures \result == 0 ==> \forall int i; 0 <= i && i < q.rear; q.queue[i] != input;
+	     	^
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:613: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:613: warning: Associated declaration: StackQueue.java:688: 
+	   @ 	ensures \result == 1 ==> \exists int i; 0 <= i && i < q.rear; q.queue[i] == input;
+	     	^
+
+
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:620: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:620: warning: Associated declaration: StackQueue.java:688: 
+	   @ 	ensures \result == \old (q.getElem(q.front) + q.getElem(q.front + 1));
+	     	^
+
+
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:641: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:641: warning: Associated declaration: StackQueue.java:688: 
+	   @ 	ensures \result == \old (q.getElem(q.front) % q.getElem(q.front + 1));
+	     	^
+
+
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:634: ) in method driverQueue
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:634: warning: Associated declaration: StackQueue.java:688: 
+	   @ 	ensures \result == \old (q.getElem(q.front) / q.getElem(q.front + 1));
+	     	^
+20 warnings

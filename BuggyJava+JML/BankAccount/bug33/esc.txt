@@ -1,0 +1,12 @@
+BankAccount.java:221: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method foreignTransfer:  overflow in int sum
+				balance = balance + amount;//balance = balance - amount;
+				                  ^
+
+
+BankAccount.java:214: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:198: ) in method foreignTransfer
+	void foreignTransfer(int amount)
+	     ^
+BankAccount.java:198: warning: Associated declaration: BankAccount.java:214: 
+	  //@ ensures balance == \old (balance) - _amount;
+	      ^
+3 warnings

@@ -1,0 +1,7 @@
+BankAccount.java:47: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:44: ) in method getBalance
+		return (this.balance == 0 ? 1: 0);//return this.balance;
+		^
+BankAccount.java:44: warning: Associated declaration: BankAccount.java:47: 
+	//@ ensures \result == this.balance;
+	    ^
+2 warnings

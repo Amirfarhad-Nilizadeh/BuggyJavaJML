@@ -1,0 +1,7 @@
+StackQueue.java:133: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:125: ) in method isContain
+        		        return false; //return true;
+        		        ^
+StackQueue.java:125: warning: Associated declaration: StackQueue.java:133: 
+    	   	//@ 	ensures !\result ==> \forall int i; 0 <= i && i <= top; arr[i] != key;
+    	   	    	^
+2 warnings

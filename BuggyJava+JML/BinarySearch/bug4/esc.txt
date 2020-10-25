@@ -1,0 +1,19 @@
+BinarySearch.java:19: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Binary
+            while (low >= high && arr[mid] != key) {//while (low < high && arr[mid] != key) {
+                                     ^
+BinarySearch.java:30: warning: The prover cannot establish an assertion (Postcondition: BinarySearch.java:5: ) in method Binary
+            return mid;
+            ^
+BinarySearch.java:5: warning: Associated declaration: BinarySearch.java:30: 
+    //@ ensures 0 <= \result && \result < arr.length ==> arr[\result] == key;
+        ^
+BinarySearch.java:18: warning: The prover cannot establish an assertion (LoopDecreases) in method Binary
+            //@ decreases high - low;
+                ^
+BinarySearch.java:30: warning: The prover cannot establish an assertion (Postcondition: BinarySearch.java:4: ) in method Binary
+            return mid;
+            ^
+BinarySearch.java:4: warning: Associated declaration: BinarySearch.java:30: 
+    //@ ensures \result == -1 <==> (\forall int i; 0 <= i && i < arr.length; arr[i] != key);
+        ^
+6 warnings

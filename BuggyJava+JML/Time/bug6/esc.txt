@@ -1,0 +1,7 @@
+Time.java:61: warning: The prover cannot establish an assertion (InvariantExit: Time.java:7: ) in method setMinute
+    public void setMinute(int m) 
+                ^
+Time.java:7: warning: Associated declaration: Time.java:61: 
+      public invariant 0 <= minute && minute < 60;
+             ^
+2 warnings

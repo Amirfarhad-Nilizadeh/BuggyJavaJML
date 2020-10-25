@@ -1,0 +1,11 @@
+
+
+PrimeNumbers.java:49: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Prime:  int multiply overflow
+             for (j = 2; j <= num*2; j++)//for (j = 2; j <= num/2; j++)
+                                 ^
+
+
+PrimeNumbers.java:44: warning: The prover cannot establish an assertion (LoopInvariant) in method Prime
+             //@ maintaining j> 1 && j <= num/2 + 1;
+                 ^
+2 warnings

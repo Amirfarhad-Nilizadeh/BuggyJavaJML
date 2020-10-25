@@ -1,0 +1,7 @@
+FindInArray.java:16: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:14: ) in method FindInArray
+    FindInArray(int inputArr[], int key)
+    ^
+FindInArray.java:14: warning: Associated declaration: FindInArray.java:16: 
+    //@ ensures this.key == key;
+        ^
+2 warnings

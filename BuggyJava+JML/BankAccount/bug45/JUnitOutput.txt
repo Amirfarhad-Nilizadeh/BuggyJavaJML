@@ -1,0 +1,6 @@
+test131(JUnitBankAccount): Balance is not correct
+test23(JUnitBankAccount): Balance is not correct
+test50(JUnitBankAccount): Balance is not correct
+test70(JUnitBankAccount): Balance is not correct
+test95(JUnitBankAccount): Balance is not correct
+false

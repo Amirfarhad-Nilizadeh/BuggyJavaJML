@@ -1,0 +1,15 @@
+test10(JUnitFindInArray): The value of array is not equal to key 
+test11(JUnitFindInArray): The value of array is not equal to key 
+test12(JUnitFindInArray): The value of array is not equal to key 
+test13(JUnitFindInArray): The value of array is not equal to key 
+test(JUnitFindInArray): The value of array is not equal to key 
+test1(JUnitFindInArray): There is a zero value but the method did not find it
+test2(JUnitFindInArray): The value of array is not equal to key 
+test3(JUnitFindInArray): The value of array is not equal to key 
+test4(JUnitFindInArray): There is a zero value but the method did not find it
+test5(JUnitFindInArray): The value of array is not equal to key 
+test6(JUnitFindInArray): The value of array is not equal to key 
+test7(JUnitFindInArray): The value of array is not equal to key 
+test8(JUnitFindInArray): The value of array is not equal to key 
+test9(JUnitFindInArray): The value of array is not equal to key 
+false

@@ -1,0 +1,7 @@
+StudentEnrollment.java:139: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:136: ) in method getLastName
+		return null;
+		^
+StudentEnrollment.java:136: warning: Associated declaration: StudentEnrollment.java:139: 
+    /*@ pure @*/ public String getLastName()
+                               ^
+2 warnings

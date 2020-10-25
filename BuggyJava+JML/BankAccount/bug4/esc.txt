@@ -1,0 +1,7 @@
+BankAccount.java:53: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:50: ) in method getPreviousTransaction
+		return (this.previousTransaction == 0 ? 1 : 0);//return this.previousTransaction;
+		^
+BankAccount.java:50: warning: Associated declaration: BankAccount.java:53: 
+	//@ ensures \result == this.previousTransaction;
+	    ^
+2 warnings

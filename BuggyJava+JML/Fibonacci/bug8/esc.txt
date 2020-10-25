@@ -1,0 +1,13 @@
+
+Fibonacci.java:50: warning: The prover cannot establish an assertion (LoopInvariant) in method fibCompute
+                //@ maintaining (\forall int i; 2 <= i && i < index; fib[i] == fib[i-1] + fib[i-2]);
+                    ^
+
+Fibonacci.java:55: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method fibCompute:  underflow in long difference
+			fib[index] = fib[index - 2] - fib[index - 1];//fib[index] = fib[index - 2] + fib[index - 1];
+			                            ^
+
+Fibonacci.java:55: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method fibCompute:  overflow in long difference
+			fib[index] = fib[index - 2] - fib[index - 1];//fib[index] = fib[index - 2] + fib[index - 1];
+			                            ^
+3 warnings

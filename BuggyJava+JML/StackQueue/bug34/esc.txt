@@ -1,0 +1,5 @@
+
+StackQueue.java:213: warning: The prover cannot establish an assertion (LoopInvariant) in method delete
+              		  	@ maintaining 0 <= i && i < rear;
+              		  	  ^
+1 warning

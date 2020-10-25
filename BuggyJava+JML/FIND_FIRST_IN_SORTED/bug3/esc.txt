@@ -1,0 +1,4 @@
+FIND_FIRST_IN_SORTED.java:20: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method find_first_in_sorted
+            if (x == arr[mid] && (mid == 0 || x != arr[mid-1])) {
+                        ^
+1 warning

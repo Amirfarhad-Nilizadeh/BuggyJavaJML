@@ -1,0 +1,27 @@
+StudentEnrollment.java:295: warning: The prover cannot establish an assertion (Precondition: StudentEnrollment.java:238: ) in method pay
+            payTuitionWithDebitCard(payment);
+                                   ^
+StudentEnrollment.java:238: warning: Associated declaration: StudentEnrollment.java:295: 
+    /*@ spec_public @*/ private void payTuitionWithDebitCard(int payment) 
+                                     ^
+StudentEnrollment.java:228: warning: Precondition conjunct is false: Integer.MIN_VALUE <= tuitionBalance - payment
+    //@   requires Integer.MIN_VALUE <= tuitionBalance - payment;
+                                     ^
+StudentEnrollment.java:235: warning: Precondition conjunct is false: !validPayment(payment)
+    //@   requires !validPayment(payment);
+                   ^
+
+StudentEnrollment.java:292: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:280: ) in method pay
+    public void pay(int payment, boolean debit) 
+                ^
+StudentEnrollment.java:280: warning: Associated declaration: StudentEnrollment.java:292: 
+    //@   ensures tuitionBalance == \old (tuitionBalance - payment);
+          ^
+
+StudentEnrollment.java:292: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:291: ) in method pay
+    public void pay(int payment, boolean debit) 
+                ^
+StudentEnrollment.java:291: warning: Associated declaration: StudentEnrollment.java:292: 
+    //@   ensures tuitionBalance == \old (tuitionBalance - _payment);
+          ^
+8 warnings

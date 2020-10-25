@@ -1,0 +1,9 @@
+
+StackQueue.java:217: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method delete
+                			queue[i] = queue[i - 1]; //queue[i] = queue[i + 1];
+                			                ^
+
+StackQueue.java:212: warning: The prover cannot establish an assertion (LoopInvariant) in method delete
+            			/*@ maintaining (\forall int j; 0 <= j && j < i; queue[j] == temp[j+1]);
+            			    ^
+2 warnings

@@ -1,0 +1,13 @@
+StackQueue.java:350: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:344: ) in method stackMinus
+		return stack.peek();
+		^
+StackQueue.java:344: warning: Associated declaration: StackQueue.java:350: 
+          @ ensures \result == \old (stack.getElem(stack.top) - stack.getElem(stack.top - 1));
+            ^
+StackQueue.java:350: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:345: ) in method stackMinus
+		return stack.peek();
+		^
+StackQueue.java:345: warning: Associated declaration: StackQueue.java:350: 
+          @ ensures stack.size() == \old (stack.size() - 1);
+            ^
+4 warnings

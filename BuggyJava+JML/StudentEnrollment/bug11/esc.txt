@@ -1,0 +1,7 @@
+StudentEnrollment.java:103: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:100: ) in method getTuition
+        return (this.tuitionBalance == 0 ? 1 : 0);//return this.tuitionBalance;
+        ^
+StudentEnrollment.java:100: warning: Associated declaration: StudentEnrollment.java:103: 
+    //@   ensures \result == this.tuitionBalance;
+          ^
+2 warnings

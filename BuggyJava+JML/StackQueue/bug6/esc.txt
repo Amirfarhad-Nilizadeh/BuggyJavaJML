@@ -1,0 +1,13 @@
+
+StackQueue.java:59: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method push
+	           		 arr[--top] = x; //arr[++top] = x; 
+	           		    ^
+
+
+StackQueue.java:56: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:45: ) in method push
+	    	public void push(int x) 
+	    	            ^
+StackQueue.java:45: warning: Associated declaration: StackQueue.java:56: 
+	          @ 	ensures top == \old (top + 1);
+	            	^
+3 warnings

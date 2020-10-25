@@ -1,0 +1,10 @@
+LeapYear.java:32: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method LeapChecking:  int multiply overflow
+            if( year * 100 == 0)//if( year % 100 == 0)
+                     ^
+LeapYear.java:45: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:18: ) in method LeapChecking
+	return leap;
+	^
+LeapYear.java:18: warning: Associated declaration: LeapYear.java:45: 
+   //@ ensures \result == false;
+       ^
+3 warnings

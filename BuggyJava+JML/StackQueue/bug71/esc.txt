@@ -1,0 +1,27 @@
+
+
+
+
+StackQueue.java:389: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method QPlus:  underflow in int difference
+		Q.enter(Q.delete() - Q.delete()); //Q.enter(Q.delete() + Q.delete());
+		                   ^
+
+
+
+
+StackQueue.java:389: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method QPlus:  overflow in int difference
+		Q.enter(Q.delete() - Q.delete()); //Q.enter(Q.delete() + Q.delete());
+		                   ^
+
+
+
+
+
+
+StackQueue.java:390: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:384: ) in method QPlus
+		return Q.getElem(Q.getRear() - 1);
+		^
+StackQueue.java:384: warning: Associated declaration: StackQueue.java:390: 
+      	  @ ensures \result == \old (Q.getElem(Q.front) + Q.getElem(Q.front + 1));
+      	    ^
+4 warnings

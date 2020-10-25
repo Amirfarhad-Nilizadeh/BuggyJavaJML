@@ -1,0 +1,16 @@
+
+
+StackQueue.java:376: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method stackModulus:  int multiply overflow
+		stack.push(stack.pop() * stack.pop()); //stack.push(stack.pop() % stack.pop());
+		                       ^
+
+
+
+
+StackQueue.java:377: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:371: ) in method stackModulus
+ 		return stack.peek();
+ 		^
+StackQueue.java:371: warning: Associated declaration: StackQueue.java:377: 
+      	  @ ensures \result == \old (stack.getElem(stack.top) % stack.getElem(stack.top - 1));
+      	    ^
+3 warnings

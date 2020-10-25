@@ -1,0 +1,7 @@
+AddLoop.java:22: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method AddLoop:  underflow in int difference
+                sum = sum - 1;
+                          ^
+AddLoop.java:19: warning: The prover cannot establish an assertion (LoopInvariant) in method AddLoop
+            //@ maintaining sum == x + y + n && 0 <= n;
+                ^
+2 warnings

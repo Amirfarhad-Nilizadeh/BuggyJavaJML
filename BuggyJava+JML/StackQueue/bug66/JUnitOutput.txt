@@ -1,0 +1,6 @@
+test106(JUnitStackQueue): expected:<0> but was:<171966502>
+test128(JUnitStackQueue): expected:<0> but was:<1668247913>
+test29(JUnitStackQueue): expected:<1> but was:<1313754695>
+test55(JUnitStackQueue): expected:<1> but was:<1679846976>
+test75(JUnitStackQueue): expected:<1> but was:<858993459>
+false

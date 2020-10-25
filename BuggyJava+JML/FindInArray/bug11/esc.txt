@@ -1,0 +1,7 @@
+FindInArray.java:61: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:49: ) in method findLast
+	return (-1 == 0 ? 1 : 0); // return -1;
+	^
+FindInArray.java:49: warning: Associated declaration: FindInArray.java:61: 
+      @ ensures 0 <= \result && \result < arr.length ==> (arr[\result] == key && 
+        ^
+2 warnings

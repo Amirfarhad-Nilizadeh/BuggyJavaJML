@@ -1,0 +1,11 @@
+StudentEnrollment.java:196: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method lateEnrollment:  underflow in int difference
+        	tuitionBalance = getTuition() - cost;//tuitionBalance = getTuition() + cost;
+        	                              ^
+
+StudentEnrollment.java:190: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:182: ) in method lateEnrollment
+    public void lateEnrollment() 
+                ^
+StudentEnrollment.java:182: warning: Associated declaration: StudentEnrollment.java:190: 
+    //@   ensures this.tuitionBalance == \old (tuitionBalance) + enrollmentCredits * costPerCredit + enrollmentCredits * latePerCredit;
+          ^
+3 warnings

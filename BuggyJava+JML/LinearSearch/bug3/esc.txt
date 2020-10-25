@@ -1,0 +1,10 @@
+LinearSearch.java:29: warning: The prover cannot establish an assertion (Postcondition: LinearSearch.java:10: ) in method LSearch
+     return location;
+     ^
+LinearSearch.java:10: warning: Associated declaration: LinearSearch.java:29: 
+      //@ ensures 0 <= \result && \result < array.length ==>  array[\result] == search;
+          ^
+LinearSearch.java:15: warning: The prover cannot establish an assertion (LoopInvariant) in method LSearch
+	//@ maintaining (\forall int i; 0 <= i && i < c; array[i] != search);
+	    ^
+3 warnings

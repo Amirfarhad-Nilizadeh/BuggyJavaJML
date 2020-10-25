@@ -1,0 +1,10 @@
+StackQueue.java:253: warning: The prover cannot establish an assertion (LoopInvariant) in method isContain
+        		//@ maintaining \forall int i; 0 <= i && i < index; queue[i] != key;
+        		    ^
+StackQueue.java:256: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:247: ) in method isContain
+        		 	       return true;
+        		 	       ^
+StackQueue.java:247: warning: Associated declaration: StackQueue.java:256: 
+    		//@   ensures \result ==> \exists int i; 0 <= i && i < rear; queue[i] == key;
+    		      ^
+3 warnings

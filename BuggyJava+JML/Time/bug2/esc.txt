@@ -1,0 +1,7 @@
+Time.java:42: warning: The prover cannot establish an assertion (InvariantExit: Time.java:6: ) in method setSecond
+    public void setSecond(int s) 
+                ^
+Time.java:6: warning: Associated declaration: Time.java:42: 
+    /*@ public invariant 0 <= second && second < 60;
+               ^
+2 warnings

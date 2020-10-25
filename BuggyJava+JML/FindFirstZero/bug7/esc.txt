@@ -1,0 +1,10 @@
+FindFirstZero.java:25: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method FindFirstZero:  overflow in int sum
+            		if (x.length + index == 0){//if (x.length - index == 0){
+            		             ^
+FindFirstZero.java:28: warning: The prover cannot establish an assertion (Postcondition: FindFirstZero.java:10: ) in method FindFirstZero
+            	return index;
+            	^
+FindFirstZero.java:10: warning: Associated declaration: FindFirstZero.java:28: 
+   	 //@ ensures \result < x.length;
+   	     ^
+3 warnings

@@ -1,0 +1,7 @@
+Smallest.java:15: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Smallest:  overflow in int sum
+        while (a.length + index > 0) {//while (a.length - index > 0) {
+                        ^
+Smallest.java:16: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Smallest
+            if (a[index] < a[smallest]) {
+                 ^
+2 warnings

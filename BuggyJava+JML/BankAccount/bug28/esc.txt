@@ -1,0 +1,19 @@
+BankAccount.java:217: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method foreignTransfer:  int multiply overflow
+		penalty = (amount*100)*5; //penalty = (amount/100)*5;
+		                 ^
+BankAccount.java:218: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method foreignTransfer:  underflow in int sum
+		amount = amount + penalty;
+		                ^
+BankAccount.java:217: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method foreignTransfer:  int multiply overflow
+		penalty = (amount*100)*5; //penalty = (amount/100)*5;
+		                      ^
+BankAccount.java:218: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method foreignTransfer:  overflow in int sum
+		amount = amount + penalty;
+		                ^
+BankAccount.java:214: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:198: ) in method foreignTransfer
+	void foreignTransfer(int amount)
+	     ^
+BankAccount.java:198: warning: Associated declaration: BankAccount.java:214: 
+	  //@ ensures balance == \old (balance) - _amount;
+	      ^
+6 warnings

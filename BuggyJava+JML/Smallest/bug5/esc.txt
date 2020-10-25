@@ -1,0 +1,4 @@
+Smallest.java:13: warning: The prover cannot establish an assertion (LoopInvariant) in method Smallest
+        //@ maintaining (\forall int i; 0 <= i && i < index; a[smallest] <= a[i]);
+            ^
+1 warning

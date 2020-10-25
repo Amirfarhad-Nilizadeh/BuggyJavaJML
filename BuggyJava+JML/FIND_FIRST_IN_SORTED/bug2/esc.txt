@@ -1,0 +1,10 @@
+FIND_FIRST_IN_SORTED.java:19: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method find_first_in_sorted:  overflow in int sum
+            int mid = (lo + hi) / 2; // check if this is floor division
+                          ^
+FIND_FIRST_IN_SORTED.java:20: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method find_first_in_sorted
+            if (x == arr[mid] && (mid == 0 || x != arr[mid-1])) {
+                        ^
+FIND_FIRST_IN_SORTED.java:15: warning: The prover cannot establish an assertion (LoopInvariant) in method find_first_in_sorted
+	//@ maintaining lo <= hi;
+	    ^
+3 warnings

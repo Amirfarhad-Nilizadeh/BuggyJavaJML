@@ -1,0 +1,7 @@
+StackQueue.java:294: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:288: ) in method isFull
+    		        	return true; //return false;
+    		        	^
+StackQueue.java:288: warning: Associated declaration: StackQueue.java:294: 
+    		//@   ensures \result <==>  MAX == rear;
+    		      ^
+2 warnings

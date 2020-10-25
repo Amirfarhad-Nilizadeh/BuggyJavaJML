@@ -1,0 +1,21 @@
+
+
+
+
+StudentEnrollment.java:338: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:325: ) in method enrollmentProcess
+    public void enrollmentProcess(int passedCredits, int semesterCredits, int payment, int initialBalance, boolean lateRegistration, boolean debit, boolean option) 
+                ^
+StudentEnrollment.java:325: warning: Associated declaration: StudentEnrollment.java:338: 
+	//@ ensures this.passedCredits == passedCredits;
+	    ^
+
+
+
+
+StudentEnrollment.java:338: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:318: ) in method enrollmentProcess
+    public void enrollmentProcess(int passedCredits, int semesterCredits, int payment, int initialBalance, boolean lateRegistration, boolean debit, boolean option) 
+                ^
+StudentEnrollment.java:318: warning: Associated declaration: StudentEnrollment.java:338: 
+	//@ ensures this.passedCredits == passedCredits;
+	    ^
+4 warnings

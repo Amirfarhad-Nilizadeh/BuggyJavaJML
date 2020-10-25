@@ -1,0 +1,7 @@
+Inverse.java:22: warning: The prover cannot establish an assertion (Postcondition: Inverse.java:6: ) in method Inverse
+        return false;//true;
+        ^
+Inverse.java:6: warning: Associated declaration: Inverse.java:22: 
+    //@ ensures \result == false ==> ((x.length != y.length) || (\exists int i; 0 <= i && i < x.length; x[i] != y[x.length - 1 -i]));
+        ^
+2 warnings

@@ -1,0 +1,10 @@
+
+
+
+Time.java:163: warning: The prover cannot establish an assertion (Postcondition: Time.java:162: ) in method timer
+    public void timer(int h, int m, int s)
+                ^
+Time.java:162: warning: Associated declaration: Time.java:163: 
+    //@ ensures convertToSeconds() == 0;
+        ^
+2 warnings

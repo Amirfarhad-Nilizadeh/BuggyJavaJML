@@ -1,0 +1,7 @@
+TransposeMatrix.java:27: warning: The prover cannot establish an assertion (LoopInvariant) in method transposeMat
+              //@ maintaining 0 <= d && d <= m;
+                  ^
+TransposeMatrix.java:29: warning: The prover cannot establish an assertion (LoopDecreases) in method transposeMat
+              //@ decreases m - d;
+                  ^
+2 warnings

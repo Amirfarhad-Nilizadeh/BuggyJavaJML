@@ -1,0 +1,17 @@
+
+
+BankAccount.java:168: warning: The prover cannot establish an assertion (InvariantExit: BankAccount.java:5: ) in method checkWithdrawal
+	void checkWithdrawal(int amount)
+	     ^
+BankAccount.java:5: warning: Associated declaration: BankAccount.java:168: 
+        //@ invariant 0 <= balance;
+            ^
+
+
+BankAccount.java:168: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:151: ) in method checkWithdrawal
+	void checkWithdrawal(int amount)
+	     ^
+BankAccount.java:151: warning: Associated declaration: BankAccount.java:168: 
+	//@ ensures balance == \old (balance) - 50;
+	    ^
+4 warnings

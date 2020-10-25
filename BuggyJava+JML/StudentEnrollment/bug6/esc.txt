@@ -1,0 +1,21 @@
+
+StudentEnrollment.java:65: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:60: ) in method setPassedCredits:  this.passedCredits
+            this.passedCredits = passedCredits;
+                               ^
+StudentEnrollment.java:60: warning: Associated declaration: StudentEnrollment.java:65: 
+    //@   assignable \nothing;
+          ^
+StudentEnrollment.java:67: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:51: ) in method setPassedCredits
+            throw new IllegalArgumentException();
+            ^
+StudentEnrollment.java:51: warning: Associated declaration: StudentEnrollment.java:67: 
+    //@ public normal_behavior
+               ^
+
+StudentEnrollment.java:62: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:58: ) in method setPassedCredits
+    public void setPassedCredits(int passedCredits)
+                ^
+StudentEnrollment.java:58: warning: Associated declaration: StudentEnrollment.java:62: 
+    //@ public exceptional_behavior
+               ^
+6 warnings

@@ -1,0 +1,10 @@
+StackQueue.java:315: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:312: ) in method getRear
+        		return (rear == 0 ? 1 : 0); //return rear; 
+        		^
+StackQueue.java:312: warning: Associated declaration: StackQueue.java:315: 
+    		//@   ensures \result == rear;
+    		      ^
+StackQueue.java:361: warning: There is no feasible path to program point at program exit in method StackQueue.stackDivision(StackQueue.Stack)
+    	public int stackDivision(Stack stack) 
+    	           ^
+3 warnings

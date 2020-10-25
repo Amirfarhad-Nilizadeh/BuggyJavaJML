@@ -1,0 +1,7 @@
+Time.java:112: warning: The prover cannot establish an assertion (Postcondition: Time.java:109: ) in method getHour
+        return (hour == 0 ? 1 : 0);//return hour;
+        ^
+Time.java:109: warning: Associated declaration: Time.java:112: 
+    //@ ensures \result == hour;
+        ^
+2 warnings

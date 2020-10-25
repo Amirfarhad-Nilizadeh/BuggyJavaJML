@@ -1,0 +1,16 @@
+PrimeCheck.java:22: warning: The prover cannot establish an assertion (LoopInvariant) in method Prime
+	//@ maintaining 1 < i && i <= mid + 1;
+	    ^
+PrimeCheck.java:31: warning: The prover cannot establish an assertion (Postcondition: PrimeCheck.java:12: ) in method Prime
+	return true;
+	^
+PrimeCheck.java:12: warning: Associated declaration: PrimeCheck.java:31: 
+   //@ ensures \result ==> (\forall int k; 1 < k && k <= a/2; div(a, k) != 0);
+       ^
+PrimeCheck.java:28: warning: The prover cannot establish an assertion (Postcondition: PrimeCheck.java:13: ) in method Prime
+		return false;
+		^
+PrimeCheck.java:13: warning: Associated declaration: PrimeCheck.java:28: 
+   //@ ensures \result == false ==> (\exists int k; 1 < k && k <= a/2; div(a,k) == 0); 
+       ^
+5 warnings

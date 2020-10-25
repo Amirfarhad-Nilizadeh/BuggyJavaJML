@@ -1,0 +1,10 @@
+Inverse.java:10: warning: The prover cannot establish an assertion (Assert) in method Inverse
+        //@ assert x.length == y.length;
+            ^
+Inverse.java:9: warning: The prover cannot establish an assertion (Postcondition: Inverse.java:6: ) in method Inverse
+        if (x.length == y.length) return false;//if (x.length != y.length) return false;
+                                  ^
+Inverse.java:6: warning: Associated declaration: Inverse.java:9: 
+    //@ ensures \result == false ==> ((x.length != y.length) || (\exists int i; 0 <= i && i < x.length; x[i] != y[x.length - 1 -i]));
+        ^
+3 warnings

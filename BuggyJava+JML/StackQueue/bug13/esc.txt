@@ -1,0 +1,16 @@
+StackQueue.java:120: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:108: ) in method search
+        		return -1;
+        		^
+StackQueue.java:108: warning: Associated declaration: StackQueue.java:120: 
+    	   	//@ 	ensures \result == -1 ==> \forall int i; 0 <= i && i <= top; arr[i] != key; 
+    	   	    	^
+StackQueue.java:115: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:150: ) in method search
+        		    if (getElem(index) == key) {
+        		               ^
+StackQueue.java:150: warning: Associated declaration: StackQueue.java:115: 
+    	   	public /*@ pure @*/ int getElem(int i) 
+    	   	                        ^
+StackQueue.java:148: warning: Precondition conjunct is false: 0 <= i
+    	   	//@ 	requires 0 <= i && i <= top;
+    	   	    	           ^
+5 warnings

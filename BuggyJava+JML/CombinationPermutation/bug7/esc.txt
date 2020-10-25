@@ -1,0 +1,9 @@
+
+
+CombinationPermutation.java:19: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:14: ) in method Permutation
+		return (permut+1); //return permut;
+		^
+CombinationPermutation.java:14: warning: Associated declaration: CombinationPermutation.java:19: 
+	//@ ensures \result == fac_spec.spec_factorial(n)/fac_spec.spec_factorial(n-r);
+	    ^
+2 warnings

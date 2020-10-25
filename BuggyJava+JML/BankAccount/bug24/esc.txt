@@ -1,0 +1,20 @@
+BankAccount.java:179: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method checkWithdrawal:  overflow in int sum
+				_balance = balance + notEnoughMoneyPenalty;//_balance = balance - notEnoughMoneyPenalty;
+				                   ^
+
+
+BankAccount.java:168: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:160: ) in method checkWithdrawal
+	void checkWithdrawal(int amount)
+	     ^
+BankAccount.java:160: warning: Associated declaration: BankAccount.java:168: 
+	//@ ensures balance == 0;
+	    ^
+
+
+BankAccount.java:168: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:151: ) in method checkWithdrawal
+	void checkWithdrawal(int amount)
+	     ^
+BankAccount.java:151: warning: Associated declaration: BankAccount.java:168: 
+	//@ ensures balance == \old (balance) - 50;
+	    ^
+5 warnings

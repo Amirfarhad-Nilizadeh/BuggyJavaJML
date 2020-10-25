@@ -1,0 +1,7 @@
+StackQueue.java:29: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:25: ) in method isEmpty
+	        	return (getTop() >= 0); //return (getTop() < 0); 
+	        	^
+StackQueue.java:25: warning: Associated declaration: StackQueue.java:29: 
+	    	//@   ensures \result <==> top < 0;
+	    	      ^
+2 warnings

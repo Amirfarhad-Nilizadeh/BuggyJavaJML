@@ -1,0 +1,8 @@
+test132(JUnitStackQueue): 100
+test152(JUnitStackQueue): 100
+test17(JUnitStackQueue): 100
+test45(JUnitStackQueue): 100
+test82(JUnitStackQueue): 100
+test98(JUnitStackQueue): 100
+test9(JUnitStackQueue): 100
+false

@@ -1,0 +1,5 @@
+test15(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test1(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test7(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test8(JUnitFIND_FIRST_IN_SORTED): There is a key value before detected location
+false

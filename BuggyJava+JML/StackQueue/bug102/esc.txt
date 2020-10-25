@@ -1,0 +1,7 @@
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:598: ) in method driverQueue
+		return output;
+		^
+StackQueue.java:598: warning: Associated declaration: StackQueue.java:688: 
+	   @	ensures \old (q.rear) == q.rear - 1;
+	    	^
+2 warnings

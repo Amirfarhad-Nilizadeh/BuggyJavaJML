@@ -1,0 +1,7 @@
+BankAccount.java:357: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:324: ) in method interestAfterYear
+		return interest;
+		^
+BankAccount.java:324: warning: Associated declaration: BankAccount.java:357: 
+	//@ ensures \result == (balance/100)*2;
+	    ^
+2 warnings

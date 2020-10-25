@@ -1,0 +1,7 @@
+LCM.java:31: warning: The prover cannot establish an assertion (Postcondition: LCM.java:25: ) in method LCMCalculating
+		return (-1 == 0 ? 1 : 0);//-1;
+		^
+LCM.java:25: warning: Associated declaration: LCM.java:31: 
+    //@ ensures \result == -1;
+        ^
+2 warnings

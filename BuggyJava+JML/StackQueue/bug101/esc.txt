@@ -1,0 +1,72 @@
+
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:506: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:506: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures \result == \old (stack.getElem(stack.top));
+	   	^
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:514: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:514: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures \result == 1 ==> \exists int i; 0 <= i && i <= stack.top; stack.arr[i] == input;
+	   	^
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:547: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:547: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures \result == stack.top + 1;
+	   	^
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:515: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:515: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures \result == 0 ==> \forall int i; 0 <= i && i <= stack.top; stack.arr[i] != input;
+	   	^
+
+
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:502: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:502: warning: Associated declaration: StackQueue.java:590: 
+	  @ 	ensures stack.peek() == input && stack.top == \old (stack.top + 1) && \result == 0;
+	    	^
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:510: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:510: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures 0 <= \result && \result <= stack.top ==> input == stack.getElem(\result);
+	   	^
+
+
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:528: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:528: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures \result == \old (stack.getElem(stack.top) - stack.getElem(stack.top - 1));
+	   	^
+
+
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:536: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:536: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures \result == \old (stack.getElem(stack.top) / stack.getElem(stack.top - 1));
+	   	^
+
+
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:521: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:521: warning: Associated declaration: StackQueue.java:590: 
+	  @	ensures \result == \old (stack.getElem(stack.top) + stack.getElem(stack.top - 1));
+	   	^
+
+
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:543: ) in method driverStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:543: warning: Associated declaration: StackQueue.java:590: 
+	  @ 	ensures \result == \old (stack.getElem(stack.top) % stack.getElem(stack.top - 1));
+	    	^
+20 warnings

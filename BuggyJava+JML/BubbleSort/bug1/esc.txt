@@ -1,0 +1,7 @@
+BubbleSort.java:12: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+	//@ maintaining 0 <= i && i < n; 
+	    ^
+BubbleSort.java:16: warning: The prover cannot establish an assertion (LoopDecreases) in method bubbleSort
+ 	//@ decreases n - i;
+ 	    ^
+2 warnings

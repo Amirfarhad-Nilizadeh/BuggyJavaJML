@@ -1,0 +1,34 @@
+
+
+
+Time.java:301: warning: The prover cannot establish an assertion (Postcondition: Time.java:281: ) in method timeOptions
+	return getTime();
+	^
+Time.java:281: warning: Associated declaration: Time.java:301: 
+      @		ensures \result.equals(difference(start, stop));
+       		^
+Time.java:299: warning: The prover cannot establish an assertion (Postcondition: Time.java:268: ) in method timeOptions
+   		return difference(start, stop);
+   		^
+Time.java:268: warning: Associated declaration: Time.java:299: 
+      @		ensures \result.hour == 0 && \result.minute == 0 && \result.second == 0;
+       		^
+
+
+
+Time.java:301: warning: The prover cannot establish an assertion (Postcondition: Time.java:273: ) in method timeOptions
+	return getTime();
+	^
+Time.java:273: warning: Associated declaration: Time.java:301: 
+      @		ensures \result.hour == \old (hour) && \result.minute == \old (minute) && \result.second == \old (second);
+       		^
+
+
+
+Time.java:301: warning: The prover cannot establish an assertion (Postcondition: Time.java:277: ) in method timeOptions
+	return getTime();
+	^
+Time.java:277: warning: Associated declaration: Time.java:301: 
+      @		ensures  start.hour == 0 && start.minute == 0 && start.second == 0;
+       		^
+8 warnings

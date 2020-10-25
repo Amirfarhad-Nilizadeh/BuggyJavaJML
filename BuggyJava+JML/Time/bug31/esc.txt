@@ -1,0 +1,4 @@
+Time.java:149: warning: The prover cannot establish an assertion (LoopInvariant) in method timer
+        //@ maintaining !isTimeZero() && flag ==> convertToSeconds() == \old (convertToSeconds() - 1);
+            ^
+1 warning

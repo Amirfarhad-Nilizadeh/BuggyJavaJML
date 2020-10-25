@@ -1,0 +1,7 @@
+GCDCalculator.java:8: warning: The prover cannot establish an assertion (Postcondition: GCDCalculator.java:6: ) in method div
+        public static int div(int n, int d) { return (n%d == 0 ? 1 : 0);}//n%d; }
+                                              ^
+GCDCalculator.java:6: warning: Associated declaration: GCDCalculator.java:8: 
+	//@ ensures \result == n%d;
+	    ^
+2 warnings

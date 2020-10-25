@@ -1,0 +1,16 @@
+Time.java:214: warning: The prover cannot establish an assertion (PossiblyBadCast) in method equals:  a java.lang.Object cannot be proved to be a Time
+        Time t = (Time) o;
+                 ^
+Time.java:212: warning: The prover cannot establish an assertion (Postcondition: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):78: ) in method equals
+            return false;
+            ^
+/home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):78: warning: Associated declaration: Time.java:212: 
+      @     ensures \result;
+            ^
+Time.java:212: warning: The prover cannot establish an assertion (Postcondition: Time.java:206: ) in method equals
+            return false;
+            ^
+Time.java:206: warning: Associated declaration: Time.java:212: 
+    /*@    	ensures \result <==> (this.hour == ((Time) o).hour)
+           	^
+5 warnings

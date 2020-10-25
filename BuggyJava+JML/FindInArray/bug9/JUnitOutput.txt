@@ -1,0 +1,8 @@
+test13(JUnitFindInArray): The value of array is not equal to key 
+test1(JUnitFindInArray): There is a key value after expected last location
+test2(JUnitFindInArray): There is a key value after expected last location
+test3(JUnitFindInArray): The value of array is not equal to key 
+test4(JUnitFindInArray): There is a key value after expected last location
+test6(JUnitFindInArray): The value of array is not equal to key 
+test9(JUnitFindInArray): The value of array is not equal to key 
+false

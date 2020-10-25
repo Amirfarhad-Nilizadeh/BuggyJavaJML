@@ -1,0 +1,10 @@
+TransposeMatrix.java:34: warning: The prover cannot establish an assertion (Postcondition: TransposeMatrix.java:7: ) in method transposeMat
+          return transpose;
+          ^
+TransposeMatrix.java:7: warning: Associated declaration: TransposeMatrix.java:34: 
+       //@ ensures (\forall int i; 0<= i && i < matrix[0].length; (\forall int j; 0 <= j && j < matrix.length ; \result[i][j] == matrix[j][i]));
+           ^
+TransposeMatrix.java:31: warning: The prover cannot establish an assertion (UndefinedTooLargeIndex) in method transposeMat
+                  transpose[c][d] = matrix[d][c];
+                           ^
+3 warnings

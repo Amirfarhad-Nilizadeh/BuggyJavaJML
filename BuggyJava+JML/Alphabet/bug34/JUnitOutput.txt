@@ -1,0 +1,8 @@
+test14(JUnitAlphabet): expected:<true> but was:<false>
+test22(JUnitAlphabet): expected:<false> but was:<true>
+test24(JUnitAlphabet): expected:<true> but was:<false>
+test35(JUnitAlphabet): expected:<true> but was:<false>
+test44(JUnitAlphabet): expected:<true> but was:<false>
+test58(JUnitAlphabet): expected:<true> but was:<false>
+test8(JUnitAlphabet): expected:<false> but was:<true>
+false

@@ -1,0 +1,7 @@
+StackQueue.java:144: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:141: ) in method size
+        		return (getTop() + 1) == 0 ? 1 : 0; //return getTop() + 1;
+        		^
+StackQueue.java:141: warning: Associated declaration: StackQueue.java:144: 
+    	   	//@ 	ensures \result == top + 1;
+    	   	    	^
+2 warnings

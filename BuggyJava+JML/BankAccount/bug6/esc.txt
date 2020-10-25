@@ -1,0 +1,13 @@
+BankAccount.java:68: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:57: ) in method isValid
+			return false;
+			^
+BankAccount.java:57: warning: Associated declaration: BankAccount.java:68: 
+	//@ ensures \result;
+	    ^
+BankAccount.java:66: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:62: ) in method isValid
+			return true;
+			^
+BankAccount.java:62: warning: Associated declaration: BankAccount.java:66: 
+	//@ ensures !\result;
+	    ^
+4 warnings

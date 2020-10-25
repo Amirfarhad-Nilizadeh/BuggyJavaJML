@@ -1,0 +1,7 @@
+StackQueue.java:495: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:491: ) in method stackModulusQ
+		return  (stack.peek() % Q.peek()) == 0 ? 1 : 0;// return  stack.peek() % Q.peek();
+		^
+StackQueue.java:491: warning: Associated declaration: StackQueue.java:495: 
+      	  @ ensures \result == stack.peek() % Q.peek();
+      	    ^
+2 warnings

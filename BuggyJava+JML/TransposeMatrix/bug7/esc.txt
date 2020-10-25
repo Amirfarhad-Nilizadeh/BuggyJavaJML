@@ -1,0 +1,7 @@
+TransposeMatrix.java:34: warning: The prover cannot establish an assertion (Postcondition: TransposeMatrix.java:10: ) in method transposeMat
+          return null;//transpose;
+          ^
+TransposeMatrix.java:10: warning: Associated declaration: TransposeMatrix.java:34: 
+       public int[][] transposeMat(int[][] matrix)
+                      ^
+2 warnings

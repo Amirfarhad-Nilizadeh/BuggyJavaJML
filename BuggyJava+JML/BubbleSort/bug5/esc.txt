@@ -1,0 +1,7 @@
+BubbleSort.java:25: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method bubbleSort:  overflow in int sum
+            for (int j = 0; j < n+i-1; j++){//for (int j = 0; j < n-i-1; j++){
+                                 ^
+BubbleSort.java:20: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+	    //@ maintaining 0 <= j && j < n - i;
+	        ^
+2 warnings

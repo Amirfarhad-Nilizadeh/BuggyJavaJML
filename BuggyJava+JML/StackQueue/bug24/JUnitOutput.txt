@@ -1,0 +1,12 @@
+test100(JUnitStackQueue): expected:<44> but was:<42>
+test104(JUnitStackQueue): expected:<41> but was:<39>
+test126(JUnitStackQueue): expected:<15> but was:<13>
+test144(JUnitStackQueue): expected:<15> but was:<13>
+test19(JUnitStackQueue): expected:<10> but was:<8>
+test27(JUnitStackQueue): expected:<0> but was:<-2>
+test32(JUnitStackQueue): expected:<41> but was:<39>
+test54(JUnitStackQueue): expected:<19> but was:<17>
+test64(JUnitStackQueue): expected:<15> but was:<13>
+test70(JUnitStackQueue): expected:<61> but was:<59>
+test97(JUnitStackQueue): expected:<15> but was:<13>
+false

@@ -1,0 +1,13 @@
+BankAccount.java:20: warning: The prover cannot establish an assertion (InvariantExit: BankAccount.java:5: ) in method BankAccount
+	BankAccount(int currentBalance)
+	^
+BankAccount.java:5: warning: Associated declaration: BankAccount.java:20: 
+        //@ invariant 0 <= balance;
+            ^
+BankAccount.java:20: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:18: ) in method BankAccount
+	BankAccount(int currentBalance)
+	^
+BankAccount.java:18: warning: Associated declaration: BankAccount.java:20: 
+	//@ ensures (0 < currentBalance) ==> balance == currentBalance; 
+	    ^
+4 warnings

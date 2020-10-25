@@ -1,0 +1,13 @@
+StackQueue.java:441: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method plusQStack:  underflow in int difference
+		return Q.peek() - stack.peek(); //return Q.peek() + stack.peek();
+		                ^
+StackQueue.java:441: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method plusQStack:  overflow in int difference
+		return Q.peek() - stack.peek(); //return Q.peek() + stack.peek();
+		                ^
+StackQueue.java:441: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:436: ) in method plusQStack
+		return Q.peek() - stack.peek(); //return Q.peek() + stack.peek();
+		^
+StackQueue.java:436: warning: Associated declaration: StackQueue.java:441: 
+          @ ensures \result == Q.peek() + stack.peek();
+            ^
+4 warnings

@@ -1,0 +1,15 @@
+
+OddOrEven.java:14: warning: The prover cannot establish an assertion (Postcondition: OddOrEven.java:5: ) in method Even
+         	return even;
+         	^
+OddOrEven.java:5: warning: Associated declaration: OddOrEven.java:14: 
+    	//@ ensures \result == true ==>  x % 2 == 0;
+    	    ^
+
+OddOrEven.java:14: warning: The prover cannot establish an assertion (Postcondition: OddOrEven.java:6: ) in method Even
+         	return even;
+         	^
+OddOrEven.java:6: warning: Associated declaration: OddOrEven.java:14: 
+    	//@ ensures \result == false ==>  x % 2 != 0;
+    	    ^
+4 warnings

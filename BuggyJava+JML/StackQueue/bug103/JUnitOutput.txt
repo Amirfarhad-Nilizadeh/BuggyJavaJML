@@ -1,0 +1,11 @@
+test123(JUnitStackQueue): expected:<0> but was:<1>
+test145(JUnitStackQueue): expected:<0> but was:<1>
+test153(JUnitStackQueue): expected:<0> but was:<1>
+test154(JUnitStackQueue): expected:<0> but was:<1>
+test15(JUnitStackQueue): expected:<1> but was:<0>
+test16(JUnitStackQueue): expected:<0> but was:<1>
+test52(JUnitStackQueue): expected:<0> but was:<1>
+test62(JUnitStackQueue): expected:<1> but was:<0>
+test79(JUnitStackQueue): expected:<0> but was:<1>
+test96(JUnitStackQueue): expected:<1> but was:<0>
+false

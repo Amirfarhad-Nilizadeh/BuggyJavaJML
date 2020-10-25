@@ -1,0 +1,7 @@
+StackQueue.java:120: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:108: ) in method search
+        		return -1;
+        		^
+StackQueue.java:108: warning: Associated declaration: StackQueue.java:120: 
+    	   	//@ 	ensures \result == -1 ==> \forall int i; 0 <= i && i <= top; arr[i] != key; 
+    	   	    	^
+2 warnings

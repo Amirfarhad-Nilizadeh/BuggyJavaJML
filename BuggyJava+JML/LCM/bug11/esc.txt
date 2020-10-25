@@ -1,0 +1,7 @@
+LCM.java:8: warning: The prover cannot establish an assertion (Postcondition: LCM.java:6: ) in method div
+        public static int div(int n, int d) { return (n%d == 0 ? 1 : 0);}//n%d; }
+                                              ^
+LCM.java:6: warning: Associated declaration: LCM.java:8: 
+	//@ ensures \result == n%d;       // this post condition is time consuming.
+	    ^
+2 warnings

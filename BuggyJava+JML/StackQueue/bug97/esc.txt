@@ -1,0 +1,10 @@
+StackQueue.java:495: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method stackModulusQ:  int multiply overflow
+		return  stack.peek() * Q.peek(); //return  stack.peek() % Q.peek();
+		                     ^
+StackQueue.java:495: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:491: ) in method stackModulusQ
+		return  stack.peek() * Q.peek(); //return  stack.peek() % Q.peek();
+		^
+StackQueue.java:491: warning: Associated declaration: StackQueue.java:495: 
+      	  @ ensures \result == stack.peek() % Q.peek();
+      	    ^
+3 warnings

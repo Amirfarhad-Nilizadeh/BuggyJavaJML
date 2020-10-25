@@ -1,0 +1,6 @@
+
+
+PrimeNumbers.java:62: warning: The prover cannot establish an assertion (Assert) in method Prime
+                //@ assert status != 0;
+                    ^
+1 warning

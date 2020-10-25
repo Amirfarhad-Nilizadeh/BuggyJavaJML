@@ -1,0 +1,2 @@
+test29(JUnitStackQueue): null
+false

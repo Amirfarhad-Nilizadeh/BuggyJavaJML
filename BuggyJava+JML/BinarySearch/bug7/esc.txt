@@ -1,0 +1,7 @@
+BinarySearch.java:15: warning: The prover cannot establish an assertion (LoopInvariant) in method Binary
+            //@ maintaining 0 <= low && low <= high  && high <= arr.length && mid == low + (high - low) / 2;
+                ^
+BinarySearch.java:18: warning: The prover cannot establish an assertion (LoopDecreases) in method Binary
+            //@ decreases high - low;
+                ^
+2 warnings

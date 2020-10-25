@@ -1,0 +1,16 @@
+StackQueue.java:413: warning: There is no feasible path to program point at program exit in method StackQueue.QDivision(StackQueue.Queue)
+    	public int QDivision(Queue Q) 
+    	           ^
+
+
+
+
+
+
+StackQueue.java:403: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:397: ) in method QMinus
+		return (Q.getElem(Q.getRear() - 1)) == 0 ? 1 : 0; //return Q.getElem(Q.getRear() - 1);
+		^
+StackQueue.java:397: warning: Associated declaration: StackQueue.java:403: 
+          @ ensures \result == \old (Q.getElem(Q.front) - Q.getElem(Q.front + 1));
+            ^
+3 warnings

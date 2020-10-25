@@ -1,0 +1,13 @@
+StackQueue.java:403: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:397: ) in method QMinus
+ 		return Q.getElem(Q.getRear() - 1);
+ 		^
+StackQueue.java:397: warning: Associated declaration: StackQueue.java:403: 
+          @ ensures \result == \old (Q.getElem(Q.front) - Q.getElem(Q.front + 1));
+            ^
+StackQueue.java:403: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:398: ) in method QMinus
+ 		return Q.getElem(Q.getRear() - 1);
+ 		^
+StackQueue.java:398: warning: Associated declaration: StackQueue.java:403: 
+          @ ensures Q.size() == \old (Q.size() - 1);
+            ^
+4 warnings

@@ -1,0 +1,7 @@
+test18(JUnitTime): expected:<true> but was:<false>
+test33(JUnitTime): expected:<true> but was:<false>
+test50(JUnitTime): expected:<true> but was:<false>
+test62(JUnitTime): expected:<true> but was:<false>
+test63(JUnitTime): expected:<true> but was:<false>
+test3(JUnitTime): expected:<true> but was:<false>
+false

@@ -1,0 +1,8 @@
+
+StackQueue.java:82: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:69: ) in method pop
+            			return arr[top--] == 0 ? 1 : 0; //return arr[top--]; 
+            			^
+StackQueue.java:69: warning: Associated declaration: StackQueue.java:82: 
+	      	   @ 	ensures \result == \old (arr[top]);
+	      	     	^
+2 warnings

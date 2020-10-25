@@ -1,0 +1,6 @@
+test1(JUnitFibonacci): null
+test2(JUnitFibonacci): null
+test3(JUnitFibonacci): null
+test4(JUnitFibonacci): null
+test5(JUnitFibonacci): null
+false

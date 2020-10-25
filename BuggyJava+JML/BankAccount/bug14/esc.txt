@@ -1,0 +1,25 @@
+BankAccount.java:103: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:95: ) in method deposit
+	void deposit(int amount)
+	     ^
+BankAccount.java:95: warning: Associated declaration: BankAccount.java:103: 
+	//@ ensures balance == \old (balance) + amount;
+	    ^
+BankAccount.java:103: warning: The prover cannot establish an assertion (InvariantExit: BankAccount.java:5: ) in method deposit
+	void deposit(int amount)
+	     ^
+BankAccount.java:5: warning: Associated declaration: BankAccount.java:103: 
+        //@ invariant 0 <= balance;
+            ^
+BankAccount.java:103: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:101: ) in method deposit
+	void deposit(int amount)
+	     ^
+BankAccount.java:101: warning: Associated declaration: BankAccount.java:103: 
+	//@ ensures balance == \old (balance);
+	    ^
+BankAccount.java:103: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:102: ) in method deposit
+	void deposit(int amount)
+	     ^
+BankAccount.java:102: warning: Associated declaration: BankAccount.java:103: 
+	//@ ensures previousTransaction == \old (previousTransaction);
+	    ^
+8 warnings

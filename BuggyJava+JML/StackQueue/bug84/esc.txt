@@ -1,0 +1,16 @@
+error: An internal JML error occurred, possibly recoverable.  Please report the bug with as much information as you can.
+  Reason: Unexpected result when querying SMT solver for reason for an unknown result: 
+StackQueue.java:429: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:423: ) in method QModulus
+		return Q.getElem(Q.getRear() - 1);
+		^
+StackQueue.java:423: warning: Associated declaration: StackQueue.java:429: 
+          @ ensures \result == \old (Q.getElem(Q.front) % Q.getElem(Q.front + 1));
+            ^
+StackQueue.java:429: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:424: ) in method QModulus
+		return Q.getElem(Q.getRear() - 1);
+		^
+StackQueue.java:424: warning: Associated declaration: StackQueue.java:429: 
+          @ ensures Q.size() == \old (Q.size() - 1);
+            ^
+1 error
+4 warnings

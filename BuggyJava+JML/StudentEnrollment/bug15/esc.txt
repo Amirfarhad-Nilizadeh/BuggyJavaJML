@@ -1,0 +1,7 @@
+StudentEnrollment.java:132: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:129: ) in method getFirstName
+		return null;
+		^
+StudentEnrollment.java:129: warning: Associated declaration: StudentEnrollment.java:132: 
+    /*@ pure @*/public String getFirstName()
+                              ^
+2 warnings

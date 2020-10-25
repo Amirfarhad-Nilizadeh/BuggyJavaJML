@@ -1,0 +1,13 @@
+test10(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test11(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test13(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test15(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test16(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test1(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test2(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test3(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test4(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test6(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test7(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+test8(JUnitFIND_FIRST_IN_SORTED): The key value is in the array but program did not find it
+false

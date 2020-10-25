@@ -1,0 +1,18 @@
+StackQueue.java:84: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StackQueue.java:65: ) in method pop
+            			throw new IllegalArgumentException();
+            			^
+StackQueue.java:65: warning: Associated declaration: StackQueue.java:84: 
+	   	 /*@ public normal_behavior
+	   	            ^
+
+StackQueue.java:82: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:76: ) in method pop:  top
+            			return arr[top--]; 
+            			              ^
+StackQueue.java:76: warning: Associated declaration: StackQueue.java:82: 
+      	      	   @ 	assignable \nothing;
+      	      	     	^
+
+StackQueue.java:82: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method pop
+            			return arr[top--]; 
+            			          ^
+5 warnings

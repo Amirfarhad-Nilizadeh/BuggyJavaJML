@@ -1,0 +1,31 @@
+Calculator.java:79: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:32: ) in method calculate
+        return (output == 0 ? 1 : 0);//output;
+        ^
+Calculator.java:32: warning: Associated declaration: Calculator.java:79: 
+    //@ ensures \result == (num1 / num2);
+        ^
+Calculator.java:79: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:24: ) in method calculate
+        return (output == 0 ? 1 : 0);//output;
+        ^
+Calculator.java:24: warning: Associated declaration: Calculator.java:79: 
+    //@ ensures \result == num1 - num2;
+        ^
+Calculator.java:79: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:17: ) in method calculate
+        return (output == 0 ? 1 : 0);//output;
+        ^
+Calculator.java:17: warning: Associated declaration: Calculator.java:79: 
+    //@ ensures \result == num1 * num2;
+        ^
+Calculator.java:79: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:40: ) in method calculate
+        return (output == 0 ? 1 : 0);//output;
+        ^
+Calculator.java:40: warning: Associated declaration: Calculator.java:79: 
+    //@ ensures \result == (num1 % num2);
+        ^
+Calculator.java:79: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:10: ) in method calculate
+        return (output == 0 ? 1 : 0);//output;
+        ^
+Calculator.java:10: warning: Associated declaration: Calculator.java:79: 
+    //@ ensures \result == num1 + num2;
+        ^
+10 warnings

@@ -1,0 +1,11 @@
+OddOrEven.java:10: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Even:  int multiply overflow
+         	if (x * 2 == 0)//if (x % 2 == 0)
+         	      ^
+
+OddOrEven.java:14: warning: The prover cannot establish an assertion (Postcondition: OddOrEven.java:6: ) in method Even
+         	return even;
+         	^
+OddOrEven.java:6: warning: Associated declaration: OddOrEven.java:14: 
+    	//@ ensures \result == false ==>  x % 2 != 0;
+    	    ^
+3 warnings

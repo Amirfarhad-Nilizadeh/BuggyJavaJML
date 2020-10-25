@@ -1,0 +1,6 @@
+
+
+BubbleSort.java:21: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+	    //@ maintaining 0 < j ==> arr[j-1] <= arr[j];
+	        ^
+1 warning

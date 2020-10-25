@@ -1,0 +1,13 @@
+StackQueue.java:242: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StackQueue.java:227: ) in method peek
+            			throw new IllegalArgumentException(); 
+            			^
+StackQueue.java:227: warning: Associated declaration: StackQueue.java:242: 
+    		/*@ public normal_behavior
+    		           ^
+StackQueue.java:240: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:233: ) in method peek
+            			return queue[front]; 
+            			^
+StackQueue.java:233: warning: Associated declaration: StackQueue.java:240: 
+      		  @ public exceptional_behavior
+      		           ^
+4 warnings

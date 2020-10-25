@@ -1,0 +1,7 @@
+PrimeCheck.java:31: warning: The prover cannot establish an assertion (Postcondition: PrimeCheck.java:13: ) in method Prime
+	return false;//true;
+	^
+PrimeCheck.java:13: warning: Associated declaration: PrimeCheck.java:31: 
+   //@ ensures \result == false ==> (\exists int k; 1 < k && k <= a/2; div(a,k) == 0); 
+       ^
+2 warnings

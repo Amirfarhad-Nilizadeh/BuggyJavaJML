@@ -1,0 +1,16 @@
+Fibonacci.java:46: warning: The prover cannot establish an assertion (Postcondition: Fibonacci.java:44: ) in method fibCompute
+	public void fibCompute() 
+	            ^
+Fibonacci.java:44: warning: Associated declaration: Fibonacci.java:46: 
+	//@ ensures (\forall int i; 2 <= i && i < fib.length; fib[i] == fib[i-1] + fib[i-2]); 
+	    ^
+Fibonacci.java:46: warning: The prover cannot establish an assertion (Postcondition: Fibonacci.java:45: ) in method fibCompute
+	public void fibCompute() 
+	            ^
+Fibonacci.java:45: warning: Associated declaration: Fibonacci.java:46: 
+	//@ ensures (\forall int i; 2 <= i && i < fib.length; (\forall int j; 2 <= j && j < i; fib[j] < fib[i]));
+	    ^
+Fibonacci.java:55: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method fibCompute
+			fib[index] = fib[index - 2] + fib[index - 1];
+			   ^
+5 warnings

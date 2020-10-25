@@ -1,0 +1,7 @@
+test(JUnitFibonacci): expected:<1> but was:<2>
+test1(JUnitFibonacci): expected:<1100087778366101931> but was:<1100087778366101932>
+test2(JUnitFibonacci): expected:<5> but was:<6>
+test3(JUnitFibonacci): expected:<956722026041> but was:<956722026042>
+test4(JUnitFibonacci): expected:<514229> but was:<514230>
+test5(JUnitFibonacci): expected:<55> but was:<56>
+false

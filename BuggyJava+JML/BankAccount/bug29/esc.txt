@@ -1,0 +1,15 @@
+BankAccount.java:214: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:205: ) in method foreignTransfer
+	void foreignTransfer(int amount)
+	     ^
+BankAccount.java:205: warning: Associated declaration: BankAccount.java:214: 
+   	  //@ ensures balance == \old (balance);
+   	      ^
+
+
+BankAccount.java:214: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:198: ) in method foreignTransfer
+	void foreignTransfer(int amount)
+	     ^
+BankAccount.java:198: warning: Associated declaration: BankAccount.java:214: 
+	  //@ ensures balance == \old (balance) - _amount;
+	      ^
+4 warnings

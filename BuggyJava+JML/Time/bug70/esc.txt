@@ -1,0 +1,22 @@
+
+
+
+Time.java:296: warning: The prover cannot establish an assertion (Postcondition: Time.java:281: ) in method timeOptions
+			return start.getTime();
+			^
+Time.java:281: warning: Associated declaration: Time.java:296: 
+      @		ensures \result.equals(difference(start, stop));
+       		^
+Time.java:299: warning: The prover cannot establish an assertion (Postcondition: Time.java:273: ) in method timeOptions
+   		return difference(start, stop);
+   		^
+Time.java:273: warning: Associated declaration: Time.java:299: 
+      @		ensures \result.hour == \old (hour) && \result.minute == \old (minute) && \result.second == \old (second);
+       		^
+Time.java:299: warning: The prover cannot establish an assertion (Postcondition: Time.java:277: ) in method timeOptions
+   		return difference(start, stop);
+   		^
+Time.java:277: warning: Associated declaration: Time.java:299: 
+      @		ensures  start.hour == 0 && start.minute == 0 && start.second == 0;
+       		^
+6 warnings

@@ -1,0 +1,39 @@
+BankAccount.java:539: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:402: ) in method menu
+	        return (result == 0 ? 1 : 0); //return result;
+	        ^
+BankAccount.java:402: warning: Associated declaration: BankAccount.java:539: 
+	 	ensures \result == previousTransaction;
+	 	^
+
+
+BankAccount.java:539: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:373: ) in method menu
+	        return (result == 0 ? 1 : 0); //return result;
+	        ^
+BankAccount.java:373: warning: Associated declaration: BankAccount.java:539: 
+	 	ensures \result == balance;
+	 	^
+BankAccount.java:539: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:466: ) in method menu
+	        return (result == 0 ? 1 : 0); //return result;
+	        ^
+BankAccount.java:466: warning: Associated declaration: BankAccount.java:539: 
+	   	ensures \result == (balance/100)*4;
+	   	^
+BankAccount.java:539: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:451: ) in method menu
+	        return (result == 0 ? 1 : 0); //return result;
+	        ^
+BankAccount.java:451: warning: Associated declaration: BankAccount.java:539: 
+	   	ensures \result == balance/100;
+	   	^
+BankAccount.java:539: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:461: ) in method menu
+	        return (result == 0 ? 1 : 0); //return result;
+	        ^
+BankAccount.java:461: warning: Associated declaration: BankAccount.java:539: 
+	   	ensures \result == (balance/100)*3;
+	   	^
+BankAccount.java:539: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:456: ) in method menu
+	        return (result == 0 ? 1 : 0); //return result;
+	        ^
+BankAccount.java:456: warning: Associated declaration: BankAccount.java:539: 
+	   	ensures \result == (balance/100)*2;
+	   	^
+12 warnings

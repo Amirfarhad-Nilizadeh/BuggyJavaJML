@@ -1,0 +1,10 @@
+LCM.java:33: warning: The prover cannot establish an assertion (Assert) in method LCMCalculating
+	//@ assert num1 != 0 && num2 != 0;
+	    ^
+LCM.java:31: warning: The prover cannot establish an assertion (Postcondition: LCM.java:20: ) in method LCMCalculating
+		return -1;
+		^
+LCM.java:20: warning: Associated declaration: LCM.java:31: 
+    //@ ensures \result == -1 ==> (\forall int k; max <= k && k <= Integer.MAX_VALUE; div(k, pNum1) == 0 ==> div(k, pNum2) != 0); 
+        ^
+3 warnings

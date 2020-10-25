@@ -1,0 +1,7 @@
+BankAccount.java:539: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:372: ) in method menu
+	        return result;
+	        ^
+BankAccount.java:372: warning: Associated declaration: BankAccount.java:539: 
+	   	ensures balance == \old (balance) - amount;
+	   	^
+2 warnings

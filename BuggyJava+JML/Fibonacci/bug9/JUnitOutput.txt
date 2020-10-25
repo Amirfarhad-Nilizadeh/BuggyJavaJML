@@ -1,0 +1,6 @@
+test1(JUnitFibonacci): 89
+test2(JUnitFibonacci): 6
+test3(JUnitFibonacci): 60
+test4(JUnitFibonacci): 30
+test5(JUnitFibonacci): 11
+false

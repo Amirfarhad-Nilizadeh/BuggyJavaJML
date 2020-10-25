@@ -1,0 +1,7 @@
+StudentEnrollment.java:87: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:71: ) in method setEnrollmentCredits
+            throw new IllegalArgumentException();
+            ^
+StudentEnrollment.java:71: warning: Associated declaration: StudentEnrollment.java:87: 
+    //@ public normal_behavior
+               ^
+2 warnings

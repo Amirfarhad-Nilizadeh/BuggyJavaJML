@@ -1,0 +1,8 @@
+test10(JUnitFindInArray): 7
+test11(JUnitFindInArray): 240
+test12(JUnitFindInArray): 7
+test(JUnitFindInArray): 265
+test5(JUnitFindInArray): 21
+test7(JUnitFindInArray): 21
+test8(JUnitFindInArray): 34
+false

@@ -1,0 +1,17 @@
+
+
+StackQueue.java:182: warning: The prover cannot establish an assertion (InvariantExit: StackQueue.java:160: ) in method enter
+   		public void enter(int data) 
+   		            ^
+StackQueue.java:160: warning: Associated declaration: StackQueue.java:182: 
+    		//@ public invariant 0 <= rear && rear <= MAX;
+    		           ^
+
+
+StackQueue.java:182: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:174: ) in method enter
+   		public void enter(int data) 
+   		            ^
+StackQueue.java:174: warning: Associated declaration: StackQueue.java:182: 
+      		  @ 	ensures \old (rear) == rear - 1;
+      		    	^
+4 warnings

@@ -1,0 +1,7 @@
+Perimeter.java:9: warning: The prover cannot establish an assertion (Postcondition: Perimeter.java:5: ) in method Perimeter
+	return squarePerimeter + 1;//squarePerimeter;
+	^
+Perimeter.java:5: warning: Associated declaration: Perimeter.java:9: 
+   //@ ensures \result == 4*x;
+       ^
+2 warnings

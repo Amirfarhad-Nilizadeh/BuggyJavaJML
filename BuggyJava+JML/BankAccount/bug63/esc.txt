@@ -1,0 +1,13 @@
+BankAccount.java:354: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method interestAfterYear:  int multiply overflow
+			_interest = balance*100;//_interest = balance/100;
+			                   ^
+BankAccount.java:355: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method interestAfterYear:  int multiply overflow
+			interest = _interest*4;
+			                    ^
+BankAccount.java:357: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:334: ) in method interestAfterYear
+		return interest;
+		^
+BankAccount.java:334: warning: Associated declaration: BankAccount.java:357: 
+	//@ ensures \result == (balance/100)*4;
+	    ^
+4 warnings

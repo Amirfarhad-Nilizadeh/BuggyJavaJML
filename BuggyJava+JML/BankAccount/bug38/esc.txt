@@ -1,0 +1,25 @@
+BankAccount.java:240: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:231: ) in method foreignDeposit
+	void foreignDeposit(int amount) 
+	     ^
+BankAccount.java:231: warning: Associated declaration: BankAccount.java:240: 
+	//@ ensures balance == \old (balance) + _amount;
+	    ^
+BankAccount.java:240: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:238: ) in method foreignDeposit
+	void foreignDeposit(int amount) 
+	     ^
+BankAccount.java:238: warning: Associated declaration: BankAccount.java:240: 
+	//@ ensures balance == \old (balance);
+	    ^
+BankAccount.java:240: warning: The prover cannot establish an assertion (InvariantExit: BankAccount.java:5: ) in method foreignDeposit
+	void foreignDeposit(int amount) 
+	     ^
+BankAccount.java:5: warning: Associated declaration: BankAccount.java:240: 
+        //@ invariant 0 <= balance;
+            ^
+BankAccount.java:240: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:239: ) in method foreignDeposit
+	void foreignDeposit(int amount) 
+	     ^
+BankAccount.java:239: warning: Associated declaration: BankAccount.java:240: 
+	//@ ensures previousTransaction == \old (previousTransaction);
+	    ^
+8 warnings

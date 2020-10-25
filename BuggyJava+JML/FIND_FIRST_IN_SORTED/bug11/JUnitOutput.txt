@@ -1,0 +1,6 @@
+test12(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test14(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test5(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+test9(JUnitFIND_FIRST_IN_SORTED): The value of array's location is not equal to key
+false

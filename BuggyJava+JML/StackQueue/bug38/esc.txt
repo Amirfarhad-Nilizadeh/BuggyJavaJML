@@ -1,0 +1,7 @@
+StackQueue.java:240: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:229: ) in method peek
+            			return queue[front] == 0 ? 1 : 0; //return queue[front]; 
+            			^
+StackQueue.java:229: warning: Associated declaration: StackQueue.java:240: 
+      		  @ 	ensures \result == queue[front];
+      		    	^
+2 warnings

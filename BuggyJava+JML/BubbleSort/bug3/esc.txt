@@ -1,0 +1,7 @@
+BubbleSort.java:26: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method bubbleSort
+                if (arr[j+1] < arr[j]) 
+                       ^
+BubbleSort.java:20: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+	    //@ maintaining 0 <= j && j < n - i;
+	        ^
+2 warnings

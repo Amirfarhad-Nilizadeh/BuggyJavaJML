@@ -1,0 +1,9 @@
+
+
+BankAccount.java:272: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:256: ) in method withdrawByCashBack
+	void withdrawByCashBack(int amount) 
+	     ^
+BankAccount.java:256: warning: Associated declaration: BankAccount.java:272: 
+	//@ ensures previousTransaction == -_amount;
+	    ^
+2 warnings
