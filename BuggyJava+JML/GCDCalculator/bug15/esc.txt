@@ -1,7 +1,0 @@
-GCDCalculator.java:58: warning: The prover cannot establish an assertion (Postcondition: GCDCalculator.java:41: ) in method GCD
-			return (-1 == 0 ? 1 : 0);//-1;	
-			^
-GCDCalculator.java:41: warning: Associated declaration: GCDCalculator.java:58: 
-	//@ ensures \result == -1;
-	    ^
-2 warnings

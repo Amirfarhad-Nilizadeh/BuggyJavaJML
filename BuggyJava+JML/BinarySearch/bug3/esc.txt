@@ -1,7 +1,7 @@
-BinarySearch.java:19: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Binary
-            while (low <= high && arr[mid] != key) {//while (low < high && arr[mid] != key) {
-                                     ^
-BinarySearch.java:18: warning: The prover cannot establish an assertion (LoopDecreases) in method Binary
+BinarySearch.java:17: warning: The prover cannot establish an assertion (LoopDecreases) in method Binary
             //@ decreases high - low;
                 ^
+BinarySearch.java:18: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Binary
+            while (low <= high && arr[mid] != key) {//while (low < high && arr[mid] != key) {
+                                     ^
 2 warnings

@@ -16,7 +16,7 @@
 	//@ ensures \forall int i; 0 <= i && i < primeArray.length; \forall int j; 2 <= j && j <= primeArray[i]/2; !div(primeArray[i],j);
 	//@ ensures (\forall int i,j; 0 <= i && i < primeArray.length && 0 <= j && j < primeArray.length && i != j; primeArray[i] != primeArray[j]);
 	//@ ensures \forall int i; 0 <= i && i < primeArray.length; \forall int j; 0 <= j && j < primeArray.length && i != j; primeArray[i] != primeArray[j];
-        public int[] Prime(int n)
+        public int[] primeList(int n)
         {
           int status = 1, num = 3, count, j;
           primeArray = new int[n];

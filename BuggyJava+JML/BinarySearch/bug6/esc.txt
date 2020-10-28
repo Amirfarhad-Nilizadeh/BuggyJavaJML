@@ -1,7 +1,7 @@
-BinarySearch.java:17: warning: The prover cannot establish an assertion (LoopInvariant) in method Binary
+BinarySearch.java:16: warning: The prover cannot establish an assertion (LoopInvariant) in method Binary
             //@ maintaining (\forall int i; high <= i && i < arr.length; key < arr[i]);
                 ^
-BinarySearch.java:16: warning: The prover cannot establish an assertion (LoopInvariant) in method Binary
+BinarySearch.java:15: warning: The prover cannot establish an assertion (LoopInvariant) in method Binary
             //@ maintaining (\forall int i; 0 <= i && i < low; arr[i] < key);
                 ^
 2 warnings

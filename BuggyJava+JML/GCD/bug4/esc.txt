@@ -1,0 +1,16 @@
+GCD.java:53: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method gcd
+		//@ maintaining result <= num1 && result <= num2;
+		    ^
+GCD.java:50: warning: The prover cannot establish an assertion (Postcondition: GCD.java:18: ) in method gcd
+			return (num1 > num2) ? num1 : num2;
+			^
+GCD.java:18: warning: Associated declaration: GCD.java:50: 
+	  @    ensures div(tnum2,\result) == 0;
+	       ^
+GCD.java:50: warning: The prover cannot establish an assertion (Postcondition: GCD.java:17: ) in method gcd
+			return (num1 > num2) ? num1 : num2;
+			^
+GCD.java:17: warning: Associated declaration: GCD.java:50: 
+	  @    ensures div(tnum1,\result) == 0;
+	       ^
+5 warnings

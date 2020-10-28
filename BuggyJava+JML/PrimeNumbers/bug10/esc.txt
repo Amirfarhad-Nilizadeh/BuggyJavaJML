@@ -1,12 +1,12 @@
 
 
-
-PrimeNumbers.java:65: warning: The prover cannot establish an assertion (Assert) in method Prime
-                //@ assert (\forall int i; i >= 2 && i <= num/2; !div(num,i));
-                    ^
-
-
-PrimeNumbers.java:44: warning: The prover cannot establish an assertion (LoopInvariant) in method Prime
+PrimeNumbers.java:44: warning: The prover cannot establish an assertion (LoopInvariant) in method primeList
              //@ maintaining j> 1 && j <= num/2 + 1;
                  ^
+
+
+
+PrimeNumbers.java:65: warning: The prover cannot establish an assertion (Assert) in method primeList
+                //@ assert (\forall int i; i >= 2 && i <= num/2; !div(num,i));
+                    ^
 2 warnings

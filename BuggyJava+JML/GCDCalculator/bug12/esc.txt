@@ -1,7 +1,0 @@
-GCDCalculator.java:68: warning: The prover cannot establish an assertion (LoopInvariant) in method GCD
-		//@ maintaining div(num1, gcd) == 0 && div(num2, gcd) == 0;
-		    ^
-GCDCalculator.java:69: warning: The prover cannot establish an assertion (LoopInvariant) in method GCD
-		//@ maintaining (\forall int j; 0 < j &&  j < i; div(num1, j) == 0 && div(num2, j) == 0 ==> j <= gcd);
-		    ^
-2 warnings

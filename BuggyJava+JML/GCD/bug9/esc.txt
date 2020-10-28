@@ -1,0 +1,10 @@
+GCD.java:58: warning: The prover cannot establish an assertion (LoopDecreases) in method gcd
+		//@ decreases num1 - i; 
+		    ^
+GCD.java:55: warning: The prover cannot establish an assertion (LoopInvariant) in method gcd
+		//@ maintaining 0 < result && result <= i;
+		    ^
+GCD.java:54: warning: The prover cannot establish an assertion (LoopInvariant) in method gcd
+		//@ maintaining 0 < i && i <= num1 + 1 && i<= num2 + 1; 
+		    ^
+3 warnings

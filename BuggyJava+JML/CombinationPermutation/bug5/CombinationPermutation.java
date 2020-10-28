@@ -5,7 +5,7 @@ public class CombinationPermutation {
         /*@ spec_public @*/ private long Combination (int n, int r) {
 		Factorial fac = new Factorial();
 		long combin;
-		combin = fac.Facto(n) / (fac.Facto(r) * fac.Facto(n-r));
+		combin = fac.factorial(n) / (fac.factorial(r) * fac.factorial(n-r));
 		return combin;
 	}
 
@@ -15,7 +15,7 @@ public class CombinationPermutation {
 	/*@ spec_public @*/ private long Permutation (int n, int r) {
 		Factorial fac = new Factorial();
 		long permut;
-		permut = fac.Facto(n) / fac.Facto(n+r);//permut = fac.Facto(n) / fac.Facto(n-r);
+		permut = fac.factorial(n) / fac.factorial(n+r);//permut = fac.factorial(n) / fac.factorial(n-r);
 		return permut;
 	}
 

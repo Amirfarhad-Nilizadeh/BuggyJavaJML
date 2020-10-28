@@ -1,7 +1,7 @@
-PrimeCheck.java:18: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Prime:  int multiply overflow
+PrimeCheck.java:15: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method isPrime:  int multiply overflow
 	int mid = a*2;//int mid = a/2;
 	           ^
-PrimeCheck.java:19: warning: The prover cannot establish an assertion (Assert) in method Prime
+PrimeCheck.java:16: warning: The prover cannot establish an assertion (Assert) in method isPrime
 	//@ assert mid == a/2;
 	    ^
 2 warnings

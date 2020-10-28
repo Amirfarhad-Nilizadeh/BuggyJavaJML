@@ -1,43 +1,37 @@
-
-PerimeterDriver.java:64: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:36: ) in method Driver
+PerimeterDriver.java:53: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:14: ) in method Driver
 		return result + 1;//result;
 		^
-PerimeterDriver.java:36: warning: Associated declaration: PerimeterDriver.java:64: 
-		//@ ensures \result == w + x + y + z;
-		    ^
-
-PerimeterDriver.java:64: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:12: ) in method Driver
+PerimeterDriver.java:14: warning: Associated declaration: PerimeterDriver.java:53: 
+	     @    ensures \result == 6*longNum;
+	          ^
+PerimeterDriver.java:53: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:6: ) in method Driver
 		return result + 1;//result;
 		^
-PerimeterDriver.java:12: warning: Associated declaration: PerimeterDriver.java:64: 
-		//@ ensures \result == 5*w;
-		    ^
-
-PerimeterDriver.java:64: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:6: ) in method Driver
+PerimeterDriver.java:6: warning: Associated declaration: PerimeterDriver.java:53: 
+	     @    ensures \result == 4*shortNum;
+	          ^
+PerimeterDriver.java:53: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:10: ) in method Driver
 		return result + 1;//result;
 		^
-PerimeterDriver.java:6: warning: Associated declaration: PerimeterDriver.java:64: 
-		//@ ensures \result == 4*shortNum;
-		    ^
-
-PerimeterDriver.java:64: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:30: ) in method Driver
+PerimeterDriver.java:10: warning: Associated declaration: PerimeterDriver.java:53: 
+	     @    ensures \result == 5*w;
+	          ^
+PerimeterDriver.java:53: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:26: ) in method Driver
 		return result + 1;//result;
 		^
-PerimeterDriver.java:30: warning: Associated declaration: PerimeterDriver.java:64: 
-		//@ ensures \result == w + x + y;
-		    ^
-
-PerimeterDriver.java:64: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:24: ) in method Driver
+PerimeterDriver.java:26: warning: Associated declaration: PerimeterDriver.java:53: 
+	     @    ensures \result == w + x + y + z;
+	          ^
+PerimeterDriver.java:53: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:18: ) in method Driver
 		return result + 1;//result;
 		^
-PerimeterDriver.java:24: warning: Associated declaration: PerimeterDriver.java:64: 
-		//@ ensures \result == 2*w + 2*x;
-		    ^
-
-PerimeterDriver.java:64: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:18: ) in method Driver
+PerimeterDriver.java:18: warning: Associated declaration: PerimeterDriver.java:53: 
+             @    ensures \result == 2*w + 2*x;
+                  ^
+PerimeterDriver.java:53: warning: The prover cannot establish an assertion (Postcondition: PerimeterDriver.java:22: ) in method Driver
 		return result + 1;//result;
 		^
-PerimeterDriver.java:18: warning: Associated declaration: PerimeterDriver.java:64: 
-		//@ ensures \result == 6*longNum;
-		    ^
+PerimeterDriver.java:22: warning: Associated declaration: PerimeterDriver.java:53: 
+	     @    ensures \result == w + x + y;
+	          ^
 12 warnings

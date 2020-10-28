@@ -25,7 +25,7 @@ public class BubbleSort
             for (int j = 0; j < n+i-1; j++){//for (int j = 0; j < n-i-1; j++){
                 if (arr[j+1] < arr[j]) 
                 {  
-		    swap.SwapArray(j, j + 1, arr); 
+		    swap.swapArray(j, j + 1, arr); 
                 } 
 	    }
 	} 

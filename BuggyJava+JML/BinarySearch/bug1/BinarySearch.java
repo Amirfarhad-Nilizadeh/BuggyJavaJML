@@ -10,7 +10,6 @@ public class BinarySearch {
             int high = arr.length;
             int mid =  high / 2;
 
-
             //@ maintaining 0 <= low && low <= high  && high <= arr.length && mid == low + (high - low) / 2;
             //@ maintaining (\forall int i; 0 <= i && i < low; arr[i] < key);
             //@ maintaining (\forall int i; high <= i && i < arr.length; key < arr[i]);

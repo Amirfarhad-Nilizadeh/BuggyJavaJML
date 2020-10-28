@@ -1,10 +1,10 @@
-LCM.java:62: warning: The prover cannot establish an assertion (Postcondition: LCM.java:20: ) in method LCMCalculating
+LCM.java:56: warning: The prover cannot establish an assertion (Postcondition: LCM.java:18: ) in method lcm
 	return -1;
 	^
-LCM.java:20: warning: Associated declaration: LCM.java:62: 
-    //@ ensures \result == -1 ==> (\forall int k; max <= k && k <= Integer.MAX_VALUE; div(k, pNum1) == 0 ==> div(k, pNum2) != 0); 
-        ^
-LCM.java:46: warning: The prover cannot establish an assertion (LoopInvariant) in method LCMCalculating
-	//@ maintaining (\forall int k; check <= k && k < lcm; div(k, num1) == 0 ==> div(k, num2) != 0);
+LCM.java:18: warning: Associated declaration: LCM.java:56: 
+      @    ensures \result == -1 ==> (\forall int k; max <= k && k <= Integer.MAX_VALUE; div(k, pNum1) == 0 ==> div(k, pNum2) != 0); 
+           ^
+LCM.java:41: warning: The prover cannot establish an assertion (LoopInvariant) in method lcm
+	//@ maintaining (\forall int k; check <= k && k < result; div(k, num1) == 0 ==> div(k, num2) != 0);
 	    ^
 3 warnings

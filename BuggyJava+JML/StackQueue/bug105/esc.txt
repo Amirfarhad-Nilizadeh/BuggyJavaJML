@@ -1,0 +1,37 @@
+StackQueue.java:757: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:713: ) in method driverQStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:713: warning: Associated declaration: StackQueue.java:757: 
+	  @ 	ensures \result == stack.peek() / q.peek();
+	    	^
+StackQueue.java:757: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:707: ) in method driverQStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:707: warning: Associated declaration: StackQueue.java:757: 
+	  @ 	ensures \result == q.peek() / stack.peek();
+	    	^
+StackQueue.java:757: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:696: ) in method driverQStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:696: warning: Associated declaration: StackQueue.java:757: 
+	  @ 	ensures \result == q.peek() + stack.peek();
+	    	^
+StackQueue.java:757: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:719: ) in method driverQStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:719: warning: Associated declaration: StackQueue.java:757: 
+	  @ 	ensures \result == q.peek() % stack.peek();
+	    	^
+StackQueue.java:757: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:701: ) in method driverQStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:701: warning: Associated declaration: StackQueue.java:757: 
+	  @ 	ensures \result == q.peek() - stack.peek();
+	    	^
+StackQueue.java:757: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:725: ) in method driverQStack
+		return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:725: warning: Associated declaration: StackQueue.java:757: 
+	  @ 	ensures \result == stack.peek() % q.peek();
+	    	^
+12 warnings

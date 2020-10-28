@@ -1,12 +1,12 @@
 
 
-PrimeNumbers.java:63: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Prime
+PrimeNumbers.java:63: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method primeList
                 primeArray[count + 1] = num;//primeArray[count - 1] = num;
                           ^
 
 
 
-PrimeNumbers.java:66: warning: The prover cannot establish an assertion (Assert) in method Prime
+PrimeNumbers.java:66: warning: The prover cannot establish an assertion (Assert) in method primeList
 		//@ assert primeArray[count -1] == num;
 		    ^
 2 warnings

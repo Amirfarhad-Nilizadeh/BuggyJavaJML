@@ -1,0 +1,7 @@
+GCD.java:64: warning: The prover cannot establish an assertion (Postcondition: GCD.java:19: ) in method gcd
+		return result;
+		^
+GCD.java:19: warning: Associated declaration: GCD.java:64: 
+	  @    ensures (\forall int i; \result < i && i <= smaller; div(smaller,i) == 0 ==> div(greater,i) != 0);
+	       ^
+2 warnings

@@ -1,7 +1,7 @@
-Perimeter.java:19: warning: The prover cannot establish an assertion (Postcondition: Perimeter.java:15: ) in method Perimeter
+Perimeter.java:16: warning: The prover cannot establish an assertion (Postcondition: Perimeter.java:12: ) in method Perimeter
 	return pentagonPerimeter + 1;//pentagonPerimeter;
 	^
-Perimeter.java:15: warning: Associated declaration: Perimeter.java:19: 
+Perimeter.java:12: warning: Associated declaration: Perimeter.java:16: 
    //@ ensures \result == 5*x;
        ^
 2 warnings

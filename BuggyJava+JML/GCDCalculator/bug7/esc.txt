@@ -1,7 +1,0 @@
-GCDCalculator.java:76: warning: The prover cannot establish an assertion (Postcondition: GCDCalculator.java:20: ) in method GCD
-		return gcd;
-		^
-GCDCalculator.java:20: warning: Associated declaration: GCDCalculator.java:76: 
-	//@ ensures (\forall int i; \result < i && i <= smaller; div(smaller,i) == 0 ==> div(greater,i) != 0);
-	    ^
-2 warnings

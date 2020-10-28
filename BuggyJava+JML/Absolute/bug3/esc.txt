@@ -1,13 +1,13 @@
-Absolute.java:33: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:21: ) in method Absolute
+Absolute.java:27: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:17: ) in method Absolute
 			return -num;
 			^
-Absolute.java:21: warning: Associated declaration: Absolute.java:33: 
-	//@ ensures \result == num;
-	    ^
-Absolute.java:31: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:27: ) in method Absolute
+Absolute.java:17: warning: Associated declaration: Absolute.java:27: 
+	  @    ensures \result == num;
+	       ^
+Absolute.java:25: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:21: ) in method Absolute
 			return num;
 			^
-Absolute.java:27: warning: Associated declaration: Absolute.java:31: 
-	//@ ensures \result == -num; 
-	    ^
+Absolute.java:21: warning: Associated declaration: Absolute.java:25: 
+	  @    ensures \result == -num; 
+	       ^
 4 warnings

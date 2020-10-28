@@ -2,8 +2,8 @@
 
 
 CombinationPermutation.java:8: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Combination:  long multiply overflow
-		combin = fac.Facto(n) * (fac.Facto(r) * fac.Facto(n-r));////combin = fac.Facto(n) / (fac.Facto(r) * fac.Facto(n-r));
-		                      ^
+		combin = fac.factorial(n) * (fac.factorial(r) * fac.factorial(n-r));////combin = fac.factorial(n) / (fac.factorial(r) * fac.factorial(n-r));
+		                          ^
 
 
 

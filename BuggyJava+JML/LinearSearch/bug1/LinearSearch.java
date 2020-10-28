@@ -8,7 +8,7 @@
       //@ assignable location;
       //@ ensures \result == -1 ==>  (\forall int i; 0 <= i && i < array.length; array[i] != search);
       //@ ensures 0 <= \result && \result < array.length ==>  array[\result] == search;
-      public static int LSearch (int search, int array[])
+      public static int linearSearch(int search, int array[])
       {
 	int c;
 	//@ maintaining 0 <= c && c <= array.length;

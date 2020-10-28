@@ -1,9 +1,9 @@
 
 CombinationPermutation.java:18: warning: The prover cannot establish an assertion (Precondition: Factorial.java:6: ) in method Permutation
-		permut = fac.Facto(n) / fac.Facto(n+r);//permut = fac.Facto(n) / fac.Facto(n-r);
-		                                 ^
+		permut = fac.factorial(n) / fac.factorial(n+r);//permut = fac.factorial(n) / fac.factorial(n-r);
+		                                         ^
 Factorial.java:6: warning: Associated declaration: CombinationPermutation.java:18: 
-       public long Facto(int n)
+       public long factorial(int n)
                    ^
 Factorial.java:3: warning: Precondition conjunct is false: 0 <= n
 	//@ requires 0 <= n && n <= 20;

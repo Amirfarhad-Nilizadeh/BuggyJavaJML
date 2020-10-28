@@ -1,4 +1,4 @@
-Factorial.java:27: warning: The prover cannot establish an assertion (Postcondition: Factorial.java:6: ) in method Facto
+Factorial.java:27: warning: The prover cannot establish an assertion (Postcondition: Factorial.java:6: ) in method factorial
           return fact + 1;//fact;
           ^
 Factorial.java:6: warning: Associated declaration: Factorial.java:27: 

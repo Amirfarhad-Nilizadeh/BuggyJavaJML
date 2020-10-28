@@ -9,6 +9,6 @@ CombinationPermutation.java:14: warning: Associated declaration: CombinationPerm
 
 
 CombinationPermutation.java:18: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Permutation:  long multiply overflow
-		permut = fac.Facto(n) * fac.Facto(n-r);//permut = fac.Facto(n) / fac.Facto(n-r);
-		                      ^
+		permut = fac.factorial(n) * fac.factorial(n-r);//permut = fac.factorial(n) / fac.factorial(n-r);
+		                          ^
 3 warnings

@@ -1,7 +1,7 @@
-FindFirstZero.java:22: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method FindFirstZero
+FindFirstZero.java:18: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method FindFirstZero
             		while (x.length + index > 0 && x[index] != 0) {//while (x.length - index > 0 && x[index] != 0) {
             		                                ^
-FindFirstZero.java:22: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method FindFirstZero:  overflow in int sum
+FindFirstZero.java:18: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method FindFirstZero:  overflow in int sum
             		while (x.length + index > 0 && x[index] != 0) {//while (x.length - index > 0 && x[index] != 0) {
             		                ^
 2 warnings

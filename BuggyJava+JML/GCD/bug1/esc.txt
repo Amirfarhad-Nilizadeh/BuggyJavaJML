@@ -1,0 +1,10 @@
+GCD.java:6: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method div:  int multiply overflow
+        public static int div(int n, int d) { return n*d; } // return n%d; }
+                                                      ^
+GCD.java:6: warning: The prover cannot establish an assertion (Postcondition: GCD.java:4: ) in method div
+        public static int div(int n, int d) { return n*d; } // return n%d; }
+                                              ^
+GCD.java:4: warning: Associated declaration: GCD.java:6: 
+	//@ ensures \result == n%d;
+	    ^
+3 warnings

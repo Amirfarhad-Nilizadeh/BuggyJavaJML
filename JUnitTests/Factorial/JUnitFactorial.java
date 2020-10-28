@@ -6,37 +6,37 @@ public class JUnitFactorial {
 
 	@Test
 	public void test() {
-		Factorial a = new Factorial();
-		assertEquals(1307674368000L, a.Facto(15));
+		Factorial f = new Factorial();
+		assertEquals(1307674368000L, f.factorial(15));
 	}
 
 	@Test
 	public void test1() {
-		Factorial a = new Factorial();
-		assertEquals(1, a.Facto(0));
+		Factorial f = new Factorial();
+		assertEquals(1, f.factorial(0));
 	}
 
 	@Test
 	public void test2() {
-		Factorial a = new Factorial();
-		assertEquals(20922789888000L, a.Facto(16));
+		Factorial f = new Factorial();
+		assertEquals(20922789888000L, f.factorial(16));
 	}
 
 	@Test
 	public void test3() {
-		Factorial a = new Factorial();
-		assertEquals(1, a.Facto(1));
+		Factorial f = new Factorial();
+		assertEquals(1, f.factorial(1));
 	}
 
 	@Test
 	public void test4() {
-		Factorial a = new Factorial();
-		assertEquals(362880, a.Facto(9));
+		Factorial f = new Factorial();
+		assertEquals(362880, f.factorial(9));
 	}
 
 	@Test
 	public void test5() {
-		Factorial a = new Factorial();
-		assertEquals(40320, a.Facto(8));
+		Factorial f = new Factorial();
+		assertEquals(40320, f.factorial(8));
 	}
 }

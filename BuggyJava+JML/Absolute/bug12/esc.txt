@@ -1,10 +1,10 @@
-Absolute.java:50: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Absolute:  overflow in long sum
+Absolute.java:41: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Absolute:  overflow in long sum
 			return -num + 1;//-num;	
 			            ^
-Absolute.java:50: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:44: ) in method Absolute
+Absolute.java:41: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:35: ) in method Absolute
 			return -num + 1;//-num;	
 			^
-Absolute.java:44: warning: Associated declaration: Absolute.java:50: 
-	//@ ensures \result == -num; 
-	    ^
+Absolute.java:35: warning: Associated declaration: Absolute.java:41: 
+	  @    ensures \result == -num; 
+	       ^
 3 warnings

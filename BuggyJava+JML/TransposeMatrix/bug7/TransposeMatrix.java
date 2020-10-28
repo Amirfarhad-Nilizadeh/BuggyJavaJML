@@ -10,12 +10,10 @@ public class TransposeMatrix {
        public int[][] transposeMat(int[][] matrix)
        {
           int m, n, p, q;
-
           m = matrix.length;
           n = matrix[0].length;
-
-     
           int[][] transpose = new int[n][m];
+
           //@ assume \forall int i; 0 <= i && i < n; transpose[i] != null && transpose[i].length == m;
           //@ assume \forall int e; 0 <= e && e < n; \forall int k; 0 <= k && k < n; (e != k ==> transpose[e] != transpose[k]);
           //@ assume \forall int e; 0<= e && e < n; (\forall int k; 0 <= k && k < m; transpose[e] != matrix[k]);

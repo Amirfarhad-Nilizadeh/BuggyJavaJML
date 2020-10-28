@@ -1,7 +1,7 @@
-Factorial.java:19: warning: The prover cannot establish an assertion (LoopInvariant) in method Facto
-	  //@ maintaining fact > 0;
-	      ^
-Factorial.java:21: warning: The prover cannot establish an assertion (LoopInvariant) in method Facto
+Factorial.java:21: warning: The prover cannot establish an assertion (LoopInvariant) in method factorial
 	  //@ maintaining spec_factorial(c - 1) == fact;
+	      ^
+Factorial.java:19: warning: The prover cannot establish an assertion (LoopInvariant) in method factorial
+	  //@ maintaining fact > 0;
 	      ^
 2 warnings

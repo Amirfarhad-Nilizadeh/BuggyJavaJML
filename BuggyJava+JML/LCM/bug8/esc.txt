@@ -1,7 +1,7 @@
-LCM.java:47: warning: The prover cannot establish an assertion (LoopDecreases) in method LCMCalculating
-	//@ decreases Integer.MAX_VALUE - lcm;
+LCM.java:42: warning: The prover cannot establish an assertion (LoopDecreases) in method lcm
+	//@ decreases Integer.MAX_VALUE - result;
 	    ^
-LCM.java:45: warning: The prover cannot establish an assertion (LoopInvariant) in method LCMCalculating
-	//@ maintaining num1 <= lcm && num2 <= lcm && lcm <= Integer.MAX_VALUE;
+LCM.java:40: warning: The prover cannot establish an assertion (LoopInvariant) in method lcm
+	//@ maintaining num1 <= result && num2 <= result && result <= Integer.MAX_VALUE;
 	    ^
 2 warnings

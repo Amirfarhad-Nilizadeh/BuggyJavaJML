@@ -3,7 +3,7 @@ public class Factorial
 	//@ requires 0 <= n && n <= 20;
 	//@ ensures \result >= 1 && \result <= Long.MAX_VALUE;
 	//@ ensures \result == spec_factorial(n);
-       public long Facto(int n)
+       public long factorial(int n)
        {
           int c;
           long fact = 1;

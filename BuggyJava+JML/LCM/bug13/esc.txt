@@ -1,7 +1,7 @@
-LCM.java:59: warning: The prover cannot establish an assertion (Postcondition: LCM.java:17: ) in method LCMCalculating
-		return (lcm == 0 ? 1 : 0);//lcm;
+LCM.java:54: warning: The prover cannot establish an assertion (Postcondition: LCM.java:15: ) in method lcm
+		return (result == 0 ? 1 : 0); // result;
 		^
-LCM.java:17: warning: Associated declaration: LCM.java:59: 
-    //@ ensures \result == -1 || 0 < \result;
-        ^
+LCM.java:15: warning: Associated declaration: LCM.java:54: 
+      @    ensures \result == -1 || 0 < \result; 
+           ^
 2 warnings

@@ -1,5 +1,5 @@
 
-PrimeNumbers.java:31: warning: The prover cannot establish an assertion (Assert) in method Prime
+PrimeNumbers.java:31: warning: The prover cannot establish an assertion (Assert) in method primeList
 	 //@ assert primeArray[0] == 2;
 	     ^
 1 warning

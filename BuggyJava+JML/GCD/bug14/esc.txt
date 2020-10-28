@@ -1,0 +1,7 @@
+GCD.java:6: warning: The prover cannot establish an assertion (Postcondition: GCD.java:4: ) in method div
+        public static int div(int n, int d) { return (n%d == 0 ? 1 : 0);} // n%d; }
+                                              ^
+GCD.java:4: warning: Associated declaration: GCD.java:6: 
+	//@ ensures \result == n%d;
+	    ^
+2 warnings

@@ -1,7 +1,7 @@
-Perimeter.java:59: warning: The prover cannot establish an assertion (Postcondition: Perimeter.java:55: ) in method Perimeter
+Perimeter.java:48: warning: The prover cannot establish an assertion (Postcondition: Perimeter.java:44: ) in method Perimeter
 	return trapeziumPerimeter;
 	^
-Perimeter.java:55: warning: Associated declaration: Perimeter.java:59: 
+Perimeter.java:44: warning: Associated declaration: Perimeter.java:48: 
    //@ ensures \result == w + x + y + z;
        ^
 2 warnings

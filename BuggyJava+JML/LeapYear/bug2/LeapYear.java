@@ -1,30 +1,19 @@
-
-
 public class LeapYear {
-
- /*@ requires 0 < year && year <= Integer.MAX_VALUE;
- {|
-    //@ requires year % 4 != 0; 
-    //@ ensures \result == false;
-
-    also
- 
-    //@ requires year % 4 == 0 && year % 100 != 0;
-    //@ ensures \result == true;
-
-    also
-
-   //@ requires year % 4 == 0 && year % 100 == 0 && year % 400 != 0;
-   //@ ensures \result == false;
-
-   also
- 
-   //@ requires year % 4 == 0 && year % 100 == 0 && year % 400 == 0;
-   //@ ensures \result == true;
- |} @*/
- 
-
-    public boolean LeapChecking(int year) {
+    /*@ requires 0 < year && year <= Integer.MAX_VALUE;
+    {|
+       @    requires year % 4 != 0; 
+       @    ensures \result == false;
+       @ also
+       @     requires year % 4 == 0 && year % 100 != 0;
+       @     ensures \result == true;
+       @ also
+       @     requires year % 4 == 0 && year % 100 == 0 && year % 400 != 0;
+       @     ensures \result == false;
+       @ also
+       @     requires year % 4 == 0 && year % 100 == 0 && year % 400 == 0;
+       @     ensures \result == true;
+    |} @*/
+    /*@ pure @*/ public boolean isLeapYear(int year) {
         boolean leap = false;
          
         if (year % 4 != 0)//if (year % 4 == 0)

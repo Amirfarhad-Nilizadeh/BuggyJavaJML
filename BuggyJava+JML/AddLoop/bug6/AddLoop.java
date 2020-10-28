@@ -25,7 +25,6 @@ public class AddLoop {
             }
         }
         return sum;
-
     }
 }
 
