@@ -1,5 +1,5 @@
 
-CombinationPermutation.java:18: warning: The prover cannot establish an assertion (Precondition: Factorial.java:6: ) in method Permutation
+CombinationPermutation.java:18: warning: The prover cannot establish an assertion (Precondition: Factorial.java:6: ) in method permutation
 		permut = fac.factorial(n) / fac.factorial(n+r);//permut = fac.factorial(n) / fac.factorial(n-r);
 		                                         ^
 Factorial.java:6: warning: Associated declaration: CombinationPermutation.java:18: 
@@ -10,7 +10,7 @@ Factorial.java:3: warning: Precondition conjunct is false: 0 <= n
 	               ^
 
 
-CombinationPermutation.java:19: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:14: ) in method Permutation
+CombinationPermutation.java:19: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:14: ) in method permutation
 		return permut;
 		^
 CombinationPermutation.java:14: warning: Associated declaration: CombinationPermutation.java:19: 

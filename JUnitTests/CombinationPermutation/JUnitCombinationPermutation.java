@@ -1,7 +1,5 @@
-
 import org.junit.Test;
 import static org.junit.Assert.assertTrue;
-
 
 public class JUnitCombinationPermutation {
 
@@ -119,4 +117,3 @@ public class JUnitCombinationPermutation {
 		assertTrue("Correct", a.select(4,0,false) == 1);
 	}						
 }
-

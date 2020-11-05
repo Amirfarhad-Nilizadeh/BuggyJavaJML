@@ -13,7 +13,7 @@ public class LeapYear {
        @     requires year % 4 == 0 && year % 100 == 0 && year % 400 == 0;
        @     ensures \result == true;
     |} @*/
-    /*@ pure @*/ public boolean isLeapYear(int year) {
+    public /*@ pure @*/ boolean isLeapYear(int year) {
         boolean leap = false;
          
         if (year * 4 == 0)//if (year % 4 == 0)

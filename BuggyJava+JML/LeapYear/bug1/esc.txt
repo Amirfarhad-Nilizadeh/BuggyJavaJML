@@ -1,16 +1,16 @@
 LeapYear.java:19: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method isLeapYear:  int multiply overflow
         if (year * 4 == 0)//if (year % 4 == 0)
                  ^
-LeapYear.java:34: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:8: ) in method isLeapYear
-	return leap;
-	^
-LeapYear.java:8: warning: Associated declaration: LeapYear.java:34: 
-       @     ensures \result == true;
-             ^
 LeapYear.java:34: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:14: ) in method isLeapYear
 	return leap;
 	^
 LeapYear.java:14: warning: Associated declaration: LeapYear.java:34: 
+       @     ensures \result == true;
+             ^
+LeapYear.java:34: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:8: ) in method isLeapYear
+	return leap;
+	^
+LeapYear.java:8: warning: Associated declaration: LeapYear.java:34: 
        @     ensures \result == true;
              ^
 5 warnings

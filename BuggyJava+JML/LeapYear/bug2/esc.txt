@@ -1,19 +1,19 @@
-LeapYear.java:34: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:8: ) in method isLeapYear
-	return leap;
-	^
-LeapYear.java:8: warning: Associated declaration: LeapYear.java:34: 
-       @     ensures \result == true;
-             ^
-LeapYear.java:34: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:14: ) in method isLeapYear
-	return leap;
-	^
-LeapYear.java:14: warning: Associated declaration: LeapYear.java:34: 
-       @     ensures \result == true;
-             ^
 LeapYear.java:34: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:5: ) in method isLeapYear
 	return leap;
 	^
 LeapYear.java:5: warning: Associated declaration: LeapYear.java:34: 
        @    ensures \result == false;
             ^
+LeapYear.java:34: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:14: ) in method isLeapYear
+	return leap;
+	^
+LeapYear.java:14: warning: Associated declaration: LeapYear.java:34: 
+       @     ensures \result == true;
+             ^
+LeapYear.java:34: warning: The prover cannot establish an assertion (Postcondition: LeapYear.java:8: ) in method isLeapYear
+	return leap;
+	^
+LeapYear.java:8: warning: Associated declaration: LeapYear.java:34: 
+       @     ensures \result == true;
+             ^
 6 warnings

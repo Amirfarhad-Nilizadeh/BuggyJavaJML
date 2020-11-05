@@ -1,7 +1,7 @@
-Fibonacci.java:29: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Fibonacci.java:12: ) in method Fibonacci
+Fibonacci.java:27: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Fibonacci.java:12: ) in method Fibonacci
 			throw new IllegalArgumentException();
 			^
-Fibonacci.java:12: warning: Associated declaration: Fibonacci.java:29: 
-	//@ public normal_behavior
-	           ^
+Fibonacci.java:12: warning: Associated declaration: Fibonacci.java:27: 
+	/*@ 	public normal_behavior
+	    	       ^
 2 warnings

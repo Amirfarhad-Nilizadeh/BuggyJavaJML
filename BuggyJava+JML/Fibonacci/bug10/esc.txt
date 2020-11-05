@@ -1,17 +1,17 @@
 
-Fibonacci.java:55: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method fibCompute:  overflow in long sum
+Fibonacci.java:53: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method fibCompute:  underflow in long sum
 			fib[index] = fib[index - 2] + fib[index + 1];//fib[index] = fib[index - 2] + fib[index - 1];
 			                            ^
 
-Fibonacci.java:55: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method fibCompute
+Fibonacci.java:53: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method fibCompute
 			fib[index] = fib[index - 2] + fib[index + 1];//fib[index] = fib[index - 2] + fib[index - 1];
 			                                 ^
 
-Fibonacci.java:55: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method fibCompute:  underflow in long sum
-			fib[index] = fib[index - 2] + fib[index + 1];//fib[index] = fib[index - 2] + fib[index - 1];
-			                            ^
-
-Fibonacci.java:50: warning: The prover cannot establish an assertion (LoopInvariant) in method fibCompute
+Fibonacci.java:48: warning: The prover cannot establish an assertion (LoopInvariant) in method fibCompute
                 //@ maintaining (\forall int i; 2 <= i && i < index; fib[i] == fib[i-1] + fib[i-2]);
                     ^
+
+Fibonacci.java:53: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method fibCompute:  overflow in long sum
+			fib[index] = fib[index - 2] + fib[index + 1];//fib[index] = fib[index - 2] + fib[index - 1];
+			                            ^
 4 warnings

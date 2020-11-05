@@ -10,16 +10,14 @@ public class Fibonacci {
 		fib[1] = 1;
 	}
 
-	//@ public normal_behavior
-	//@ 	requires 2 <= size && size <= 93;
-	//@ 	ensures fib[0] == 0 && fib[1] == 1;
-	//@ 	ensures (\forall int i; 2 <= i && i < fib.length; fib[i] == 0);
-
-	//@ also
-
-	//@ public exceptional_behavior
-   	//@ 	requires size < 2 || 93 < size;
-	//@ 	signals_only IllegalArgumentException; 	
+	/*@ 	public normal_behavior
+	  @ 		requires 2 <= size && size <= 93;
+	  @ 		ensures fib[0] == 0 && fib[1] == 1;
+	  @ 		ensures (\forall int i; 2 <= i && i < fib.length; fib[i] == 0);
+	  @ also
+	  @ 	public exceptional_behavior
+   	  @ 		requires size < 2 || 93 < size;
+	  @ 		signals_only IllegalArgumentException; @*/ 	
 	/*@ spec_public @*/ Fibonacci(int size)
 	{
 		if (2 <= size && size <= 93) {
