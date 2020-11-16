@@ -32,9 +32,8 @@ public class Calculator {
       @ also
       @    requires operator != '+' && operator != '*' && operator != '-' && operator != '/' && operator != '%';
       @    ensures \result == -1;
-    |} @*/
-    /*@ pure @*/ 
-    public int calculate(int num1, int num2, char operator) {
+    |} @*/     
+    public /*@ pure @*/ int calculate(int num1, int num2, char operator) {
 
         int output;
 	

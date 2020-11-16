@@ -1,7 +1,6 @@
-
 public class PerimeterDriver {
-	//@ requires 0 <= select && select < 6;
-	/*@ {|
+	/*@ requires 0 <= select && select < 6;
+	  @ {|
 	     @    requires select == 0;
 	     @    requires 0 < shortNum && shortNum <= Short.MAX_VALUE;
 	     @    ensures \result == 4*shortNum;
@@ -25,8 +24,8 @@ public class PerimeterDriver {
 	     @    requires select == 5;
 	     @    requires 0 < w && 0 < x && 0 < y && 0 < z && w + x + y + z <= Integer.MAX_VALUE;
 	     @    ensures \result == w + x + y + z;
-	//@ |}
-	/*@ pure @*/ public long Driver(int select, int w, int x, int y, int z, short shortNum, long longNum) {
+	  @ |} @*/
+	 public /*@ pure @*/ long Driver(int select, int w, int x, int y, int z, short shortNum, long longNum) {
 
 		Perimeter p = new Perimeter();
 		long result = 0;
