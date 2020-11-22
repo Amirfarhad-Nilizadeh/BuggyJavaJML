@@ -1,7 +1,7 @@
-Calculator.java:77: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:45: ) in method calculate
+Calculator.java:61: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:32: ) in method calculate
                 return (-1 == 0 ? 1 : 0);//-1;
                 ^
-Calculator.java:45: warning: Associated declaration: Calculator.java:77: 
-    //@ ensures \result == -1;
-        ^
+Calculator.java:32: warning: Associated declaration: Calculator.java:61: 
+      @    ensures \result == -1;
+           ^
 2 warnings

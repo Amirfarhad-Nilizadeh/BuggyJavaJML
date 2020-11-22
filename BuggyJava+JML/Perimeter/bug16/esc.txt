@@ -2,6 +2,6 @@ Perimeter.java:48: warning: The prover cannot establish an assertion (Postcondit
 	return trapeziumPerimeter + 1;//trapeziumPerimeter;
 	^
 Perimeter.java:44: warning: Associated declaration: Perimeter.java:48: 
-   //@ ensures \result == w + x + y + z;
-       ^
+    //@ ensures \result == w + x + y + z;
+        ^
 2 warnings

@@ -1,10 +1,10 @@
-Calculator.java:73: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method calculate:  int multiply overflow
+Calculator.java:57: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method calculate:  int multiply overflow
 		output = num1 * num2;//output = num1 % num2;
 		              ^
-Calculator.java:79: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:40: ) in method calculate
+Calculator.java:63: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:29: ) in method calculate
         return output;
         ^
-Calculator.java:40: warning: Associated declaration: Calculator.java:79: 
-    //@ ensures \result == (num1 % num2);
-        ^
+Calculator.java:29: warning: Associated declaration: Calculator.java:63: 
+      @    ensures \result == (num1 % num2);
+           ^
 3 warnings

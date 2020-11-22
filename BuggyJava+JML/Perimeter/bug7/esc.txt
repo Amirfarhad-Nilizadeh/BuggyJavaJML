@@ -2,6 +2,6 @@ Perimeter.java:40: warning: The prover cannot establish an assertion (Postcondit
 	return trianglePerimeter;
 	^
 Perimeter.java:36: warning: Associated declaration: Perimeter.java:40: 
-   //@ ensures \result == x + y + z;
-       ^
+    //@ ensures \result == x + y + z;
+        ^
 2 warnings

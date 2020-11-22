@@ -1,6 +1,4 @@
 public class Calculator {
-    //@ requires Integer.MIN_VALUE <= num1 && num1 <= Integer.MAX_VALUE;
-    //@ requires Integer.MIN_VALUE <= num2 && num2 <= Integer.MAX_VALUE;
     //@ requires 37 <= (int)operator && (int)operator <= 47;
     /*@ {|
       @    requires operator == '+';

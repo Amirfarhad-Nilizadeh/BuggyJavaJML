@@ -2,6 +2,6 @@ Perimeter.java:24: warning: The prover cannot establish an assertion (Postcondit
 	return hexagonalPerimeter + 1; //hexagonalPerimeter;
 	^
 Perimeter.java:20: warning: Associated declaration: Perimeter.java:24: 
-   //@ ensures \result == 6*x;
-       ^
+    //@ ensures \result == 6*x;
+        ^
 2 warnings
