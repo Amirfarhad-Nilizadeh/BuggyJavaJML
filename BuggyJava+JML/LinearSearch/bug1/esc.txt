@@ -1,4 +1,4 @@
-LinearSearch.java:19: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method LSearch
-          if (array[c] == search)     /* Searching element is present */
+LinearSearch.java:18: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method linearSearch
+          if (array[c] == search)
                    ^
 1 warning
