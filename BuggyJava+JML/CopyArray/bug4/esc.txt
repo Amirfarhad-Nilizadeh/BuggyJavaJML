@@ -1,7 +1,7 @@
-CopyArray.java:19: warning: The prover cannot establish an assertion (LoopInvariant) in method CopyArray
-        //@ maintaining iBegin <= k && k <= iEnd;
-            ^
-CopyArray.java:21: warning: The prover cannot establish an assertion (LoopDecreases) in method CopyArray
+CopyArray.java:11: warning: The prover cannot establish an assertion (LoopDecreases) in method CopyArray
         //@ decreases iEnd  - k;
+            ^
+CopyArray.java:9: warning: The prover cannot establish an assertion (LoopInvariant) in method CopyArray
+        //@ maintaining iBegin <= k && k <= iEnd;
             ^
 2 warnings
