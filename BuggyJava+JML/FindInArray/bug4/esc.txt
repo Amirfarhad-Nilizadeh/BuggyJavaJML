@@ -1,7 +1,7 @@
-FindInArray.java:46: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:43: ) in method size
+FindInArray.java:48: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:45: ) in method size
    	return (arr.length == 0 ? 1 : 0);//return arr.length;
    	^
-FindInArray.java:43: warning: Associated declaration: FindInArray.java:46: 
+FindInArray.java:45: warning: Associated declaration: FindInArray.java:48: 
     //@ ensures \result == arr.length;	
         ^
 2 warnings

@@ -1,7 +1,7 @@
-FindInArray.java:53: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method findLast:  overflow in int sum
+FindInArray.java:55: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method findLast:  overflow in int sum
 	int index = size() + 1;//int index = size() - 1;
 	                   ^
-FindInArray.java:54: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method findLast
+FindInArray.java:56: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method findLast
 	//@ maintaining -1 <= index && index < arr.length; 
 	    ^
 2 warnings

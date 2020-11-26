@@ -1,4 +1,4 @@
-FindInArray.java:54: warning: The prover cannot establish an assertion (LoopInvariant) in method findLast
+FindInArray.java:56: warning: The prover cannot establish an assertion (LoopInvariant) in method findLast
 	//@ maintaining -1 <= index && index < arr.length; 
 	    ^
 1 warning

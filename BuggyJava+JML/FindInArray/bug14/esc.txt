@@ -1,10 +1,10 @@
-FindInArray.java:70: warning: The prover cannot establish an assertion (LoopInvariant) in method findFirst
+FindInArray.java:72: warning: The prover cannot establish an assertion (LoopInvariant) in method findFirst
 	//@ maintaining (\forall int i; 0 <= i && i < index; arr[i] != key);
 	    ^
-FindInArray.java:73: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:65: ) in method findFirst
+FindInArray.java:75: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:67: ) in method findFirst
 			return index;
 			^
-FindInArray.java:65: warning: Associated declaration: FindInArray.java:73: 
+FindInArray.java:67: warning: Associated declaration: FindInArray.java:75: 
       @ ensures 0 <= \result && \result < arr.length ==> (arr[\result] == key && 
         ^
 3 warnings

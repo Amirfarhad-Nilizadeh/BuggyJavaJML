@@ -2,6 +2,7 @@ class FindInArray {
      private /*@ spec_public @*/ int key;
      private /*@ spec_public @*/ int arr[];
 
+    //@ requires 0 <= inputArr.length;
     //@ ensures (\forall int i; 0 <= i && i < inputArr.length; inputArr[i] == arr[i]);
     //@ ensures key == 0;
      FindInArray(int inputArr[])
@@ -11,6 +12,7 @@ class FindInArray {
 	arr = inputArr.clone();
     } 
 
+    //@ requires 0 <= inputArr.length;
     //@ ensures this.key == key;
     //@ ensures (\forall int i; 0 <= i && i < inputArr.length; inputArr[i] == arr[i]);
     FindInArray(int inputArr[], int key)
@@ -45,7 +47,7 @@ class FindInArray {
     {
    	return arr.length;
     }
-     /*@ requires 0 < arr.length; 
+    /*@ requires 0 <= arr.length; 
       @ ensures 0 <= \result && \result < arr.length ==> (arr[\result] == key && 
       @			(\forall int i; \result < i && i < arr.length; arr[i] != key)); 
       @ ensures \result == -1 ==> (\forall int i; 0 <= i && i < arr.length; arr[i] != key);
@@ -61,7 +63,7 @@ class FindInArray {
 	return -1;
     }
 
-    /*@ requires 0 < arr.length; 
+    /*@ requires 0 <= arr.length; 
       @ ensures 0 <= \result && \result < arr.length ==> (arr[\result] == key && 
       @			(\forall int i; 0 <= i && i < \result; arr[i] != key)); 
       @ ensures \result == -1 ==> (\forall int i; 0 <= i && i < arr.length; arr[i] != key);
@@ -75,7 +77,7 @@ class FindInArray {
 	return -1;
     }
 
-    /*@ requires 0 < arr.length;
+    /*@ requires 0 <= arr.length;
       @ ensures \result <==> findLast() != findFirst();
       @ pure @*/ boolean isMoreThanOneKey() {
 	int first = findFirst();
