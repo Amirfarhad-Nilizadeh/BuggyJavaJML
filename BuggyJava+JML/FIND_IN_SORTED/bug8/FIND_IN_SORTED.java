@@ -29,7 +29,7 @@ public class FIND_IN_SORTED {
         }
     }
 
-    //@ requires 0 < arr.length && arr.length <= Integer.MAX_VALUE; 
+    //@ requires 0 <= arr.length && arr.length <= Integer.MAX_VALUE; 
     //@ requires \forall int j; 0 <= j && j < arr.length; \forall int i; 0 <= i && i < j ;arr[i] <= arr[j];
     //@ ensures \result < arr.length;
     //@ ensures 0 <= \result && \result < arr.length ==> arr[\result] == x;
