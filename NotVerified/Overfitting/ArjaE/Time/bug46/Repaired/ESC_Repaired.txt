@@ -1,0 +1,46 @@
+Time.java:212: warning: The prover cannot establish an assertion (ExceptionalPostcondition: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: ) in method equals
+        Time t=(Time)getTime();//Time t = (Time) o;
+                            ^
+/home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: warning: Associated declaration: Time.java:212: 
+      @   public normal_behavior
+                 ^
+Time.java:214: warning: The prover cannot establish an assertion (Postcondition: Time.java:204: ) in method equals
+        return this.hour == t.hour && this.minute != t.minute && this.second == t.second; //return this.hour == t.hour && this.minute == t.minute && this.second == t.second;
+        ^
+Time.java:204: warning: Associated declaration: Time.java:214: 
+    /*@    	ensures \result <==> (this.hour == ((Time) o).hour)
+           	^
+Time.java:214: warning: The prover cannot establish an assertion (Postcondition: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):78: ) in method equals
+        return this.hour == t.hour && this.minute != t.minute && this.second == t.second; //return this.hour == t.hour && this.minute == t.minute && this.second == t.second;
+        ^
+/home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):78: warning: Associated declaration: Time.java:214: 
+      @     ensures \result;
+            ^
+
+
+
+Time.java:300: warning: The prover cannot establish an assertion (Postcondition: Time.java:272: ) in method timeOptions
+	return getTime();
+	^
+Time.java:272: warning: Associated declaration: Time.java:300: 
+      @		ensures \result.hour == \old (hour) && \result.minute == \old (minute) && \result.second == \old (second);
+       		^
+
+
+
+Time.java:300: warning: The prover cannot establish an assertion (Postcondition: Time.java:276: ) in method timeOptions
+	return getTime();
+	^
+Time.java:276: warning: Associated declaration: Time.java:300: 
+      @		ensures  start.hour == 0 && start.minute == 0 && start.second == 0;
+       		^
+
+
+
+Time.java:300: warning: The prover cannot establish an assertion (Postcondition: Time.java:280: ) in method timeOptions
+	return getTime();
+	^
+Time.java:280: warning: Associated declaration: Time.java:300: 
+      @		ensures \result.equals(difference(start, stop));
+       		^
+12 warnings

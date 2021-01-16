@@ -1,7 +1,7 @@
-FindInArray.java:77: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:67: ) in method findFirst
+FindInArray.java:74: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:64: ) in method findFirst
 	return (-1 == 0 ? 1 : 0);
 	^
-FindInArray.java:67: warning: Associated declaration: FindInArray.java:77: 
-      @ ensures 0 <= \result && \result < arr.length ==> (arr[\result] == key && 
+FindInArray.java:64: warning: Associated declaration: FindInArray.java:74: 
+    /*@ ensures 0 <= \result && \result < arr.length ==> (arr[\result] == key && 
         ^
 2 warnings

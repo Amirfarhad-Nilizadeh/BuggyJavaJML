@@ -1,7 +1,7 @@
-StudentEnrollment.java:117: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:114: ) in method getPassedCredits
-         return (this.passedCredits == 0 ? 1 : 0);//return this.passedCredits;
-         ^
-StudentEnrollment.java:114: warning: Associated declaration: StudentEnrollment.java:117: 
+StudentEnrollment.java:110: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:107: ) in method getPassedCredits
+        return (this.passedCredits == 0) ? 1 : 0; //return this.passedCredits;
+        ^
+StudentEnrollment.java:107: warning: Associated declaration: StudentEnrollment.java:110: 
     //@   ensures \result == this.passedCredits;
           ^
 2 warnings

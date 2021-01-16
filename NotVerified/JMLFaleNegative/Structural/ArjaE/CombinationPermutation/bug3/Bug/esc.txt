@@ -1,0 +1,16 @@
+
+
+
+CombinationPermutation.java:9: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:4: ) in method combination
+		return combin;
+		^
+CombinationPermutation.java:4: warning: Associated declaration: CombinationPermutation.java:9: 
+	//@ ensures \result == fac_spec.spec_factorial(n)/(fac_spec.spec_factorial(r) * fac_spec.spec_factorial(n-r));
+	    ^
+
+
+
+CombinationPermutation.java:8: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method combination:  long multiply overflow
+		combin = fac.factorial(n) * (fac.factorial(r) * fac.factorial(n-r));////combin = fac.factorial(n) / (fac.factorial(r) * fac.factorial(n-r));
+		                          ^
+3 warnings

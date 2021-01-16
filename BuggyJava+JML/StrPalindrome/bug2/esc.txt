@@ -1,0 +1,9 @@
+
+StrPalindrome.java:15: warning: The prover cannot establish an assertion (LoopInvariant) in method isPalindrome
+      //@ maintaining i_counter + i + 1 == length;
+          ^
+
+StrPalindrome.java:13: warning: The prover cannot establish an assertion (LoopInvariant) in method isPalindrome
+      //@ maintaining -1 <= i && i < str.length(); 
+          ^
+2 warnings

@@ -1,11 +1,7 @@
 public class FindFirstZero {
-	 //@    requires x.length == 0;
-   	 //@    ensures \result == -1; 			
-	 //@ also
-	 //@    requires 0 < x.length && x.length <= Integer.MAX_VALUE; 
-   	 //@    ensures \result < x.length;
-   	 //@    ensures 0 <= \result && \result < x.length ==> x[\result] == 0 && (\forall int i; 0 <= i && i < \result; x[i] != 0);
-	 //@    ensures \result == -1 ==> (\forall int i; 0 <= i && i < x.length; x[i] != 0);
+	 //@ ensures x.length == 0 ==> \result == -1;
+   	 //@ ensures 0 <= \result && \result < x.length ==> x[\result] == 0 && (\forall int i; 0 <= i && i < \result; x[i] != 0);
+	 //@ ensures \result == -1 ==> (\forall int i; 0 <= i && i < x.length; x[i] != 0);
     	 public static int FindFirstZero(int[] x) {
          	assert x.length >= 0;
          	if (x.length != 0) {//if (x.length == 0) {

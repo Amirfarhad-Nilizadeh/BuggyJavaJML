@@ -1,0 +1,11 @@
+
+
+
+
+Alphabet.java:44: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:36: ) in method isVowel
+       return (('a' <= c) && (c <= 'z')) || (('A' <= c) && (c <= 'Z')); // return !vowel; // return vowel;
+       ^
+Alphabet.java:36: warning: Associated declaration: Alphabet.java:44: 
+     @   ensures vowel_set && \result == vowel;
+         ^
+2 warnings

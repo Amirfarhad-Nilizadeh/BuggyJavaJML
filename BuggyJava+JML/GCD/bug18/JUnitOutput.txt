@@ -1,0 +1,16 @@
+test12(JUnitGCD): expected:<1> but was:<591405353>
+test13(JUnitGCD): expected:<3> but was:<696188928>
+test15(JUnitGCD): expected:<1> but was:<179687>
+test16(JUnitGCD): expected:<9> but was:<600554343>
+test18(JUnitGCD): expected:<256> but was:<2116352>
+test19(JUnitGCD): expected:<1> but was:<129>
+test20(JUnitGCD): expected:<1> but was:<55450667>
+test21(JUnitGCD): expected:<1> but was:<1053991>
+test22(JUnitGCD): expected:<4> but was:<496885150>
+test1(JUnitGCD): expected:<2> but was:<1198682738>
+test3(JUnitGCD): expected:<1> but was:<1268039>
+test4(JUnitGCD): expected:<360> but was:<1649035080>
+test7(JUnitGCD): expected:<1> but was:<543781664>
+test8(JUnitGCD): expected:<2> but was:<117440750>
+test9(JUnitGCD): expected:<4> but was:<567346040>
+false

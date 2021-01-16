@@ -1,0 +1,6 @@
+test(JUnitStrPalindrome): expected:<true> but was:<false>
+test2(JUnitStrPalindrome): String index out of range: -1
+test4(JUnitStrPalindrome): expected:<true> but was:<false>
+test6(JUnitStrPalindrome): expected:<true> but was:<false>
+test8(JUnitStrPalindrome): expected:<true> but was:<false>
+false

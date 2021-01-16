@@ -1,0 +1,33 @@
+
+StudentEnrollment.java:226: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method payTuitionWithDebitCard:  overflow in int difference
+            tuitionBalance -= payment;
+                           ^
+
+StudentEnrollment.java:226: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:221: ) in method payTuitionWithDebitCard:  tuitionBalance
+            tuitionBalance -= payment;
+                           ^
+StudentEnrollment.java:221: warning: Associated declaration: StudentEnrollment.java:226: 
+      @   	assignable \nothing;
+          	^
+
+StudentEnrollment.java:234: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:213: ) in method payTuitionWithDebitCard
+            throw new IllegalArgumentException();
+            ^
+StudentEnrollment.java:213: warning: Associated declaration: StudentEnrollment.java:234: 
+    /*@      public normal_behavior
+                    ^
+
+StudentEnrollment.java:223: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:12: ) in method payTuitionWithDebitCard
+    private /*@ spec_public @*/ void payTuitionWithDebitCard(int payment) 
+                                     ^
+StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:223: 
+    /*@ public invariant tuitionBalance <= 
+               ^
+
+StudentEnrollment.java:223: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:219: ) in method payTuitionWithDebitCard
+    private /*@ spec_public @*/ void payTuitionWithDebitCard(int payment) 
+                                     ^
+StudentEnrollment.java:219: warning: Associated declaration: StudentEnrollment.java:223: 
+      @      public exceptional_behavior
+                    ^
+9 warnings

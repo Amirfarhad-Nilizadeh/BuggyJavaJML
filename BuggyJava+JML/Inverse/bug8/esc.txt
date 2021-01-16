@@ -1,7 +1,7 @@
-Inverse.java:9: warning: The prover cannot establish an assertion (Postcondition: Inverse.java:7: ) in method Inverse
-        if (x.length != y.length) return true;//false;
+Inverse.java:5: warning: The prover cannot establish an assertion (Postcondition: Inverse.java:3: ) in method Inverse
+        if (x.length != y.length) return true; // false;
                                   ^
-Inverse.java:7: warning: Associated declaration: Inverse.java:9: 
-    //@ ensures \result == true ==> x.length == y.length && (\forall int i; 0 <= i && i < x.length; x[i] == y[x.length - 1 - i]);
+Inverse.java:3: warning: Associated declaration: Inverse.java:5: 
+    //@ ensures \result ==> x.length == y.length && (\forall int i; 0 <= i && i < x.length; x[i] == y[x.length - 1 - i]);
         ^
 2 warnings

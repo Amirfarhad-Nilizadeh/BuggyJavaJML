@@ -1,0 +1,65 @@
+
+
+
+Time.java:124: warning: The prover cannot establish an assertion (InvariantExit: Time.java:7: ) in method decr
+    public void decr()
+                ^
+Time.java:7: warning: Associated declaration: Time.java:124: 
+      public invariant 0 <= minute && minute < 60;
+             ^
+
+
+
+
+
+Time.java:124: warning: The prover cannot establish an assertion (Postcondition: Time.java:123: ) in method decr
+    public void decr()
+                ^
+Time.java:123: warning: Associated declaration: Time.java:124: 
+    //@   	ensures convertToSeconds() == \old(convertToSeconds() - 1);
+          	^
+
+
+
+
+
+Time.java:124: warning: The prover cannot establish an assertion (InvariantExit: Time.java:8: ) in method decr
+    public void decr()
+                ^
+Time.java:8: warning: Associated declaration: Time.java:124: 
+      public invariant 0 <= hour && hour < 24; @*/
+             ^
+
+
+Time.java:173: warning: The prover cannot establish an assertion (Assignable: Time.java:170: ) in method isTimeZero:  minute
+	reset();
+	     ^
+Time.java:170: warning: Associated declaration: Time.java:173: 
+    //@ ensures \result == (convertToSeconds() == 0);
+        ^
+
+Time.java:173: warning: The prover cannot establish an assertion (Assignable: Time.java:170: ) in method isTimeZero:  second
+	reset();
+	     ^
+Time.java:170: warning: Associated declaration: Time.java:173: 
+    //@ ensures \result == (convertToSeconds() == 0);
+        ^
+
+
+
+Time.java:173: warning: The prover cannot establish an assertion (Assignable: Time.java:170: ) in method isTimeZero:  hour
+	reset();
+	     ^
+Time.java:170: warning: Associated declaration: Time.java:173: 
+    //@ ensures \result == (convertToSeconds() == 0);
+        ^
+
+
+
+
+
+
+Time.java:166: warning: The prover cannot establish an assertion (Assert) in method timer
+	//@ assert hour == h && minute == m && second == s;
+	    ^
+13 warnings

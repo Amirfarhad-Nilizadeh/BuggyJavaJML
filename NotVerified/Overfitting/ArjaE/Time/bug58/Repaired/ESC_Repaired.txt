@@ -1,0 +1,22 @@
+Time.java:211: warning: The prover cannot establish an assertion (ExceptionalPostcondition: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: ) in method equals
+        Time t=new Time(this.hour,this.minute,this.second); // Time t = (Time) o;
+               ^
+/home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: warning: Associated declaration: Time.java:211: 
+      @   public normal_behavior
+                 ^
+Time.java:212: warning: The prover cannot establish an assertion (Postcondition: Time.java:203: ) in method equals
+        return this.hour == t.hour && this.minute == t.minute && this.second == t.second;
+        ^
+Time.java:203: warning: Associated declaration: Time.java:212: 
+    /*@    	ensures \result <==> (this.hour == ((Time) o).hour)
+           	^
+
+
+
+Time.java:245: warning: The prover cannot establish an assertion (Postcondition: Time.java:222: ) in method trustedDifference
+        return(diff);
+        ^
+Time.java:222: warning: Associated declaration: Time.java:245: 
+    //@ ensures diff_minutes == \result.minute;
+        ^
+6 warnings

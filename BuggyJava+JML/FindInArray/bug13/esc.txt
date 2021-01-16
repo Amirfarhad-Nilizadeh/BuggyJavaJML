@@ -1,16 +1,16 @@
-FindInArray.java:74: warning: The prover cannot establish an assertion (Precondition: FindInArray.java:40: ) in method findFirst
-		if (getArr(index) == getKey())
-		          ^
-FindInArray.java:40: warning: Associated declaration: FindInArray.java:74: 
-    /*@ pure @*/ int getArr(int i) 
-                     ^
-FindInArray.java:38: warning: Precondition conjunct is false: i < arr.length
-    //@ requires 0 <= i && i <arr.length;
-                             ^
-FindInArray.java:77: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:69: ) in method findFirst
+FindInArray.java:74: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:66: ) in method findFirst
 	return -1;
 	^
-FindInArray.java:69: warning: Associated declaration: FindInArray.java:77: 
+FindInArray.java:66: warning: Associated declaration: FindInArray.java:74: 
       @ ensures \result == -1 ==> (\forall int i; 0 <= i && i < arr.length; arr[i] != key);
         ^
+FindInArray.java:71: warning: The prover cannot establish an assertion (Precondition: FindInArray.java:38: ) in method findFirst
+		if (getArr(index) == getKey())
+		          ^
+FindInArray.java:38: warning: Associated declaration: FindInArray.java:71: 
+    /*@ pure @*/ int getArr(int i) 
+                     ^
+FindInArray.java:36: warning: Precondition conjunct is false: i < arr.length
+    //@ requires 0 <= i && i < arr.length;
+                             ^
 5 warnings

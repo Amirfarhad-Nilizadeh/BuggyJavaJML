@@ -1,0 +1,10 @@
+error: An error while executing a proof script for driverQStack: (error "Solver has unexpectedly terminated")
+
+StackQueue.java:213: warning: The prover cannot establish an assertion (LoopInvariant) in method delete
+              		  	@ maintaining 0 <= i && i < rear;
+              		  	  ^
+StackQueue.java:216: warning: The prover cannot establish an assertion (UndefinedTooLargeIndex) in method delete
+                			//@ assume queue[i+1] == temp[i+1];
+                			                ^
+1 error
+2 warnings

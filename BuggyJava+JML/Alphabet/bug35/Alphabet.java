@@ -1,7 +1,7 @@
 public class Alphabet {
    private boolean vowel_set = false;
    private boolean vowel;
-    /*@ private invariant vowel_set ==> 
+   /*@ private invariant vowel_set ==> 
                      (vowel == (c == 'a' || c == 'A' || c == 'e' || c == 'E' 
                                || c == 'i' || c == 'I' || c == 'o'
 			       || c == 'O' || c == 'u' || c == 'U')); @*/
@@ -21,23 +21,23 @@ public class Alphabet {
 
    private /*@ spec_public @*/ final char c;
 
-   //@ private normal_behavior
-   //@    ensures !vowel_set && !alphabetic_set && !digit_set;
-   //@    ensures !uppercase_set && !lowercase_set;
-   //@ public normal_behavior
-   //@    ensures this.c == c;
+   /*@ private normal_behavior
+     @   ensures !vowel_set && !alphabetic_set && !digit_set;
+     @   ensures !uppercase_set && !lowercase_set;
+     @ public normal_behavior
+     @   ensures this.c == c; @*/
    public /*@ pure @*/ Alphabet(char c) 
    {
 	this.c = c;
    }
 
-    /*@ private normal_behavior
-      @   assignable vowel_set, vowel;
-      @   ensures vowel_set && \result == vowel; @*/
-   /*@ public normal_behavior
-         ensures \result == (c == 'a' || c == 'A' || c == 'e' || c == 'E' 
-                               || c == 'i' || c == 'I' || c == 'o'
-			       || c == 'O' || c == 'u' || c == 'U'); @*/
+   /*@ private normal_behavior
+     @   assignable vowel_set, vowel;
+     @   ensures vowel_set && \result == vowel;
+     @ public normal_behavior
+     @   	ensures \result == (c == 'a' || c == 'A' || c == 'e' || c == 'E' 
+     @    	                      || c == 'i' || c == 'I' || c == 'o'
+     @				      || c == 'O' || c == 'u' || c == 'U'); @*/
    public boolean isVowel() 
    {
        setVowel();
@@ -46,9 +46,9 @@ public class Alphabet {
 
    /*@ private normal_behavior
      @   assignable alphabetic_set, alphabetic;
-     @   ensures alphabetic_set && \result == alphabetic; @*/
-   //@ public normal_behavior
-   //@   ensures \result == ('a' <= c && c <= 'z')||('A' <= c && c <='Z');
+     @   ensures alphabetic_set && \result == alphabetic; 
+     @ public normal_behavior
+     @   ensures \result == ('a' <= c && c <= 'z')||('A' <= c && c <='Z'); @*/
    public boolean isAlphabetic() 
    {
 	setAlphabetic();
@@ -57,9 +57,9 @@ public class Alphabet {
 
    /*@ private normal_behavior
      @   assignable uppercase_set, uppercase;
-     @   ensures uppercase_set && \result == uppercase; @*/
-   //@ public normal_behavior
-   //@   ensures \result == ('A' <= c && c <= 'Z');
+     @   ensures uppercase_set && \result == uppercase; 
+     @ public normal_behavior
+     @   ensures \result == ('A' <= c && c <= 'Z'); @*/
    public boolean isUppercase() 
    {
 	setUppercase();
@@ -68,9 +68,9 @@ public class Alphabet {
 
    /*@ private normal_behavior
       @   assignable lowercase_set, lowercase;
-      @   ensures lowercase_set && \result == lowercase; @*/
-   //@ public normal_behavior
-   //@   ensures \result == ('a' <= c && c <= 'z');
+      @   ensures lowercase_set && \result == lowercase; 
+      @ public normal_behavior
+      @   ensures \result == ('a' <= c && c <= 'z'); @*/
    public boolean isLowercase() 
    {
        setLowercase();
@@ -79,26 +79,25 @@ public class Alphabet {
 
    /*@ private normal_behavior
      @   assignable digit_set, digit;
-     @   ensures digit_set && \result == digit; @*/
-   //@ public normal_behavior
-   //@   ensures \result == ('0' <= c && c <= '9');
+     @   ensures digit_set && \result == digit; 
+     @ public normal_behavior
+     @   ensures \result == ('0' <= c && c <= '9'); @*/
    public boolean isDigit() 
    {
 	setDigit();
 	return digit;
    }
 
-    /*@ private normal_behavior
-      @   assignable vowel_set, vowel;
-      @   ensures vowel_set;
-      @   ensures vowel ==> (c == 'a' || c == 'A' || c == 'e' || c == 'E' 
-                             || c == 'i' || c == 'I' || c == 'o'
-	 	 	     || c == 'O' || c == 'u' || c == 'U'); @*/
-    private /*@ spec_public @*/ void setVowel() 
-    {
-        if (!vowel_set) {
-            vowel = false;
-            switch (c) {
+   /*@ private normal_behavior
+     @   assignable vowel_set, vowel;
+     @   ensures vowel_set;
+     @   ensures vowel <==> (c == 'a' || c == 'A' || c == 'e' || c == 'E' 
+     @                     	|| c == 'i' || c == 'I' || c == 'o'
+     @	 	 	     	|| c == 'O' || c == 'u' || c == 'U'); @*/
+   private /*@ spec_public @*/ void setVowel() 
+   {
+        vowel = false;
+        switch (c) {
             case 'a' :
             case 'e' :
             case 'i' :
@@ -109,94 +108,84 @@ public class Alphabet {
             case 'I' :
             case 'O' :
             case 'U' : vowel = true;
-            }
         }
         vowel_set = true;
    }
 
-   //@ private normal_behavior
-   //@   assignable alphabetic_set, alphabetic;
-   //@   ensures alphabetic_set;
-   //@   ensures alphabetic ==> ('a' <= c && c <= 'z')||('A' <= c && c <='Z');
+   /*@ private normal_behavior
+     @    assignable alphabetic_set, alphabetic;
+     @    ensures alphabetic_set;
+     @    ensures alphabetic <==> ('a' <= c && c <= 'z')||('A' <= c && c <= 'Z'); @*/
    private /*@ spec_public @*/ void setAlphabetic() 
    {
-	if (!alphabetic_set) {
-		alphabetic = (('a' <= c && c <= 'z')||('A' <= c && c <= 'Z'));		
-        }
+	alphabetic = (('a' <= c && c <= 'z')||('A' <= c && c <= 'Z'));		
 	alphabetic_set = true;
    }
 
-   //@ private normal_behavior
-   //@   assignable uppercase_set, uppercase;
-   //@   ensures uppercase_set;
-   //@   ensures uppercase ==> ('A' <= c && c <= 'Z');
+   /*@ private normal_behavior
+     @    assignable uppercase_set, uppercase;
+     @    ensures uppercase_set;
+     @    ensures uppercase <==> ('A' <= c && c <= 'Z'); @*/
    private /*@ spec_public @*/ void setUppercase() 
    {
-	if (!uppercase_set) {
-		uppercase = ('A' <= c && c <= 'Z');		
-        }
+	uppercase = ('A' <= c && c <= 'Z');		
 	uppercase_set = true;
    }
 
-
-   //@ private normal_behavior
-   //@   assignable lowercase_set, lowercase;
-   //@   ensures lowercase_set;
-   //@   ensures lowercase ==> ('a' <= c && c <= 'z');
+   /*@ private normal_behavior
+     @    assignable lowercase_set, lowercase;
+     @    ensures lowercase_set;
+     @    ensures lowercase <==> ('a' <= c && c <= 'z'); @*/
    private /*@ spec_public @*/ void setLowercase() 
    {
-       if (!lowercase_set) {
-	   lowercase = ('a' <= c && c <= 'z');
-       }
+       lowercase = ('a' <= c && c <= 'z');
        lowercase_set = true;
    }
 
-   //@ private normal_behavior
-   //@   assignable digit_set, digit;
-   //@   ensures digit_set;
-   //@   ensures digit ==> ('0' <= c && c <= '9');
+   /*@ private normal_behavior
+     @    assignable digit_set, digit;
+     @    ensures digit_set;
+     @    ensures digit <==> ('0' <= c && c <= '9'); @*/
    private /*@ spec_public @*/ void setDigit() 
    {
-	if (!digit_set) {
-	    digit = ('0' <= c && c > '9'); // digit = ('0' <= c && c <= '9');
-	}	
+	digit = ('0' <= c && c <= '9');	
 	digit_set = true;
    }
 
-   //@ private normal_behavior
-   //@   ensures \result == alphabetic_set;
+   /*@ private normal_behavior
+     @   ensures \result == alphabetic_set; @*/
    public /*@ pure @*/ boolean getAlphabetic_set()
    {
 	return alphabetic_set;
    }
 
-   //@ private normal_behavior
-   //@   ensures \result == uppercase_set;
+   /*@ private normal_behavior
+     @   ensures \result == uppercase_set; @*/
    public /*@ pure @*/ boolean getUppercase_set()
    {
 	return uppercase_set;
    }
 
-   //@ private normal_behavior
-   //@   ensures \result == lowercase_set;
+   /*@ private normal_behavior
+     @   ensures \result == lowercase_set; @*/
    public /*@ pure @*/ boolean getLowercase_set()
    {
 	return lowercase_set;
    }
 
-   //@ private normal_behavior
-   //@   ensures \result == vowel_set;
+   /*@ private normal_behavior
+     @   ensures \result == vowel_set; @*/
    public /*@ pure @*/ boolean getVowel_set()
    {
 	return vowel_set;
    }
 
-   //@ private normal_behavior
-   //@   ensures \result == digit_set;
+   /*@ private normal_behavior
+     @   ensures \result == digit_set; @*/
    public /*@ pure @*/ boolean getDigit_set()
    {
-	return digit_set;
-   }
+	return !digit_set; // return digit_set;
+   } 
    
    /*@ requires 0 <= op && op <= 4;
      @ {|
@@ -218,10 +207,8 @@ public class Alphabet {
      @	    ensures \result[4];
      @ also
      @      requires op == 4;
-     @      ensures \result[0] ==> ('a' <= c && c <= 'z')||('A' <= c && c <='Z');
      @	    ensures \result[5];
-     @ |} 
-   @*/
+     @ |} @*/
    public boolean[] driver(int op) 
    {
 	boolean[] result = new boolean[6];

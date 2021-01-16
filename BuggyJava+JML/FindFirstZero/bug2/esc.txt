@@ -1,4 +1,4 @@
-FindFirstZero.java:18: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method FindFirstZero
+FindFirstZero.java:14: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method FindFirstZero
             		while (x.length - index >= 0 && x[index] != 0) {//while (x.length - index > 0 && x[index] != 0) {
             		                                 ^
 1 warning

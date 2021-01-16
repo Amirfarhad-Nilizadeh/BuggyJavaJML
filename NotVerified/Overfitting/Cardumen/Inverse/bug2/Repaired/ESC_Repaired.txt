@@ -1,0 +1,13 @@
+Inverse.java:7: warning: The prover cannot establish an assertion (LoopInvariant) in method Inverse
+        //@ maintaining 0 <= index && index <= x.length && x.length == y.length;
+            ^
+Inverse.java:11: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Inverse
+            if (x[index] != y[x.length - 1 - index]) {
+                 ^
+Inverse.java:8: warning: The prover cannot establish an assertion (LoopInvariant) in method Inverse
+        //@ maintaining (\forall int i; 0 <= i && i < index; x[i] == y[x.length -1 - i]);
+            ^
+Inverse.java:9: warning: The prover cannot establish an assertion (LoopDecreases) in method Inverse
+        //@ decreases x.length - index;
+            ^
+4 warnings

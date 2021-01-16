@@ -1,0 +1,10 @@
+Time.java:211: warning: The prover cannot establish an assertion (PossiblyBadCast) in method equals:  a java.lang.Object cannot be proved to be a Time
+        Time t = (Time) o;
+                 ^
+Time.java:293: warning: The prover cannot establish an assertion (Postcondition: Time.java:274: ) in method timeOptions
+			return difference(start,stop);// return start.getTime();
+			^
+Time.java:274: warning: Associated declaration: Time.java:293: 
+      @		ensures  start.hour == 0 && start.minute == 0 && start.second == 0;
+       		^
+3 warnings

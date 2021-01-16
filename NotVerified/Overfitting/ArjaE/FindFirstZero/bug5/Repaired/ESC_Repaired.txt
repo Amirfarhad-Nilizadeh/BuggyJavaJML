@@ -1,0 +1,10 @@
+FindFirstZero.java:11: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method FindFirstZero
+            		//@ maintaining (\forall int i; 0 <= i && i < index; x[i] != 0);
+            		    ^
+FindFirstZero.java:20: warning: The prover cannot establish an assertion (Postcondition: FindFirstZero.java:4: ) in method FindFirstZero
+            	return index;
+            	^
+FindFirstZero.java:4: warning: Associated declaration: FindFirstZero.java:20: 
+	 //@ ensures \result == -1 ==> (\forall int i; 0 <= i && i < x.length; x[i] != 0);
+	     ^
+3 warnings

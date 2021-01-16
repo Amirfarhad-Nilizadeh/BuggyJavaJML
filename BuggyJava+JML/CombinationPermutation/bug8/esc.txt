@@ -1,24 +1,15 @@
-CombinationPermutation.java:35: warning: The prover cannot establish an assertion (Precondition: CombinationPermutation.java:5: ) in method select
-		return !flag ? combination(n, r) : permutation(n, r); //return flag ? combination(n, r) : permutation(n, r);
-		                          ^
-CombinationPermutation.java:5: warning: Associated declaration: CombinationPermutation.java:35: 
-        /*@ spec_public @*/ private long combination(int n, int r) {
-                                         ^
-CombinationPermutation.java:2: warning: Precondition conjunct is false: 0 <= r
-	//@ requires 0 <= n && n <= 20 && 0 <= r && r <= 20 && 0 <= (n-r) && (n-r) <= 20 ;
-	                                    ^
 
-CombinationPermutation.java:35: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:32: ) in method select
+CombinationPermutation.java:31: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:26: ) in method select
 		return !flag ? combination(n, r) : permutation(n, r); //return flag ? combination(n, r) : permutation(n, r);
 		^
-CombinationPermutation.java:32: warning: Associated declaration: CombinationPermutation.java:35: 
-	//@ ensures \result == fac_spec.spec_factorial(n)/fac_spec.spec_factorial(n-r);
-	    ^
+CombinationPermutation.java:26: warning: Associated declaration: CombinationPermutation.java:31: 
+	  @ 	ensures \result == fac_spec.spec_factorial(n)/(fac_spec.spec_factorial(r) * fac_spec.spec_factorial(n-r));
+	    	^
 
-CombinationPermutation.java:35: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:26: ) in method select
+CombinationPermutation.java:31: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:29: ) in method select
 		return !flag ? combination(n, r) : permutation(n, r); //return flag ? combination(n, r) : permutation(n, r);
 		^
-CombinationPermutation.java:26: warning: Associated declaration: CombinationPermutation.java:35: 
-	//@ ensures \result == fac_spec.spec_factorial(n)/(fac_spec.spec_factorial(r) * fac_spec.spec_factorial(n-r));
-	    ^
-7 warnings
+CombinationPermutation.java:29: warning: Associated declaration: CombinationPermutation.java:31: 
+	  @	ensures \result == fac_spec.spec_factorial(n)/fac_spec.spec_factorial(n-r); |} @*/
+	   	^
+4 warnings

@@ -9,7 +9,7 @@ public class Factorial
           long fact = 1;
 
 	  //@ assert spec_factorial(0) == 1;
-	   if ( n == 0) {        
+	   if (n == 0) {        
               return fact;
 	   }
 
@@ -22,7 +22,7 @@ public class Factorial
                 fact = fact*c;
              }	 
 
-          return fact + 1;//fact;
+          return fact + 1; // fact;
      }
 
 	/*@ 	requires n > 0 && n <= 20;
@@ -39,6 +39,5 @@ public class Factorial
 	        assert n * spec_factorial(n-1) <= Long.MAX_VALUE;
 		return n * spec_factorial(n-1);
 	    }
-
         }@*/
      }

@@ -1,0 +1,14 @@
+Alphabet.java:235: warning: The prover cannot establish an assertion (InvariantLeaveCaller: Alphabet.java:14: ) in method driver:  (Caller: Alphabet.driver(int), Callee: Alphabet.isDigit())
+		result[0] = isDigit();
+		                   ^
+Alphabet.java:14: warning: Associated declaration: Alphabet.java:235: 
+   //@ private invariant digit_set ==> digit == ('0' <= c && c <= '9');
+               ^
+
+Alphabet.java:89: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:82: ) in method isDigit
+	return digit;
+	^
+Alphabet.java:82: warning: Associated declaration: Alphabet.java:89: 
+     @   ensures digit_set && \result == digit; 
+         ^
+4 warnings

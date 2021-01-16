@@ -1,10 +1,10 @@
 LCM.java:6: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method div:  int multiply overflow
-    public static int div(int n, int d) { return n*d; }//return n%d; }
+    public static int div(int n, int d) { return n*d; } // return n%d; }
                                                   ^
 LCM.java:6: warning: The prover cannot establish an assertion (Postcondition: LCM.java:4: ) in method div
-    public static int div(int n, int d) { return n*d; }//return n%d; }
+    public static int div(int n, int d) { return n*d; } // return n%d; }
                                           ^
 LCM.java:4: warning: Associated declaration: LCM.java:6: 
-    //@ ensures \result == n%d;
-        ^
+      @    ensures \result == n%d;
+           ^
 3 warnings

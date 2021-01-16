@@ -1,7 +1,7 @@
-Absolute.java:27: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:21: ) in method Absolute
+Absolute.java:23: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:18: ) in method Absolute
 			return (-num== 0 ? 1 : 0);//-num;
 			^
-Absolute.java:21: warning: Associated declaration: Absolute.java:27: 
-	  @    ensures \result == -num; 
+Absolute.java:18: warning: Associated declaration: Absolute.java:23: 
+	  @    ensures \result == -num; @*/
 	       ^
 2 warnings

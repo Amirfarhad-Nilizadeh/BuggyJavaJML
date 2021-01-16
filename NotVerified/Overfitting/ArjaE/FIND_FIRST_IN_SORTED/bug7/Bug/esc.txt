@@ -1,0 +1,10 @@
+FIND_FIRST_IN_SORTED.java:21: warning: The prover cannot establish an assertion (Postcondition: FIND_FIRST_IN_SORTED.java:7: ) in method find_first_in_sorted
+                return mid;
+                ^
+FIND_FIRST_IN_SORTED.java:7: warning: Associated declaration: FIND_FIRST_IN_SORTED.java:21: 
+    //@ ensures 0 <= \result && \result < arr.length ==> arr[\result] == x && (\forall int i; 0 <= i && i < \result; arr[i] != x);
+        ^
+FIND_FIRST_IN_SORTED.java:20: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method find_first_in_sorted
+            if (x == arr[mid] && (mid != 0 || x != arr[mid-1])) { //if (x == arr[mid] && (mid == 0 || x != arr[mid-1])) {
+                                                      ^
+3 warnings

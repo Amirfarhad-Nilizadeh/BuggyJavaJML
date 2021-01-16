@@ -1,0 +1,9 @@
+
+
+StackQueue.java:195: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StackQueue.java:170: ) in method enter
+            			throw new IllegalArgumentException(); 
+            			^
+StackQueue.java:170: warning: Associated declaration: StackQueue.java:195: 
+    		/*@ public normal_behavior
+    		           ^
+2 warnings

@@ -1,5 +1,5 @@
 BinarySearch.java:27: warning: The prover cannot establish an assertion (Postcondition: BinarySearch.java:4: ) in method Binary
-                return (-1 == 0 ? 1 : 0);//-1;
+                return 0; // -1;
                 ^
 BinarySearch.java:4: warning: Associated declaration: BinarySearch.java:27: 
     //@ ensures \result == -1 <==> (\forall int i; 0 <= i && i < arr.length; arr[i] != key);

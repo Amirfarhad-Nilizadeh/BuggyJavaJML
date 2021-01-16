@@ -1,11 +1,9 @@
 
 
-PrimeNumbers.java:36: warning: The prover cannot establish an assertion (LoopInvariant) in method primeList
-	 //@ maintaining (\forall int i; 0 <= i && i < count-1; primeArray[i] < num);
-	     ^
-
-
-PrimeNumbers.java:40: warning: The prover cannot establish an assertion (LoopDecreases) in method primeList
-         //@ decreases maxnumber - num;
-             ^
+PrimeNumbers.java:57: warning: The prover cannot establish an assertion (Postcondition: PrimeNumbers.java:17: ) in method primeList
+	return null;//primeArray; 
+	^
+PrimeNumbers.java:17: warning: Associated declaration: PrimeNumbers.java:57: 
+        public int[] primeList(int n)
+                     ^
 2 warnings

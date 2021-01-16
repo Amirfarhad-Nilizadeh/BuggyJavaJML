@@ -1,7 +1,7 @@
-PrimeCheck.java:7: warning: The prover cannot establish an assertion (Postcondition: PrimeCheck.java:5: ) in method div
-   public static int div(int n, int d) { return (n%d == 0 ? 1 : 0);}//n%d; }
+PrimeCheck.java:6: warning: The prover cannot establish an assertion (Postcondition: PrimeCheck.java:4: ) in method div
+   public static int div(int n, int d) { return (n%d == 0 ? 1 : 0);} // n%d; }
                                          ^
-PrimeCheck.java:5: warning: Associated declaration: PrimeCheck.java:7: 
-   //@ ensures \result == n%d;
-       ^
+PrimeCheck.java:4: warning: Associated declaration: PrimeCheck.java:6: 
+     @    ensures \result == n%d;
+          ^
 2 warnings

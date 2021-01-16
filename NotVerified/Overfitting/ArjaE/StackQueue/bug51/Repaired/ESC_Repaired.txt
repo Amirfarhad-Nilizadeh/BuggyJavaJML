@@ -1,0 +1,7 @@
+StackQueue.java:284: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:281: ) in method isEmpty
+   		     	return (getRear() < getFront());//return (getRear() != getFront()); //return (getRear() == getFront());
+   		     	^
+StackQueue.java:281: warning: Associated declaration: StackQueue.java:284: 
+   		//@   ensures \result <==>  rear == front;
+   		      ^
+2 warnings

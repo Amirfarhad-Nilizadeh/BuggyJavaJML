@@ -1,6 +1,25 @@
-test(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
-test2(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
-test5(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
-test6(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
-test8(JUnitFIND_IN_SORTED): The key value is in the array, but program did not find it
-false
+FIND_IN_SORTED.java:17: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method binsearch
+        if (x < arr[mid]) {
+                   ^
+FIND_IN_SORTED.java:14: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:10: ) in method binsearch
+            return -1;
+            ^
+FIND_IN_SORTED.java:10: warning: Associated declaration: FIND_IN_SORTED.java:14: 
+      @ ensures \result == -1 ==> (\forall int i; start <= i && i < end; arr[i] != x); @*/
+        ^
+FIND_IN_SORTED.java:20: warning: The prover cannot establish an assertion (Precondition: FIND_IN_SORTED.java:12: ) in method binsearch
+            return binsearch(arr, x, mid+1, end);
+                            ^
+FIND_IN_SORTED.java:12: warning: Associated declaration: FIND_IN_SORTED.java:20: 
+    int binsearch(int[] arr, int x, int start, int end) {
+        ^
+FIND_IN_SORTED.java:2: warning: Precondition conjunct is false: start <= end
+    /*@ requires 0 <= start && 0 <= end && start <= end && end <= arr.length;
+                                                 ^
+FIND_IN_SORTED.java:22: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:8: ) in method binsearch
+            return mid;
+            ^
+FIND_IN_SORTED.java:8: warning: Associated declaration: FIND_IN_SORTED.java:22: 
+      @ ensures \result < end;
+        ^
+8 warnings

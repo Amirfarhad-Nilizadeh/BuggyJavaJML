@@ -1,0 +1,7 @@
+PrimeCheck.java:14: warning: The prover cannot establish an assertion (Postcondition: PrimeCheck.java:10: ) in method isPrime
+	if (div(a,i) == 0) return false;
+	                   ^
+PrimeCheck.java:10: warning: Associated declaration: PrimeCheck.java:14: 
+   //@ ensures !\result ==> (\exists int k; 1 < k && k <= a/2; div(a,k) == 0); 
+       ^
+2 warnings

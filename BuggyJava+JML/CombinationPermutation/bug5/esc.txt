@@ -1,14 +1,4 @@
 
-CombinationPermutation.java:18: warning: The prover cannot establish an assertion (Precondition: Factorial.java:6: ) in method permutation
-		permut = fac.factorial(n) / fac.factorial(n+r);//permut = fac.factorial(n) / fac.factorial(n-r);
-		                                         ^
-Factorial.java:6: warning: Associated declaration: CombinationPermutation.java:18: 
-       public long factorial(int n)
-                   ^
-Factorial.java:3: warning: Precondition conjunct is false: 0 <= n
-	//@ requires 0 <= n && n <= 20;
-	               ^
-
 
 CombinationPermutation.java:19: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:14: ) in method permutation
 		return permut;
@@ -16,4 +6,14 @@ CombinationPermutation.java:19: warning: The prover cannot establish an assertio
 CombinationPermutation.java:14: warning: Associated declaration: CombinationPermutation.java:19: 
 	//@ ensures \result == fac_spec.spec_factorial(n)/fac_spec.spec_factorial(n-r);
 	    ^
+
+CombinationPermutation.java:18: warning: The prover cannot establish an assertion (Precondition: Factorial.java:6: ) in method permutation
+		permut = fac.factorial(n) / fac.factorial(n+r);//permut = fac.factorial(n) / fac.factorial(n-r);
+		                                         ^
+Factorial.java:6: warning: Associated declaration: CombinationPermutation.java:18: 
+       public /* pure @*/ long factorial(int n)
+                               ^
+Factorial.java:3: warning: Precondition conjunct is false: n <= 20
+       //@ requires 0 <= n && n <= 20;
+                                ^
 5 warnings

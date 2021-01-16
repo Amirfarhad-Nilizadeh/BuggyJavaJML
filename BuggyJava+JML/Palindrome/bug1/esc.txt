@@ -1,4 +1,0 @@
-Palindrome.java:23: warning: The prover cannot establish an assertion (Assert) in method isPalindrome
-      //@ assert i_counter == length; 
-          ^
-1 warning

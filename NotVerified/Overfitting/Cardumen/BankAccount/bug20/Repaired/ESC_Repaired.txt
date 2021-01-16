@@ -1,0 +1,13 @@
+BankAccount.java:171: warning: The prover cannot establish an assertion (Precondition: BankAccount.java:83: ) in method checkWithdrawal
+			if (isValid(balance, amount)) {
+			           ^
+BankAccount.java:83: warning: Associated declaration: BankAccount.java:171: 
+	/*@ spec_public pure @*/ boolean isValid(int _balance, int _amount)
+	                                 ^
+BankAccount.java:72: warning: Precondition conjunct is false: isValid(_amount)
+	//@ requires isValid(_amount);
+	                    ^
+BankAccount.java:80: warning: Precondition conjunct is false: _balance - _amount < 0
+	  //@ requires _balance - _amount < 0;
+	                                  ^
+4 warnings

@@ -3,9 +3,9 @@
 
 
 Alphabet.java:55: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:49: ) in method isAlphabetic
-	return !alphabetic; //return alphabetic;
+	return !alphabetic; // return alphabetic;
 	^
 Alphabet.java:49: warning: Associated declaration: Alphabet.java:55: 
-     @   ensures alphabetic_set && \result == alphabetic; @*/
+     @   ensures alphabetic_set && \result == alphabetic; 
          ^
 2 warnings

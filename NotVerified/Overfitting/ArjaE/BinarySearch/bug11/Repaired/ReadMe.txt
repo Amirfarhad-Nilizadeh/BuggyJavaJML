@@ -1,0 +1,2 @@
+This program is buggy in an infrequent scenario. when the size of an array is equal to integer maximum value and both "low" and "high" become equal to integer maximum value. Also, the key is not in the array. In this case, "low=mid + 1;" makes the value of "low" equal to the integer minimum value. 
+

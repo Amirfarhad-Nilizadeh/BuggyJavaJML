@@ -1,0 +1,13 @@
+Inverse.java:4: warning: The prover cannot establish an assertion (Postcondition: Inverse.java:2: ) in method Inverse
+    public static boolean Inverse(int[] x, int[] y) {
+                          ^
+Inverse.java:2: warning: Associated declaration: Inverse.java:4: 
+    //@ ensures !\result ==> ((x.length != y.length) || (\exists int i; 0 <= i && i < x.length; x[i] != y[x.length - 1 -i]));
+        ^
+Inverse.java:16: warning: The prover cannot establish an assertion (Postcondition: Inverse.java:3: ) in method Inverse
+	    return true;
+	    ^
+Inverse.java:3: warning: Associated declaration: Inverse.java:16: 
+    //@ ensures \result ==> x.length == y.length && (\forall int i; 0 <= i && i < x.length; x[i] == y[x.length - 1 - i]);
+        ^
+4 warnings

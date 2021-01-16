@@ -1,0 +1,7 @@
+Time.java:209: warning: The prover cannot establish an assertion (Postcondition: Time.java:200: ) in method equals
+            return true;//return false;
+            ^
+Time.java:200: warning: Associated declaration: Time.java:209: 
+    //@    	ensures !\result;
+           	^
+2 warnings

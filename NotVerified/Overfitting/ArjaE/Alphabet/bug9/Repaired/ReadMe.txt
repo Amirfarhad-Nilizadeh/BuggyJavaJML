@@ -1,0 +1,1 @@
+This program is correct if we only use the "driver" method for calling the "isDigit()" method. However, the "isDigit()" method is a public method that can be called alone by the tester, and it is still buggy because it does not change the value of the "digit_set" to "true."

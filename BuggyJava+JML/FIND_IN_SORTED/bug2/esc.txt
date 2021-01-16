@@ -1,19 +1,19 @@
-FIND_IN_SORTED.java:20: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:10: ) in method binsearch
+FIND_IN_SORTED.java:14: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:5: ) in method binsearch
             return 0; //return -1;
             ^
-FIND_IN_SORTED.java:10: warning: Associated declaration: FIND_IN_SORTED.java:20: 
-    //@ ensures (0 <= \result && \result < arr.length) ==> arr[\result] == x;
+FIND_IN_SORTED.java:5: warning: Associated declaration: FIND_IN_SORTED.java:14: 
+      @ ensures (0 <= \result && \result < arr.length) ==> arr[\result] == x;
         ^
-FIND_IN_SORTED.java:20: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:15: ) in method binsearch
+FIND_IN_SORTED.java:14: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:8: ) in method binsearch
             return 0; //return -1;
             ^
-FIND_IN_SORTED.java:15: warning: Associated declaration: FIND_IN_SORTED.java:20: 
-    //@ ensures (start == end) ==> \result == -1;
+FIND_IN_SORTED.java:8: warning: Associated declaration: FIND_IN_SORTED.java:14: 
+      @ ensures \result < end;
         ^
-FIND_IN_SORTED.java:20: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:14: ) in method binsearch
+FIND_IN_SORTED.java:14: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:9: ) in method binsearch
             return 0; //return -1;
             ^
-FIND_IN_SORTED.java:14: warning: Associated declaration: FIND_IN_SORTED.java:20: 
-    //@ ensures \result < end;
+FIND_IN_SORTED.java:9: warning: Associated declaration: FIND_IN_SORTED.java:14: 
+      @ ensures (start == end) ==> \result == -1;
         ^
 6 warnings

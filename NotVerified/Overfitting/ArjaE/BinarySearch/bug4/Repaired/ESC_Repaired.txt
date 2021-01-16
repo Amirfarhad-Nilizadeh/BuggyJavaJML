@@ -1,0 +1,7 @@
+BinarySearch.java:14: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method Binary
+            //@ maintaining 0 <= low && low <= high  && high <= arr.length && mid == low + (high - low) / 2;
+                ^
+BinarySearch.java:15: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method Binary
+            //@ maintaining (\forall int i; 0 <= i && i < low; arr[i] < key);
+                ^
+2 warnings

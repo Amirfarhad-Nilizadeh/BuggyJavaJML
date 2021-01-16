@@ -1,0 +1,7 @@
+StackQueue.java:37: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:33: ) in method isFull
+	        	return (top != MAX - 1); //return (top == MAX - 1); 
+	        	^
+StackQueue.java:33: warning: Associated declaration: StackQueue.java:37: 
+	    	//@ 	ensures \result <==> top == MAX - 1;
+	    	    	^
+2 warnings

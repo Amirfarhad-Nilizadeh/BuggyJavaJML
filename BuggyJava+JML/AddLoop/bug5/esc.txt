@@ -1,7 +1,7 @@
-AddLoop.java:14: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method AddLoop:  overflow in int sum
+AddLoop.java:12: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method AddLoop:  overflow in int sum
                 n = n + 1;//n = n - 1;
                       ^
-AddLoop.java:10: warning: The prover cannot establish an assertion (LoopInvariant) in method AddLoop
+AddLoop.java:9: warning: The prover cannot establish an assertion (LoopInvariant) in method AddLoop
             //@ maintaining sum == x + y - n && 0 <= n;
                 ^
 2 warnings

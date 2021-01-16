@@ -1,0 +1,4 @@
+AddLoop.java:8: error: Expected an integral type in loop_decreases, not double
+            //@ decreases n;
+                          ^
+1 error

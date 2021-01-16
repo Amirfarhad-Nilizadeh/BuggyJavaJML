@@ -1,0 +1,33 @@
+
+Time.java:46: warning: The prover cannot establish an assertion (Assignable: Time.java:39: ) in method setSecond:  this.second
+            this.second = s;
+                        ^
+Time.java:39: warning: Associated declaration: Time.java:46: 
+      @     	assignable \nothing;
+            	^
+
+Time.java:41: warning: The prover cannot establish an assertion (InvariantExit: Time.java:6: ) in method setSecond
+    public void setSecond(int s) 
+                ^
+Time.java:6: warning: Associated declaration: Time.java:41: 
+    /*@ public invariant 0 <= second && second < 60;
+               ^
+Time.java:44: warning: The prover cannot establish an assertion (Postcondition: Time.java:35: ) in method setSecond
+           return;
+           ^
+Time.java:35: warning: Associated declaration: Time.java:44: 
+      @     	ensures this.second == s;
+            	^
+Time.java:44: warning: The prover cannot establish an assertion (Postcondition: Time.java:37: ) in method setSecond
+           return;
+           ^
+Time.java:37: warning: Associated declaration: Time.java:44: 
+      @     public exceptional_behavior
+                   ^
+
+
+
+Time.java:165: warning: The prover cannot establish an assertion (Assert) in method timer
+	//@ assert hour == h && minute == m && second == s;
+	    ^
+9 warnings

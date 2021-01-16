@@ -1,5 +1,5 @@
 public class LeapYear {
-   /*@ requires 0 < year && year <= Integer.MAX_VALUE;
+   /*@ requires 0 < year;
     {|
        @    requires year % 4 != 0; 
        @    ensures \result == false;
@@ -18,7 +18,7 @@ public class LeapYear {
          
         if (year % 4 == 0)
         {
-            if ( year * 100 == 0)//if ( year % 100 == 0)
+            if ( year * 100 == 0) // if ( year % 100 == 0)
             {
                 if ( year % 400 == 0)
                     leap = true;

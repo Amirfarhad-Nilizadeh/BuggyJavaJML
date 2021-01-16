@@ -1,0 +1,27 @@
+Time.java:62: warning: The prover cannot establish an assertion (Postcondition: Time.java:55: ) in method setMinute
+            return;
+            ^
+Time.java:55: warning: Associated declaration: Time.java:62: 
+      @     public exceptional_behavior
+                   ^
+
+Time.java:64: warning: The prover cannot establish an assertion (Assignable: Time.java:57: ) in method setMinute:  this.minute
+            this.minute = m;
+                        ^
+Time.java:57: warning: Associated declaration: Time.java:64: 
+      @     	assignable \nothing;
+            	^
+
+Time.java:59: warning: The prover cannot establish an assertion (InvariantExit: Time.java:7: ) in method setMinute
+    public void setMinute(int m) 
+                ^
+Time.java:7: warning: Associated declaration: Time.java:59: 
+      public invariant 0 <= minute && minute < 60;
+             ^
+Time.java:62: warning: The prover cannot establish an assertion (Postcondition: Time.java:53: ) in method setMinute
+            return;
+            ^
+Time.java:53: warning: Associated declaration: Time.java:62: 
+      @     	ensures this.minute == m;
+            	^
+8 warnings

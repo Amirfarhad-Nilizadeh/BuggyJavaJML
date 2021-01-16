@@ -1,0 +1,6 @@
+
+
+PrimeNumbers.java:49: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method primeList
+                primeArray[count - 1] = num;
+                          ^
+1 warning

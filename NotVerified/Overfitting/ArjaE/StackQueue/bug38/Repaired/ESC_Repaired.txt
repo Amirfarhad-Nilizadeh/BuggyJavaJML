@@ -1,0 +1,25 @@
+StackQueue.java:244: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method peek
+    queue[i]=queue[i + 1];
+         ^
+
+StackQueue.java:247: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:237: ) in method peek:  rear
+  rear--;
+      ^
+StackQueue.java:237: warning: Associated declaration: StackQueue.java:247: 
+    		public /*@ pure @*/ int peek() 
+    		           ^
+
+StackQueue.java:244: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:237: ) in method peek:  queue[i]
+    queue[i]=queue[i + 1];
+            ^
+StackQueue.java:237: warning: Associated declaration: StackQueue.java:244: 
+    		public /*@ pure @*/ int peek() 
+    		           ^
+
+StackQueue.java:248: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:229: ) in method peek
+  return poll;
+  ^
+StackQueue.java:229: warning: Associated declaration: StackQueue.java:248: 
+      		  @ 	ensures \result == queue[front];
+      		    	^
+7 warnings

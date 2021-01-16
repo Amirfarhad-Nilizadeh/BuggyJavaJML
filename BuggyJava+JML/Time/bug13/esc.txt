@@ -1,7 +1,7 @@
-Time.java:94: warning: The prover cannot establish an assertion (Postcondition: Time.java:90: ) in method getTime
+Time.java:91: warning: The prover cannot establish an assertion (Postcondition: Time.java:87: ) in method getTime
 		return null;
 		^
-Time.java:90: warning: Associated declaration: Time.java:94: 
+Time.java:87: warning: Associated declaration: Time.java:91: 
     public /*@ pure @*/ Time getTime()
                              ^
 2 warnings

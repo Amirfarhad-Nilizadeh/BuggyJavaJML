@@ -1,7 +1,10 @@
-GCD.java:46: warning: The prover cannot establish an assertion (Postcondition: GCD.java:34: ) in method gcd
-			return (-1 == 0 ? 1 : 0);//-1;	
-			^
-GCD.java:34: warning: Associated declaration: GCD.java:46: 
-	  @    ensures \result == -1;
-	       ^
-2 warnings
+GCD.java:64: warning: The prover cannot establish an assertion (LoopDecreases) in method gcd
+		//@ decreases num1 - i; 
+		    ^
+GCD.java:61: warning: The prover cannot establish an assertion (LoopInvariant) in method gcd
+		//@ maintaining 0 < result && result <= i;
+		    ^
+GCD.java:60: warning: The prover cannot establish an assertion (LoopInvariant) in method gcd
+		//@ maintaining 0 < i && i <= num1 + 1 && i<= num2 + 1; 
+		    ^
+3 warnings

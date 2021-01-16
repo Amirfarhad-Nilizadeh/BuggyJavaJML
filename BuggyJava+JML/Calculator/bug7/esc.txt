@@ -1,31 +1,31 @@
-Calculator.java:63: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:7: ) in method calculate
+Calculator.java:62: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:28: ) in method calculate
         return (output == 0 ? 1 : 0);//output;
         ^
-Calculator.java:7: warning: Associated declaration: Calculator.java:63: 
-      @    ensures \result == num1 + num2;
-           ^
-Calculator.java:63: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:12: ) in method calculate
-        return (output == 0 ? 1 : 0);//output;
-        ^
-Calculator.java:12: warning: Associated declaration: Calculator.java:63: 
-      @    ensures \result == num1 * num2;
-           ^
-Calculator.java:63: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:17: ) in method calculate
-        return (output == 0 ? 1 : 0);//output;
-        ^
-Calculator.java:17: warning: Associated declaration: Calculator.java:63: 
-      @    ensures \result == num1 - num2;
-           ^
-Calculator.java:63: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:29: ) in method calculate
-        return (output == 0 ? 1 : 0);//output;
-        ^
-Calculator.java:29: warning: Associated declaration: Calculator.java:63: 
+Calculator.java:28: warning: Associated declaration: Calculator.java:62: 
       @    ensures \result == (num1 % num2);
            ^
-Calculator.java:63: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:23: ) in method calculate
+Calculator.java:62: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:23: ) in method calculate
         return (output == 0 ? 1 : 0);//output;
         ^
-Calculator.java:23: warning: Associated declaration: Calculator.java:63: 
+Calculator.java:23: warning: Associated declaration: Calculator.java:62: 
       @    ensures \result == (num1 / num2);
+           ^
+Calculator.java:62: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:7: ) in method calculate
+        return (output == 0 ? 1 : 0);//output;
+        ^
+Calculator.java:7: warning: Associated declaration: Calculator.java:62: 
+      @    ensures \result == num1 + num2;
+           ^
+Calculator.java:62: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:17: ) in method calculate
+        return (output == 0 ? 1 : 0);//output;
+        ^
+Calculator.java:17: warning: Associated declaration: Calculator.java:62: 
+      @    ensures \result == num1 - num2;
+           ^
+Calculator.java:62: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:12: ) in method calculate
+        return (output == 0 ? 1 : 0);//output;
+        ^
+Calculator.java:12: warning: Associated declaration: Calculator.java:62: 
+      @    ensures \result == num1 * num2;
            ^
 10 warnings

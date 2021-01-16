@@ -1,7 +1,0 @@
-StudentEnrollment.java:152: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:149: ) in method validPayment
-         return (0 <= payment);//return (0 < payment);
-         ^
-StudentEnrollment.java:149: warning: Associated declaration: StudentEnrollment.java:152: 
-    //@   ensures \result <==> (0 < payment);
-          ^
-2 warnings

@@ -1,0 +1,12 @@
+
+StackQueue.java:251: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:249: ) in method isContain:  rear
+			rear--;
+			    ^
+StackQueue.java:249: warning: Associated declaration: StackQueue.java:251: 
+    		public /*@ pure @*/ boolean isContain(int key)
+    		           ^
+
+StackQueue.java:253: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method isContain
+        		//@ maintaining 0 <= index && index <= rear;
+        		    ^
+3 warnings

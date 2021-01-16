@@ -1,0 +1,12 @@
+Time.java:84: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Time.java:68: ) in method setHour
+            throw new IllegalArgumentException();
+            ^
+Time.java:68: warning: Associated declaration: Time.java:84: 
+    /*@     public normal_behavior
+                   ^
+
+
+Time.java:169: warning: The prover cannot establish an assertion (Assert) in method timer
+	//@ assert hour == h && minute == m && second == s;
+	    ^
+3 warnings

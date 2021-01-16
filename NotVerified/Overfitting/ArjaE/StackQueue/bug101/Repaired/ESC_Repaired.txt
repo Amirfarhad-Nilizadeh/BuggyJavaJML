@@ -1,0 +1,38 @@
+
+
+
+StackQueue.java:565: warning: The prover cannot establish an assertion (PossiblyDivideByZero) in method driverStack
+			stack.push(stack.pop() / stack.pop());
+			                       ^
+
+
+
+
+
+StackQueue.java:565: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:503: ) in method driverStack:  arr[*]
+			stack.push(stack.pop() / stack.pop());
+			          ^
+StackQueue.java:503: warning: Associated declaration: StackQueue.java:565: 
+	/*@ requires 0 <= op && op < 9;
+	    ^
+
+
+
+StackQueue.java:565: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method driverStack:  overflow in int divide
+			stack.push(stack.pop() / stack.pop());
+			                       ^
+
+
+
+
+
+StackQueue.java:596: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:512: ) in method driverStack
+		return output;//return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:512: warning: Associated declaration: StackQueue.java:596: 
+	  @	ensures stack.top == \old (stack.top - 1);
+	   	^
+StackQueue.java:418: warning: There is no feasible path to program point at program exit in method StackQueue.QDivision(StackQueue.Queue)
+    	public int QDivision(Queue Q) 
+    	           ^
+7 warnings

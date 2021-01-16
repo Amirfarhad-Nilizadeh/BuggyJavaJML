@@ -1,7 +1,5 @@
-
 public class Smallest {
-    //@ requires 0 <= a.length && a.length <= Integer.MAX_VALUE;
-    //@ ensures \result == -1 ==> a.length == 0;
+    //@ ensures \result == -1 <==> a.length == 0;
     //@ ensures -1 < \result ==> (\forall int i; 0 <= i && i < a.length; a[\result] <= a[i]);
     static public int Smallest(int[] a) {
         if (a.length == 0) return -1;

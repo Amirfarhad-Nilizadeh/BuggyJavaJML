@@ -1,7 +1,0 @@
-Alphabet.java:177: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:174: ) in method getUppercase_set
-	return !uppercase_set; //return uppercase_set;
-	^
-Alphabet.java:174: warning: Associated declaration: Alphabet.java:177: 
-   //@   ensures \result == uppercase_set;
-         ^
-2 warnings

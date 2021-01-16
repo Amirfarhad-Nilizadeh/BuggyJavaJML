@@ -3,9 +3,9 @@
 
 
 Alphabet.java:77: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:71: ) in method isLowercase
-       return !lowercase; //return lowercase;
+       return !lowercase; // return lowercase;
        ^
 Alphabet.java:71: warning: Associated declaration: Alphabet.java:77: 
-      @   ensures lowercase_set && \result == lowercase; @*/
+      @   ensures lowercase_set && \result == lowercase; 
           ^
 2 warnings

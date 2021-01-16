@@ -1,0 +1,29 @@
+
+
+
+StackQueue.java:591: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:521: ) in method driverStack
+		return output;
+		^
+StackQueue.java:521: warning: Associated declaration: StackQueue.java:591: 
+	  @	ensures \result == \old (stack.getElem(stack.top) + stack.getElem(stack.top - 1));
+	   	^
+
+
+
+StackQueue.java:591: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:522: ) in method driverStack
+		return output;
+		^
+StackQueue.java:522: warning: Associated declaration: StackQueue.java:591: 
+	  @	ensures stack.top == \old (stack.top - 1);
+	   	^
+
+
+
+
+StackQueue.java:337: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:331: ) in method stackPlus
+		return stack.peek() == 0 ? 1 : 0; //return stack.peek();
+		^
+StackQueue.java:331: warning: Associated declaration: StackQueue.java:337: 
+      	  @ ensures \result == \old (stack.getElem(stack.top) + stack.getElem(stack.top - 1));
+      	    ^
+6 warnings

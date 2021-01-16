@@ -1,8 +1,0 @@
-test11(JUnitAlphabet): expected:<true> but was:<false>
-test20(JUnitAlphabet): expected:<false> but was:<true>
-test29(JUnitAlphabet): expected:<false> but was:<true>
-test33(JUnitAlphabet): expected:<true> but was:<false>
-test41(JUnitAlphabet): expected:<false> but was:<true>
-test49(JUnitAlphabet): expected:<true> but was:<false>
-test5(JUnitAlphabet): expected:<false> but was:<true>
-false

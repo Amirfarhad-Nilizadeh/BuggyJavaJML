@@ -1,0 +1,7 @@
+Smallest.java:5: warning: The prover cannot establish an assertion (Postcondition: Smallest.java:2: ) in method Smallest
+        if (a.length == 0) return -0;
+                           ^
+Smallest.java:2: warning: Associated declaration: Smallest.java:5: 
+    //@ ensures \result == -1 <==> a.length == 0;
+        ^
+2 warnings

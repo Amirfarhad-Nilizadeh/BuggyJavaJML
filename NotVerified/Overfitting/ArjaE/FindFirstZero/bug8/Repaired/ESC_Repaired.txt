@@ -1,0 +1,4 @@
+FindFirstZero.java:12: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method FindFirstZero
+            		//@ maintaining (\forall int i; 0 <= i && i < index; x[i] != 0);
+            		    ^
+1 warning

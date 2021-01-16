@@ -1,0 +1,10 @@
+OddEven.java:5: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method isEven:  int multiply overflow
+         	return x*2 == 0; // return x%2 == 0;
+         	        ^
+OddEven.java:5: warning: The prover cannot establish an assertion (Postcondition: OddEven.java:2: ) in method isEven
+         	return x*2 == 0; // return x%2 == 0;
+         	^
+OddEven.java:2: warning: Associated declaration: OddEven.java:5: 
+    	 //@ ensures \result <==>  x%2 == 0;
+    	     ^
+3 warnings

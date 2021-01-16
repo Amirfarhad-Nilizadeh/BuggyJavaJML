@@ -1,7 +1,7 @@
-PrimeCheck.java:21: warning: The prover cannot establish an assertion (LoopDecreases) in method isPrime
+PrimeCheck.java:18: warning: The prover cannot establish an assertion (LoopDecreases) in method isPrime
 	//@ decreases maxnumber - i;
 	    ^
-PrimeCheck.java:19: warning: The prover cannot establish an assertion (LoopInvariant) in method isPrime
+PrimeCheck.java:16: warning: The prover cannot establish an assertion (LoopInvariant) in method isPrime
 	//@ maintaining 1 < i && i <= mid + 1;
 	    ^
 2 warnings

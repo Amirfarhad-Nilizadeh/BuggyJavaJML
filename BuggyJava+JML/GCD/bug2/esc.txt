@@ -1,13 +1,7 @@
-GCD.java:46: warning: The prover cannot establish an assertion (Postcondition: GCD.java:31: ) in method gcd
-			return -1;	
-			^
-GCD.java:31: warning: Associated declaration: GCD.java:46: 
-	  @    ensures \result == tnum1;
+GCD.java:7: warning: The prover cannot establish an assertion (Postcondition: GCD.java:4: ) in method div
+		return (n%d == 0) ? 1 : 0; // return n%d; 
+		^
+GCD.java:4: warning: Associated declaration: GCD.java:7: 
+	  @    ensures \result == n%d;
 	       ^
-GCD.java:50: warning: The prover cannot establish an assertion (Postcondition: GCD.java:34: ) in method gcd
-			return (num1 > num2) ? num1 : num2;
-			^
-GCD.java:34: warning: Associated declaration: GCD.java:50: 
-	  @    ensures \result == -1;
-	       ^
-4 warnings
+2 warnings

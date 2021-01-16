@@ -1,13 +1,21 @@
-BubbleSort.java:20: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
-	    //@ maintaining 0 <= j && j < n - i;
-	        ^
-BubbleSort.java:21: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
-	    //@ maintaining 0 < j ==> arr[j-1] <= arr[j];
-	        ^
-BubbleSort.java:24: warning: The prover cannot establish an assertion (LoopDecreases) in method bubbleSort
+
+
+BubbleSort.java:20: warning: The prover cannot establish an assertion (LoopDecreases) in method bubbleSort
 	    //@ decreases n - j;
 	        ^
-BubbleSort.java:22: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+
+
+BubbleSort.java:18: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
 	    //@ maintaining (\forall int k; 0 <= k && k < j; arr[k] <= arr[j]);
+	        ^
+
+
+BubbleSort.java:16: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+	    //@ maintaining 0 <= j && j < n - i;
+	        ^
+
+
+BubbleSort.java:17: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+	    //@ maintaining 0 < j ==> arr[j-1] <= arr[j];
 	        ^
 4 warnings

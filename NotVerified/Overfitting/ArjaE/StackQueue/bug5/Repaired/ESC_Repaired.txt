@@ -1,0 +1,12 @@
+
+StackQueue.java:59: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:53: ) in method push:  top
+	           		 arr[++top] = x; 
+	           		     ^
+StackQueue.java:53: warning: Associated declaration: StackQueue.java:59: 
+	          @ 	assignable \nothing;
+	            	^
+
+StackQueue.java:59: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method push
+	           		 arr[++top] = x; 
+	           		    ^
+3 warnings

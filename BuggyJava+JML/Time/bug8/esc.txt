@@ -1,13 +1,21 @@
-Time.java:61: warning: The prover cannot establish an assertion (InvariantExit: Time.java:7: ) in method setMinute
+
+Time.java:64: warning: The prover cannot establish an assertion (Assignable: Time.java:57: ) in method setMinute:  this.minute
+            this.minute = m;
+                        ^
+Time.java:57: warning: Associated declaration: Time.java:64: 
+      @     	assignable \nothing;
+            	^
+
+Time.java:59: warning: The prover cannot establish an assertion (InvariantExit: Time.java:7: ) in method setMinute
     public void setMinute(int m) 
                 ^
-Time.java:7: warning: Associated declaration: Time.java:61: 
+Time.java:7: warning: Associated declaration: Time.java:59: 
       public invariant 0 <= minute && minute < 60;
              ^
-Time.java:64: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Time.java:51: ) in method setMinute
+Time.java:62: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Time.java:50: ) in method setMinute
             throw new IllegalArgumentException();
             ^
-Time.java:51: warning: Associated declaration: Time.java:64: 
-    //@ public normal_behavior
-               ^
-4 warnings
+Time.java:50: warning: Associated declaration: Time.java:62: 
+    /*@     public normal_behavior
+                   ^
+6 warnings

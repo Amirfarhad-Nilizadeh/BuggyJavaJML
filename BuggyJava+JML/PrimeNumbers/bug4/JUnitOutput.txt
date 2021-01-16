@@ -1,0 +1,6 @@
+test(JUnitPrimeNumbers): expected:<0> but was:<3>
+test1(JUnitPrimeNumbers): expected:<0> but was:<3>
+test2(JUnitPrimeNumbers): expected:<0> but was:<3>
+test3(JUnitPrimeNumbers): expected:<0> but was:<3>
+test4(JUnitPrimeNumbers): expected:<0> but was:<3>
+false

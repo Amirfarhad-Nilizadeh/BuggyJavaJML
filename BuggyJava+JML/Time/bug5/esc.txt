@@ -1,7 +1,0 @@
-Time.java:64: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Time.java:51: ) in method setMinute
-            throw new IllegalArgumentException();
-            ^
-Time.java:51: warning: Associated declaration: Time.java:64: 
-    //@ public normal_behavior
-               ^
-2 warnings

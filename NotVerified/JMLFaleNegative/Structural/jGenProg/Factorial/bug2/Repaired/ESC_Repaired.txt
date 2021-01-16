@@ -1,0 +1,25 @@
+Factorial.java:21: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method factorial:  overflow in int sum
+          for (c = 1; c < n; c++) {//for (c = 1; c <= n; c++) {
+                              ^
+Factorial.java:16: warning: The prover cannot establish an assertion (LoopInvariant) in method factorial
+          //@ maintaining c >= 1 && c <= n+1;
+              ^
+Factorial.java:17: warning: The prover cannot establish an assertion (LoopInvariant) in method factorial
+	  //@ maintaining fact > 0;
+	      ^
+Factorial.java:19: warning: The prover cannot establish an assertion (LoopInvariant) in method factorial
+	  //@ maintaining spec_factorial(c - 1) == fact;
+	      ^
+Factorial.java:25: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method factorial:  long multiply overflow
+                fact = fact*c;
+                           ^
+Factorial.java:28: warning: The prover cannot establish an assertion (Postcondition: Factorial.java:5: ) in method factorial
+          return fact;
+          ^
+Factorial.java:5: warning: Associated declaration: Factorial.java:28: 
+       //@ ensures \result == spec_factorial(n);
+           ^
+Factorial.java:23: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method factorial:  long multiply overflow
+				fact = fact * c;
+				            ^
+8 warnings

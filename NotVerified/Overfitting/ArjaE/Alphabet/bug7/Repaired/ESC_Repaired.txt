@@ -1,0 +1,15 @@
+
+Alphabet.java:174: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:172: ) in method getLowercase_set:  lowercase_set
+	lowercase_set=true;
+	             ^
+Alphabet.java:172: warning: Associated declaration: Alphabet.java:174: 
+   public /*@ pure @*/ boolean getLowercase_set()
+              ^
+
+Alphabet.java:78: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:71: ) in method isLowercase
+       return lowercase;
+       ^
+Alphabet.java:71: warning: Associated declaration: Alphabet.java:78: 
+      @   ensures lowercase_set && \result == lowercase; 
+          ^
+4 warnings

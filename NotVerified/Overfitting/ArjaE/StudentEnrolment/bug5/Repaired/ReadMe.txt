@@ -1,0 +1,1 @@
+The "setPassedCredits" method is public, and it is still buggy. Also, " throw new IllegalArgumentException();" is not implemented for the patch that is replaced with the place where "setPassedCredits" is called.

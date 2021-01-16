@@ -1,0 +1,16 @@
+
+StackQueue.java:188: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:180: ) in method enter:  rear
+				front=rear=0;
+				          ^
+StackQueue.java:180: warning: Associated declaration: StackQueue.java:188: 
+		  @	 assignable \nothing;
+		   	 ^
+
+
+StackQueue.java:188: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:180: ) in method enter:  front
+				front=rear=0;
+				     ^
+StackQueue.java:180: warning: Associated declaration: StackQueue.java:188: 
+		  @	 assignable \nothing;
+		   	 ^
+4 warnings

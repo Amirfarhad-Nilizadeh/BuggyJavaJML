@@ -1,0 +1,8 @@
+
+Fibonacci.java:34: warning: The prover cannot establish an assertion (Assignable: Fibonacci.java:33: ) in method getFib:  fib[1]
+		fib[1]=1;
+		      ^
+Fibonacci.java:33: warning: Associated declaration: Fibonacci.java:34: 
+	public /*@ pure @*/ long getFib(int index) {
+	           ^
+2 warnings

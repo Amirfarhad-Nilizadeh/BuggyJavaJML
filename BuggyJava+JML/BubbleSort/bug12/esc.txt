@@ -1,7 +1,7 @@
-BubbleSort.java:32: warning: The prover cannot establish an assertion (Postcondition: BubbleSort.java:6: ) in method bubbleSort
-	return null;//arr;
+BubbleSort.java:27: warning: The prover cannot establish an assertion (Postcondition: BubbleSort.java:4: ) in method bubbleSort
+	return null; // arr;
 	^
-BubbleSort.java:6: warning: Associated declaration: BubbleSort.java:32: 
-    int[] bubbleSort(int arr[]) 
+BubbleSort.java:4: warning: Associated declaration: BubbleSort.java:27: 
+    int[] bubbleSort(int arr[]) { 
           ^
 2 warnings

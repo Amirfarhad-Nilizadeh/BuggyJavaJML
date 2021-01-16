@@ -1,0 +1,1 @@
+Generated patch repaired the bug,but also insearts "uppercase=('A' <= c && c <= 'Z');" in the "isAlphabetic()" method. Based on the specification the  "setAlphabetic();" can only modified "alphabetic" and "alfabetic_set" fields and not "uppercase" field. Thus, OpenJML cannot verify it, while the program is correct.

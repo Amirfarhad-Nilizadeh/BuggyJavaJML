@@ -1,7 +1,0 @@
-Time.java:118: warning: The prover cannot establish an assertion (Postcondition: Time.java:115: ) in method convertToSeconds
-        return (hour*60/60 + minute*60 + second);// return (hour*60*60 + minute*60 + second);
-        ^
-Time.java:115: warning: Associated declaration: Time.java:118: 
-    //@ ensures \result == hour*60*60 + minute*60 + second;
-        ^
-2 warnings

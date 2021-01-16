@@ -1,0 +1,9 @@
+
+
+StackQueue.java:215: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:198: ) in method delete
+            			return poll; 
+            			^
+StackQueue.java:198: warning: Associated declaration: StackQueue.java:215: 
+      		  @ 	ensures (\forall int i; 0 <= i && i < rear; queue[i] == tempQ[i+1]);
+      		    	^
+2 warnings

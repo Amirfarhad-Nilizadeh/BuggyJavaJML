@@ -1,4 +1,4 @@
-LCM.java:49: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method lcm:  overflow in int sum
+LCM.java:45: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method lcm:  overflow in int sum
             result++;
                   ^
 1 warning

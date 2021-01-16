@@ -1,0 +1,6 @@
+test(JUnitPrimeNumbers): null
+test1(JUnitPrimeNumbers): null
+test2(JUnitPrimeNumbers): null
+test3(JUnitPrimeNumbers): null
+test4(JUnitPrimeNumbers): null
+false

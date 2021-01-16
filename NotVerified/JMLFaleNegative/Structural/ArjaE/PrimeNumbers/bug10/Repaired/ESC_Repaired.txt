@@ -1,0 +1,18 @@
+
+
+PrimeNumbers.java:44: warning: The prover cannot establish an assertion (Precondition: PrimeNumbers.java:9: ) in method primeList
+  			if (div(num,j)) {
+  			       ^
+PrimeNumbers.java:9: warning: Associated declaration: PrimeNumbers.java:44: 
+        private /*@ spec_public @*/ static boolean div(int n, int d) { return n%d == 0; }
+                                                   ^
+PrimeNumbers.java:6: warning: Precondition conjunct is false: d != 0
+          @    requires d != 0;
+                          ^
+
+
+
+PrimeNumbers.java:25: warning: The prover cannot establish an assertion (LoopInvariant) in method primeList
+	    @ maintaining (\forall int i; 0 <= i && i < count-1; (\forall int k;  2 <= k && k <= primeArray[i]/2; !div(primeArray[i],k)));
+	      ^
+4 warnings

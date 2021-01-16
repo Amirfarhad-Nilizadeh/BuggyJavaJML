@@ -1,0 +1,38 @@
+Alphabet.java:219: warning: The prover cannot establish an assertion (InvariantLeaveCaller: Alphabet.java:11: ) in method driver:  (Caller: Alphabet.driver(int), Callee: Alphabet.isVowel())
+		result[0] = isVowel();
+		                   ^
+Alphabet.java:11: warning: Associated declaration: Alphabet.java:219: 
+   //@ private invariant alphabetic_set ==> alphabetic == (('a' <= c && c <= 'z')||('A' <= c && c <='Z'));
+               ^
+Alphabet.java:234: warning: The prover cannot establish an assertion (InvariantLeaveCaller: Alphabet.java:11: ) in method driver:  (Caller: Alphabet.driver(int), Callee: Alphabet.isDigit())
+		result[0] = isDigit();
+		                   ^
+Alphabet.java:11: warning: Associated declaration: Alphabet.java:234: 
+   //@ private invariant alphabetic_set ==> alphabetic == (('a' <= c && c <= 'z')||('A' <= c && c <='Z'));
+               ^
+Alphabet.java:239: warning: The prover cannot establish an assertion (InvariantLeaveCaller: Alphabet.java:11: ) in method driver:  (Caller: Alphabet.driver(int), Callee: Alphabet.isAlphabetic())
+		result[0] = isAlphabetic();
+		                        ^
+Alphabet.java:11: warning: Associated declaration: Alphabet.java:239: 
+   //@ private invariant alphabetic_set ==> alphabetic == (('a' <= c && c <= 'z')||('A' <= c && c <='Z'));
+               ^
+Alphabet.java:229: warning: The prover cannot establish an assertion (InvariantLeaveCaller: Alphabet.java:11: ) in method driver:  (Caller: Alphabet.driver(int), Callee: Alphabet.isLowercase())
+		result[0] = isLowercase();
+		                       ^
+Alphabet.java:11: warning: Associated declaration: Alphabet.java:229: 
+   //@ private invariant alphabetic_set ==> alphabetic == (('a' <= c && c <= 'z')||('A' <= c && c <='Z'));
+               ^
+Alphabet.java:224: warning: The prover cannot establish an assertion (InvariantLeaveCaller: Alphabet.java:11: ) in method driver:  (Caller: Alphabet.driver(int), Callee: Alphabet.isUppercase())
+		result[0] = isUppercase();
+		                       ^
+Alphabet.java:11: warning: Associated declaration: Alphabet.java:224: 
+   //@ private invariant alphabetic_set ==> alphabetic == (('a' <= c && c <= 'z')||('A' <= c && c <='Z'));
+               ^
+
+Alphabet.java:56: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:49: ) in method isAlphabetic
+	return alphabetic;
+	^
+Alphabet.java:49: warning: Associated declaration: Alphabet.java:56: 
+     @   ensures alphabetic_set && \result == alphabetic; 
+         ^
+12 warnings

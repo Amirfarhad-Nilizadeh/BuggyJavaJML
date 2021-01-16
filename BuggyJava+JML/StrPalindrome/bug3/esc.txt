@@ -1,0 +1,7 @@
+StrPalindrome.java:13: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method isPalindrome
+      //@ maintaining -1 <= i && i < str.length(); 
+          ^
+StrPalindrome.java:16: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method isPalindrome:  overflow in int sum
+      for (int i = length + 1; 0 <= i; i--) { // for (int i = length - 1; 0 <= i; i--) {
+                          ^
+2 warnings

@@ -1,13 +1,21 @@
-Time.java:80: warning: The prover cannot establish an assertion (InvariantExit: Time.java:8: ) in method setHour
+
+Time.java:82: warning: The prover cannot establish an assertion (Assignable: Time.java:75: ) in method setHour:  this.hour
+            this.hour = h;
+                      ^
+Time.java:75: warning: Associated declaration: Time.java:82: 
+      @     	assignable \nothing;
+            	^
+
+Time.java:77: warning: The prover cannot establish an assertion (InvariantExit: Time.java:8: ) in method setHour
     public void setHour(int h) 
                 ^
-Time.java:8: warning: Associated declaration: Time.java:80: 
+Time.java:8: warning: Associated declaration: Time.java:77: 
       public invariant 0 <= hour && hour < 24; @*/
              ^
-Time.java:83: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Time.java:70: ) in method setHour
+Time.java:80: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Time.java:68: ) in method setHour
             throw new IllegalArgumentException();
             ^
-Time.java:70: warning: Associated declaration: Time.java:83: 
-    //@ public normal_behavior
-               ^
-4 warnings
+Time.java:68: warning: Associated declaration: Time.java:80: 
+    /*@     public normal_behavior
+                   ^
+6 warnings

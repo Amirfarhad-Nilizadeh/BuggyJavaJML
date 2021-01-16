@@ -1,10 +1,10 @@
-BubbleSort.java:19: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method bubbleSort
-	    //@ maintaining 0 <= i && i < n - 1;
-	        ^
-BubbleSort.java:32: warning: The prover cannot establish an assertion (Postcondition: BubbleSort.java:5: ) in method bubbleSort
+BubbleSort.java:27: warning: The prover cannot establish an assertion (Postcondition: BubbleSort.java:3: ) in method bubbleSort
 	return arr;
 	^
-BubbleSort.java:5: warning: Associated declaration: BubbleSort.java:32: 
+BubbleSort.java:3: warning: Associated declaration: BubbleSort.java:27: 
     //@ ensures \forall int i; 0 <= i && i < \result.length; \forall int j; i <= j && j < \result.length; \result[i] <= \result[j];
         ^
+BubbleSort.java:15: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method bubbleSort
+	    //@ maintaining 0 <= i && i < n - 1;
+	        ^
 3 warnings

@@ -1,0 +1,28 @@
+BubbleSort.java:9: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+	//@ maintaining 0 <= i && i < n; 
+	    ^
+BubbleSort.java:4: warning: The prover cannot establish an assertion (Postcondition: BubbleSort.java:3: ) in method bubbleSort
+    int[] bubbleSort(int arr[]) { 
+          ^
+BubbleSort.java:3: warning: Associated declaration: BubbleSort.java:4: 
+    //@ ensures \forall int i; 0 <= i && i < \result.length; \forall int j; i <= j && j < \result.length; \result[i] <= \result[j];
+        ^
+BubbleSort.java:4: warning: The prover cannot establish an assertion (Postcondition: BubbleSort.java:4: ) in method bubbleSort
+    int[] bubbleSort(int arr[]) { 
+          ^
+BubbleSort.java:4: warning: Associated declaration: BubbleSort.java:4: 
+    int[] bubbleSort(int arr[]) { 
+          ^
+BubbleSort.java:13: warning: The prover cannot establish an assertion (LoopDecreases) in method bubbleSort
+ 	//@ decreases n - i;
+ 	    ^
+
+
+
+SwapInArray.java:6: warning: The prover cannot establish an assertion (Postcondition: SwapInArray.java:4: ) in method swap
+	public void swap(int x, int y,  int array[]) {
+	            ^
+SwapInArray.java:4: warning: Associated declaration: SwapInArray.java:6: 
+	  @ ensures \old(array[x]) == array[y] && \old(array[y]) == array[x];
+	    ^
+8 warnings

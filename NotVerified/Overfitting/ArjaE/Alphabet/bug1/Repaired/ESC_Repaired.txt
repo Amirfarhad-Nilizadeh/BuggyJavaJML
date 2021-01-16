@@ -1,0 +1,13 @@
+Alphabet.java:230: warning: The prover cannot establish an assertion (InvariantLeaveCaller: Alphabet.java:4: ) in method driver:  (Caller: Alphabet.driver(int), Callee: Alphabet.isVowel())
+		result[0] = isVowel();
+		                   ^
+Alphabet.java:4: warning: Associated declaration: Alphabet.java:230: 
+   /*@ private invariant vowel_set ==> 
+               ^
+Alphabet.java:56: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:36: ) in method isVowel
+       return vowel;
+       ^
+Alphabet.java:36: warning: Associated declaration: Alphabet.java:56: 
+     @   ensures vowel_set && \result == vowel;
+         ^
+4 warnings

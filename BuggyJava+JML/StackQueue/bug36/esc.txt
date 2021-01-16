@@ -1,0 +1,8 @@
+
+StackQueue.java:221: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:197: ) in method delete
+            			return poll == 0 ? 1 : 0; //return poll; 
+            			^
+StackQueue.java:197: warning: Associated declaration: StackQueue.java:221: 
+      		  @ 	ensures \result == \old (queue[front]);
+      		    	^
+2 warnings

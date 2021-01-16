@@ -1,0 +1,7 @@
+Factorial.java:25: warning: The prover cannot establish an assertion (Postcondition: Factorial.java:5: ) in method factorial
+          return fact;
+          ^
+Factorial.java:5: warning: Associated declaration: Factorial.java:25: 
+       //@ ensures \result == spec_factorial(n);
+           ^
+2 warnings

@@ -1,0 +1,44 @@
+Time.java:111: warning: The prover cannot establish an assertion (Postcondition: Time.java:108: ) in method convertToSeconds
+        return (hour/60*60 + minute*60 + second);// return (hour*60*60 + minute*60 + second);
+        ^
+Time.java:108: warning: Associated declaration: Time.java:111: 
+    //@ ensures \result == hour*60*60 + minute*60 + second;
+        ^
+
+
+
+Time.java:124: warning: The prover cannot establish an assertion (Postcondition: Time.java:119: ) in method decr
+            return;
+            ^
+Time.java:119: warning: Associated declaration: Time.java:124: 
+    //@   	ensures convertToSeconds() == \old(convertToSeconds() - 1);
+          	^
+
+Time.java:79: warning: The prover cannot establish an assertion (Assignable: Time.java:75: ) in method setHour:  hour
+       hour--;
+           ^
+Time.java:75: warning: Associated declaration: Time.java:79: 
+      @     	assignable \nothing;
+            	^
+
+Time.java:77: warning: The prover cannot establish an assertion (InvariantExit: Time.java:8: ) in method setHour
+    public void setHour(int h) 
+                ^
+Time.java:8: warning: Associated declaration: Time.java:77: 
+      public invariant 0 <= hour && hour < 24; @*/
+             ^
+
+Time.java:77: warning: The prover cannot establish an assertion (Postcondition: Time.java:73: ) in method setHour
+    public void setHour(int h) 
+                ^
+Time.java:73: warning: Associated declaration: Time.java:77: 
+      @     public exceptional_behavior
+                   ^
+
+Time.java:77: warning: The prover cannot establish an assertion (Postcondition: Time.java:71: ) in method setHour
+    public void setHour(int h) 
+                ^
+Time.java:71: warning: Associated declaration: Time.java:77: 
+      @  	ensures this.hour == h;
+         	^
+12 warnings

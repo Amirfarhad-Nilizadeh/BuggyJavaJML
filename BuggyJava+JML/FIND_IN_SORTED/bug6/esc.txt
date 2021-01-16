@@ -1,7 +1,7 @@
-FIND_IN_SORTED.java:24: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:16: ) in method binsearch
+FIND_IN_SORTED.java:18: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:10: ) in method binsearch
             return binsearch(arr, x, start, mid);
             ^
-FIND_IN_SORTED.java:16: warning: Associated declaration: FIND_IN_SORTED.java:24: 
-    //@ ensures \result == -1 ==> (\forall int i; start <= i && i < end; arr[i] != x);
+FIND_IN_SORTED.java:10: warning: Associated declaration: FIND_IN_SORTED.java:18: 
+      @ ensures \result == -1 ==> (\forall int i; start <= i && i < end; arr[i] != x); @*/
         ^
 2 warnings

@@ -1,0 +1,7 @@
+GCD.java:70: warning: The prover cannot establish an assertion (Postcondition: GCD.java:26: ) in method gcd
+		return ((result == 0) ? 1 : 0); // return result;
+		^
+GCD.java:26: warning: Associated declaration: GCD.java:70: 
+	  @    ensures \result > 0;
+	       ^
+2 warnings

@@ -1,7 +1,0 @@
-Palindrome.java:27: warning: The prover cannot establish an assertion (Postcondition: Palindrome.java:8: ) in method isPalindrome
-	 return false;//true;
-	 ^
-Palindrome.java:8: warning: Associated declaration: Palindrome.java:27: 
-   //@ ensures \result <==> reverse.equals(str);
-       ^
-2 warnings

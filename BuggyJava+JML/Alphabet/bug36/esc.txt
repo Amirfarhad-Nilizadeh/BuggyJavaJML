@@ -1,7 +1,41 @@
-Alphabet.java:170: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:167: ) in method getAlphabetic_set
-	return !alphabetic_set; //return alphabetic_set;
-	^
-Alphabet.java:167: warning: Associated declaration: Alphabet.java:170: 
-   //@   ensures \result == alphabetic_set;
-         ^
-2 warnings
+
+
+Alphabet.java:243: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:212: ) in method driver
+		return null;
+		^
+Alphabet.java:212: warning: Associated declaration: Alphabet.java:243: 
+   public boolean[] driver(int op) 
+                    ^
+
+
+Alphabet.java:243: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:212: ) in method driver
+		return null;
+		^
+Alphabet.java:212: warning: Associated declaration: Alphabet.java:243: 
+   public boolean[] driver(int op) 
+                    ^
+
+
+Alphabet.java:243: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:212: ) in method driver
+		return null;
+		^
+Alphabet.java:212: warning: Associated declaration: Alphabet.java:243: 
+   public boolean[] driver(int op) 
+                    ^
+
+
+Alphabet.java:243: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:212: ) in method driver
+		return null;
+		^
+Alphabet.java:212: warning: Associated declaration: Alphabet.java:243: 
+   public boolean[] driver(int op) 
+                    ^
+
+
+Alphabet.java:243: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:212: ) in method driver
+		return null;
+		^
+Alphabet.java:212: warning: Associated declaration: Alphabet.java:243: 
+   public boolean[] driver(int op) 
+                    ^
+10 warnings

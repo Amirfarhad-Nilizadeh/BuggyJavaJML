@@ -1,0 +1,28 @@
+
+StudentEnrollment.java:252: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:244: ) in method payTuitionWithCreditCard:  tuitionBalance
+            tuitionBalance -= payment;
+                           ^
+StudentEnrollment.java:244: warning: Associated declaration: StudentEnrollment.java:252: 
+      @   	assignable \nothing;
+          	^
+StudentEnrollment.java:254: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:232: ) in method payTuitionWithCreditCard
+            throw new IllegalArgumentException();
+            ^
+StudentEnrollment.java:232: warning: Associated declaration: StudentEnrollment.java:254: 
+    /*@      public normal_behavior
+                    ^
+
+StudentEnrollment.java:246: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:12: ) in method payTuitionWithCreditCard
+    private /*@ spec_public @*/ void payTuitionWithCreditCard(int payment) 
+                                     ^
+StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:246: 
+    /*@ public invariant tuitionBalance <= 
+               ^
+
+StudentEnrollment.java:246: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:240: ) in method payTuitionWithCreditCard
+    private /*@ spec_public @*/ void payTuitionWithCreditCard(int payment) 
+                                     ^
+StudentEnrollment.java:240: warning: Associated declaration: StudentEnrollment.java:246: 
+      @      public exceptional_behavior
+                    ^
+8 warnings

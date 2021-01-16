@@ -1,0 +1,16 @@
+Factorial.java:14: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method factorial:  long multiply overflow
+  			fact=fact * c;
+  			          ^
+Factorial.java:16: warning: The prover cannot establish an assertion (Postcondition: Factorial.java:5: ) in method factorial
+              return fact;
+              ^
+Factorial.java:5: warning: Associated declaration: Factorial.java:16: 
+       //@ ensures \result == spec_factorial(n);
+           ^
+Factorial.java:16: warning: The prover cannot establish an assertion (Postcondition: Factorial.java:4: ) in method factorial
+              return fact;
+              ^
+Factorial.java:4: warning: Associated declaration: Factorial.java:16: 
+       //@ ensures \result >= 1 && \result <= Long.MAX_VALUE;
+           ^
+5 warnings

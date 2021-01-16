@@ -1,10 +1,13 @@
-GCD.java:54: warning: The prover cannot establish an assertion (LoopInvariant) in method gcd
-		//@ maintaining 0 < i && i <= num1 + 1 && i<= num2 + 1; 
-		    ^
-GCD.java:64: warning: The prover cannot establish an assertion (Postcondition: GCD.java:19: ) in method gcd
-		return result;
-		^
-GCD.java:19: warning: Associated declaration: GCD.java:64: 
-	  @    ensures (\forall int i; \result < i && i <= smaller; div(smaller,i) == 0 ==> div(greater,i) != 0);
+GCD.java:56: warning: The prover cannot establish an assertion (Postcondition: GCD.java:39: ) in method gcd
+			return (num1 <= num2) ? num1 : num2; // return (num1 > num2) ? num1 : num2;
+			^
+GCD.java:39: warning: Associated declaration: GCD.java:56: 
+	  @    ensures \result == tnum1;
 	       ^
-3 warnings
+GCD.java:56: warning: The prover cannot establish an assertion (Postcondition: GCD.java:34: ) in method gcd
+			return (num1 <= num2) ? num1 : num2; // return (num1 > num2) ? num1 : num2;
+			^
+GCD.java:34: warning: Associated declaration: GCD.java:56: 
+	  @    ensures \result == tnum2;
+	       ^
+4 warnings

@@ -1,0 +1,4 @@
+Smallest.java:11: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method Smallest
+        //@ maintaining 0 <= smallest && smallest < a.length;
+            ^
+1 warning

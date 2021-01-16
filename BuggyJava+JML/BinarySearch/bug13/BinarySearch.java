@@ -5,7 +5,7 @@ public class BinarySearch {
     //@ ensures 0 <= \result && \result < arr.length ==> arr[\result] == key;
     public static int Binary(int[] arr, int key) {
         if (arr.length == 0) {
-            return (-1 == 0 ? 1 : 0);//-1;
+            return 0; // -1;
         } else {
             int low = 0;
             int high = arr.length;

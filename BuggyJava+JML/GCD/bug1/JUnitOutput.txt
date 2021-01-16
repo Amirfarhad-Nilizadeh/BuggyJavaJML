@@ -1,0 +1,9 @@
+test13(JUnitGCD): expected:<3> but was:<1>
+test16(JUnitGCD): expected:<9> but was:<1>
+test18(JUnitGCD): expected:<256> but was:<1>
+test22(JUnitGCD): expected:<4> but was:<1>
+test1(JUnitGCD): expected:<2> but was:<1>
+test4(JUnitGCD): expected:<360> but was:<1610612736>
+test8(JUnitGCD): expected:<2> but was:<1>
+test9(JUnitGCD): expected:<4> but was:<1>
+false

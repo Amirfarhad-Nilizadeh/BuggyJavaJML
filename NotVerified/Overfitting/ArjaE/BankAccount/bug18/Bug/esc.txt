@@ -1,0 +1,12 @@
+BankAccount.java:133: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method withdraw:  overflow in int sum
+				balance = balance + amount;//balance = balance - amount;
+				                  ^
+
+
+BankAccount.java:129: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:114: ) in method withdraw
+	void withdraw(int amount)
+	     ^
+BankAccount.java:114: warning: Associated declaration: BankAccount.java:129: 
+	//@ ensures balance == \old (balance) - amount;
+	    ^
+3 warnings

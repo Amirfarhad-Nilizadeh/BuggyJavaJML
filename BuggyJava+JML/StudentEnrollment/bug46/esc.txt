@@ -1,29 +1,43 @@
 
-StudentEnrollment.java:351: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:302: ) in method enrollmentProcess
-            throw new IllegalArgumentException();
-            ^
-StudentEnrollment.java:302: warning: Associated declaration: StudentEnrollment.java:351: 
-    //@ public normal_behavior
-               ^
 
-StudentEnrollment.java:351: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:302: ) in method enrollmentProcess
-            throw new IllegalArgumentException();
-            ^
-StudentEnrollment.java:302: warning: Associated declaration: StudentEnrollment.java:351: 
-    //@ public normal_behavior
-               ^
 
-StudentEnrollment.java:351: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:302: ) in method enrollmentProcess
-            throw new IllegalArgumentException();
-            ^
-StudentEnrollment.java:302: warning: Associated declaration: StudentEnrollment.java:351: 
-    //@ public normal_behavior
-               ^
 
-StudentEnrollment.java:351: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:302: ) in method enrollmentProcess
-            throw new IllegalArgumentException();
-            ^
-StudentEnrollment.java:302: warning: Associated declaration: StudentEnrollment.java:351: 
-    //@ public normal_behavior
-               ^
+
+StudentEnrollment.java:319: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:304: ) in method enrollmentProcess
+    public void enrollmentProcess(int passedCredits, int semesterCredits, int payment, int initialBalance, boolean lateRegistration, boolean debit, boolean option) 
+                ^
+StudentEnrollment.java:304: warning: Associated declaration: StudentEnrollment.java:319: 
+      @ 		ensures this.tuitionBalance == initialBalance + enrollmentCredits * costPerCredit;
+        		^
+
+
+
+
+StudentEnrollment.java:319: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:317: ) in method enrollmentProcess
+    public void enrollmentProcess(int passedCredits, int semesterCredits, int payment, int initialBalance, boolean lateRegistration, boolean debit, boolean option) 
+                ^
+StudentEnrollment.java:317: warning: Associated declaration: StudentEnrollment.java:319: 
+      @ 		ensures this.tuitionBalance == initialBalance - _payment;
+        		^
+
+
+
+
+StudentEnrollment.java:319: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:314: ) in method enrollmentProcess
+    public void enrollmentProcess(int passedCredits, int semesterCredits, int payment, int initialBalance, boolean lateRegistration, boolean debit, boolean option) 
+                ^
+StudentEnrollment.java:314: warning: Associated declaration: StudentEnrollment.java:319: 
+      @ 		ensures this.tuitionBalance == initialBalance - payment;	        
+        		^
+
+
+
+
+
+StudentEnrollment.java:319: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:309: ) in method enrollmentProcess
+    public void enrollmentProcess(int passedCredits, int semesterCredits, int payment, int initialBalance, boolean lateRegistration, boolean debit, boolean option) 
+                ^
+StudentEnrollment.java:309: warning: Associated declaration: StudentEnrollment.java:319: 
+      @ 		ensures this.tuitionBalance == initialBalance + enrollmentCredits * costPerCredit + enrollmentCredits * latePerCredit;
+        		^
 8 warnings

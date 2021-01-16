@@ -165,7 +165,7 @@ public class StackQueue {
     		public /*@ pure @*/ Queue() 
     		{ 
        			 front = rear = 0;  
-   		 } 
+   		} 
 
     		/*@ public normal_behavior
      		  @ 	requires 0 <= rear && rear < MAX;
@@ -177,8 +177,8 @@ public class StackQueue {
       		  @ also
 
       		  @      requires isFull();
-      		  @     signals_only IllegalArgumentException;
-      		@*/
+		  @	 assignable \nothing;
+      		  @      signals_only IllegalArgumentException; @*/
    		public void enter(int data) 
     		{ 
        			if (!isFull()) { 
@@ -201,8 +201,8 @@ public class StackQueue {
 
       		  @ public exceptional_behavior
      		  @ 	requires isEmpty();
-      		  @   signals_only IllegalArgumentException;  	
-      		@*/
+		  @	assignable \nothing;
+      		  @     signals_only IllegalArgumentException; @*/
     		public int delete() 
     		{ 
         		if (!isEmpty()) { 

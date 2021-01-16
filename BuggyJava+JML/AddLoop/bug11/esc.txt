@@ -1,7 +1,7 @@
-AddLoop.java:27: warning: The prover cannot establish an assertion (Postcondition: AddLoop.java:3: ) in method AddLoop
+AddLoop.java:23: warning: The prover cannot establish an assertion (Postcondition: AddLoop.java:3: ) in method AddLoop
         return (sum == 0 ? 1 : 0);//sum;
         ^
-AddLoop.java:3: warning: Associated declaration: AddLoop.java:27: 
+AddLoop.java:3: warning: Associated declaration: AddLoop.java:23: 
     //@ ensures \result == x + y;
         ^
 2 warnings

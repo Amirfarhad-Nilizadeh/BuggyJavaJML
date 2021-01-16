@@ -1,0 +1,4 @@
+Time.java:211: warning: The prover cannot establish an assertion (PossiblyBadCast) in method equals:  a java.lang.Object cannot be proved to be a Time
+        Time t = (Time) o;
+                 ^
+1 warning

@@ -4,11 +4,11 @@ CombinationPermutation.java:8: warning: The prover cannot establish an assertion
 		combin = fac.factorial(n) / (fac.factorial(r) * fac.factorial(n+r)); //combin = fac.factorial(n) / (fac.factorial(r) * fac.factorial(n-r));
 		                                                             ^
 Factorial.java:6: warning: Associated declaration: CombinationPermutation.java:8: 
-       public long factorial(int n)
-                   ^
+       public /* pure @*/ long factorial(int n)
+                               ^
 Factorial.java:3: warning: Precondition conjunct is false: n <= 20
-	//@ requires 0 <= n && n <= 20;
-	                         ^
+       //@ requires 0 <= n && n <= 20;
+                                ^
 
 
 

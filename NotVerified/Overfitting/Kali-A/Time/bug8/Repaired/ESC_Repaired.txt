@@ -1,0 +1,15 @@
+
+Time.java:64: warning: The prover cannot establish an assertion (Assignable: Time.java:57: ) in method setMinute:  this.minute
+            this.minute = m;
+                        ^
+Time.java:57: warning: Associated declaration: Time.java:64: 
+      @     	assignable \nothing;
+            	^
+
+Time.java:59: warning: The prover cannot establish an assertion (InvariantExit: Time.java:7: ) in method setMinute
+    public void setMinute(int m) 
+                ^
+Time.java:7: warning: Associated declaration: Time.java:59: 
+      public invariant 0 <= minute && minute < 60;
+             ^
+4 warnings

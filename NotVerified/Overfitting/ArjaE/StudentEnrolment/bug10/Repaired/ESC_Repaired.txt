@@ -1,0 +1,21 @@
+
+StudentEnrollment.java:78: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:73: ) in method setEnrollmentCredits:  this.enrollmentCredits
+            this.enrollmentCredits = enrollmentCredits;
+                                   ^
+StudentEnrollment.java:73: warning: Associated declaration: StudentEnrollment.java:78: 
+      @   	assignable \nothing;
+          	^
+
+StudentEnrollment.java:75: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:10: ) in method setEnrollmentCredits
+    public void setEnrollmentCredits(int enrollmentCredits)
+                ^
+StudentEnrollment.java:10: warning: Associated declaration: StudentEnrollment.java:75: 
+    //@ public invariant 0 <= enrollmentCredits && enrollmentCredits <= maxSemesterCredits;
+               ^
+StudentEnrollment.java:80: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:66: ) in method setEnrollmentCredits
+            throw new IllegalArgumentException(lastName);
+            ^
+StudentEnrollment.java:66: warning: Associated declaration: StudentEnrollment.java:80: 
+    /*@      public normal_behavior
+                    ^
+6 warnings

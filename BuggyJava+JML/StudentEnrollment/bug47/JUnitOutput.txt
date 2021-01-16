@@ -1,34 +1,18 @@
 test10(JUnitStudentEnrollment): null
-test11(JUnitStudentEnrollment): null
-test12(JUnitStudentEnrollment): null
-test13(JUnitStudentEnrollment): null
-test14(JUnitStudentEnrollment): null
-test15(JUnitStudentEnrollment): null
+test11(JUnitStudentEnrollment): Balance is not correct
+test13(JUnitStudentEnrollment): Balance is not correct
 test16(JUnitStudentEnrollment): null
-test17(JUnitStudentEnrollment): null
-test18(JUnitStudentEnrollment): null
-test19(JUnitStudentEnrollment): null
-test20(JUnitStudentEnrollment): null
-test21(JUnitStudentEnrollment): null
+test18(JUnitStudentEnrollment): Balance is not correct
+test20(JUnitStudentEnrollment): Balance is not correct
 test22(JUnitStudentEnrollment): null
-test23(JUnitStudentEnrollment): null
-test24(JUnitStudentEnrollment): null
-test25(JUnitStudentEnrollment): null
-test26(JUnitStudentEnrollment): null
+test25(JUnitStudentEnrollment): Balance is not correct
+test26(JUnitStudentEnrollment): Balance is not correct
 test27(JUnitStudentEnrollment): null
-test28(JUnitStudentEnrollment): null
-test29(JUnitStudentEnrollment): null
 test30(JUnitStudentEnrollment): null
-test31(JUnitStudentEnrollment): null
-test32(JUnitStudentEnrollment): null
-test(JUnitStudentEnrollment): null
-test1(JUnitStudentEnrollment): null
+test31(JUnitStudentEnrollment): Balance is not correct
+test32(JUnitStudentEnrollment): Balance is not correct
 test2(JUnitStudentEnrollment): null
 test3(JUnitStudentEnrollment): null
-test4(JUnitStudentEnrollment): null
-test5(JUnitStudentEnrollment): null
-test6(JUnitStudentEnrollment): null
-test7(JUnitStudentEnrollment): null
+test6(JUnitStudentEnrollment): Balance is not correct
 test8(JUnitStudentEnrollment): null
-test9(JUnitStudentEnrollment): null
 false

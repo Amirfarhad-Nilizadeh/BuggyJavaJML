@@ -1,16 +1,17 @@
-Fibonacci.java:24: warning: The prover cannot establish an assertion (PossiblyNegativeSize) in method Fibonacci
+Fibonacci.java:23: warning: The prover cannot establish an assertion (PossiblyNegativeSize) in method Fibonacci
 			fib = new long[size];	
 			               ^
-Fibonacci.java:25: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Fibonacci
+Fibonacci.java:24: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Fibonacci
 			fib[0] = 0;
 			   ^
-Fibonacci.java:26: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Fibonacci
+
+Fibonacci.java:25: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Fibonacci
 			fib[1] = 1;
 			   ^
-Fibonacci.java:28: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Fibonacci.java:13: ) in method Fibonacci
+Fibonacci.java:27: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Fibonacci.java:12: ) in method Fibonacci
 			throw new IllegalArgumentException();
 			^
-Fibonacci.java:13: warning: Associated declaration: Fibonacci.java:28: 
+Fibonacci.java:12: warning: Associated declaration: Fibonacci.java:27: 
 	/*@ 	public normal_behavior
 	    	       ^
 5 warnings

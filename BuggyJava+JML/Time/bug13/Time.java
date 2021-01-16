@@ -29,16 +29,15 @@ public class Time {
         minute = m;
         second = s;
     }
-    //@ public normal_behavior
-    //@     	requires 0 <= s && s < 60;
-    //@     	assignable this.second;
-    //@     	ensures this.second == s;
-
-    //@ also
-
-    //@ public exceptional_behavior
-    //@     	requires s < 0 || 60 <= s;
-    //@     	signals_only IllegalArgumentException; 
+    /*@      public normal_behavior
+      @     	requires 0 <= s && s < 60;
+      @     	assignable this.second;
+      @     	ensures this.second == s;
+      @ also
+      @     public exceptional_behavior
+      @     	requires s < 0 || 60 <= s;
+      @     	assignable \nothing;
+      @     	signals_only IllegalArgumentException; @*/ 
     public void setSecond(int s) 
     {
         if (s < 0 || 60 <= s) {
@@ -48,16 +47,15 @@ public class Time {
         }
     } 
 
-    //@ public normal_behavior
-    //@     	requires 0 <= m && m < 60;
-    //@     	assignable this.minute;
-    //@     	ensures this.minute == m;
-    
-    //@ also
-
-    //@ public exceptional_behavior
-    //@     	requires m < 0 || 60 <= m;
-    //@     	signals_only IllegalArgumentException; 
+    /*@     public normal_behavior
+      @     	requires 0 <= m && m < 60;
+      @     	assignable this.minute;
+      @     	ensures this.minute == m;
+      @ also
+      @     public exceptional_behavior
+      @      	requires m < 0 || 60 <= m;
+      @     	assignable \nothing;
+      @     	signals_only IllegalArgumentException; @*/
     public void setMinute(int m) 
     {
         if (m < 0 || 60 <= m) {
@@ -67,16 +65,15 @@ public class Time {
         }
     } 
 
-    //@ public normal_behavior
-    //@  	requires 0 <= h && h < 24;
-    //@	  	assignable this.hour;
-    //@  	ensures this.hour == h;
-    
-    //@ also
-
-    //@ public exceptional_behavior
-    //@ 	requires h < 0 || 24 <= h;
-    //@  	signals_only IllegalArgumentException; 
+    /*@     public normal_behavior
+      @  	requires 0 <= h && h < 24;
+      @	  	assignable this.hour;
+      @  	ensures this.hour == h;
+      @ also
+      @     public exceptional_behavior
+      @ 	requires h < 0 || 24 <= h;
+      @     	assignable \nothing;
+      @  	signals_only IllegalArgumentException; @*/
     public void setHour(int h) 
     {
         if (h < 0 || 24 <= h) {

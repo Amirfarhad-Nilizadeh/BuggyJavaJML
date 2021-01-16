@@ -1,7 +1,7 @@
-StudentEnrollment.java:145: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:142: ) in method registrationPermission
-        return (this.tuitionBalance > 0);// return (this.tuitionBalance <= 0);
+StudentEnrollment.java:138: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:135: ) in method registrationPermission
+        return !(this.tuitionBalance <= 0); // return (this.tuitionBalance <= 0);
         ^
-StudentEnrollment.java:142: warning: Associated declaration: StudentEnrollment.java:145: 
+StudentEnrollment.java:135: warning: Associated declaration: StudentEnrollment.java:138: 
     //@   ensures \result <==> (tuitionBalance <= 0);
           ^
 2 warnings

@@ -1,0 +1,4 @@
+AddLoop.java:17: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method AddLoop
+            //@ maintaining sum == x + y + n && 0 <= n;
+                ^
+1 warning

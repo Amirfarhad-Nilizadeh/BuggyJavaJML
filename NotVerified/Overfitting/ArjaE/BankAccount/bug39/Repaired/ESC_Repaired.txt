@@ -1,0 +1,14 @@
+
+
+BankAccount.java:524: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method menu:  overflow in int sum
+			balance=balance + amount;
+			                ^
+
+
+BankAccount.java:540: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:445: ) in method menu
+	        return result;
+	        ^
+BankAccount.java:445: warning: Associated declaration: BankAccount.java:540: 
+	   	ensures balance == \old (balance) + _amount;
+	   	^
+3 warnings

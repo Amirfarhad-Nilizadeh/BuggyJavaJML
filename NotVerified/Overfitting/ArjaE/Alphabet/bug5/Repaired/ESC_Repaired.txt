@@ -1,0 +1,15 @@
+
+Alphabet.java:167: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:165: ) in method getUppercase_set:  uppercase_set
+	uppercase_set=true;
+	             ^
+Alphabet.java:165: warning: Associated declaration: Alphabet.java:167: 
+   public /*@ pure @*/ boolean getUppercase_set()
+              ^
+
+Alphabet.java:67: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:60: ) in method isUppercase
+	return uppercase;
+	^
+Alphabet.java:60: warning: Associated declaration: Alphabet.java:67: 
+     @   ensures uppercase_set && \result == uppercase; 
+         ^
+4 warnings

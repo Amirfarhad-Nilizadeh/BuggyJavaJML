@@ -1,0 +1,9 @@
+
+
+BankAccount.java:129: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:115: ) in method withdraw
+	void withdraw(int amount)
+	     ^
+BankAccount.java:115: warning: Associated declaration: BankAccount.java:129: 
+	//@ ensures previousTransaction == -amount;
+	    ^
+2 warnings

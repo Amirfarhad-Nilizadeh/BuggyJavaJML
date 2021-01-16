@@ -1,0 +1,11 @@
+test(JUnitStrPalindrome): String index out of range: 67
+test1(JUnitStrPalindrome): String index out of range: 7
+test2(JUnitStrPalindrome): String index out of range: 1
+test3(JUnitStrPalindrome): String index out of range: 4
+test4(JUnitStrPalindrome): String index out of range: 19
+test5(JUnitStrPalindrome): String index out of range: 10
+test6(JUnitStrPalindrome): String index out of range: 33
+test7(JUnitStrPalindrome): String index out of range: 35
+test8(JUnitStrPalindrome): String index out of range: 79
+test9(JUnitStrPalindrome): String index out of range: 19
+false

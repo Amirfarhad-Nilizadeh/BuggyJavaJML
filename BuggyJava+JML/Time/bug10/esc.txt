@@ -1,7 +1,0 @@
-Time.java:80: warning: The prover cannot establish an assertion (InvariantExit: Time.java:8: ) in method setHour
-    public void setHour(int h) 
-                ^
-Time.java:8: warning: Associated declaration: Time.java:80: 
-      public invariant 0 <= hour && hour < 24; @*/
-             ^
-2 warnings

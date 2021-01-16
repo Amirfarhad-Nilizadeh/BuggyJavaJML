@@ -1,0 +1,1 @@
+It inserts "setKey()" method in the "isMoreThanOneKey()" which is a pure method. Also, it inserts a new loop to the "findFirst()" method, which is basically a structural problem. Thus, this repair can be considered as both modular and structural. 

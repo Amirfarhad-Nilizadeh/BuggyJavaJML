@@ -1,0 +1,8 @@
+
+FindInArray.java:54: warning: The prover cannot establish an assertion (Assignable: FindInArray.java:49: ) in method findLast:  this.key
+	setKey(key);
+	      ^
+FindInArray.java:49: warning: Associated declaration: FindInArray.java:54: 
+    /*@ ensures 0 <= \result && \result < arr.length ==> (arr[\result] == key && 
+        ^
+2 warnings

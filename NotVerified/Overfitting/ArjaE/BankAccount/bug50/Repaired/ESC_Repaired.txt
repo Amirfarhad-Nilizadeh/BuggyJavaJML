@@ -1,0 +1,11 @@
+
+
+
+
+BankAccount.java:306: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:290: ) in method ATMWithdraw
+	void ATMWithdraw(int amount)
+	     ^
+BankAccount.java:290: warning: Associated declaration: BankAccount.java:306: 
+	  //@ ensures balance == \old (balance) - (amount + ATMpenalty);
+	      ^
+2 warnings

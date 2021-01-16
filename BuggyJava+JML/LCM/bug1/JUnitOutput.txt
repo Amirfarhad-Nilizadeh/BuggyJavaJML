@@ -1,0 +1,17 @@
+test10(JUnitLCM): expected:<492654342> but was:<-1>
+test13(JUnitLCM): expected:<589554324> but was:<-1>
+test14(JUnitLCM): expected:<100124100> but was:<-1>
+test15(JUnitLCM): expected:<-1> but was:<1073741824>
+test18(JUnitLCM): expected:<1188494430> but was:<-1>
+test19(JUnitLCM): expected:<703> but was:<-1>
+test22(JUnitLCM): expected:<250567538> but was:<-1>
+test24(JUnitLCM): expected:<71670144> but was:<-1>
+test25(JUnitLCM): expected:<33010096> but was:<-1>
+test26(JUnitLCM): expected:<3571125> but was:<-1>
+test(JUnitLCM): expected:<192441312> but was:<-1>
+test2(JUnitLCM): expected:<819324174> but was:<-1>
+test3(JUnitLCM): expected:<761896320> but was:<-1>
+test4(JUnitLCM): expected:<7416036> but was:<1073741824>
+test7(JUnitLCM): expected:<757366056> but was:<-1>
+test9(JUnitLCM): expected:<12419946> but was:<-1>
+false

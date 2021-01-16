@@ -9,7 +9,7 @@ public class Factorial
           long fact = 1;
 
 	  //@ assert spec_factorial(0) == 1;
-	   if ( n == 0) {         
+	   if (n == 0) {         
               return fact;
 	   }
 

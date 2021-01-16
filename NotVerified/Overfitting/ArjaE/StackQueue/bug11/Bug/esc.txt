@@ -1,0 +1,7 @@
+StackQueue.java:101: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:90: ) in method peek
+            			return arr[top] == 0 ? 1 : 0; //return arr[top]; 
+            			^
+StackQueue.java:90: warning: Associated declaration: StackQueue.java:101: 
+      	     	  @ 	ensures \result == arr[top];
+      	     	    	^
+2 warnings

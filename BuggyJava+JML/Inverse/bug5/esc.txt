@@ -1,7 +1,7 @@
-Inverse.java:16: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Inverse
-            if (x[index] != y[x.length - 1 + index]) {//if (x[index] != y[x.length - 1 - index]) {
+Inverse.java:11: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method Inverse
+            if (x[index] != y[x.length - 1 + index]) { // if (x[index] != y[x.length - 1 - index]) {
                              ^
-Inverse.java:16: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Inverse:  overflow in int sum
-            if (x[index] != y[x.length - 1 + index]) {//if (x[index] != y[x.length - 1 - index]) {
+Inverse.java:11: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Inverse:  overflow in int sum
+            if (x[index] != y[x.length - 1 + index]) { // if (x[index] != y[x.length - 1 - index]) {
                                            ^
 2 warnings

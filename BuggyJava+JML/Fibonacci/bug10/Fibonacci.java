@@ -3,8 +3,7 @@ public class Fibonacci {
 	//@ public invariant 2 <= fib.length && fib.length <= 93; // 93 < size ==> Long Overflow 
 
 	//@ ensures fib[0] == 0 && fib[1] == 1;
-	Fibonacci()
-	{
+	Fibonacci() {
 		fib = new long[2];
 		fib[0] = 0;
 		fib[1] = 1;
@@ -17,9 +16,9 @@ public class Fibonacci {
 	  @ also
 	  @ 	public exceptional_behavior
    	  @ 		requires size < 2 || 93 < size;
+	  @		assignable \nothing;
 	  @ 		signals_only IllegalArgumentException; @*/  	
-	/*@ spec_public @*/ Fibonacci(int size)
-	{
+	/*@ spec_public @*/ Fibonacci(int size) {
 		if (2 <= size && size <= 93) {
 			fib = new long[size];	
 			fib[0] = 0;
@@ -30,10 +29,8 @@ public class Fibonacci {
 	}
 
 	//@ requires 0 <= index && index < fib.length;
-        //@ requires index > 0 ==> fib[index] > 0;
 	//@ ensures \result == fib[index];
-	public /*@ pure @*/ long getFib(int index) 
-	{
+	public /*@ pure @*/ long getFib(int index) {
 		return fib[index];
 	}
 	
@@ -41,8 +38,7 @@ public class Fibonacci {
 	//@ assignable fib[2 .. fib.length-1]; 
 	//@ ensures (\forall int i; 2 <= i && i < fib.length; fib[i] == fib[i-1] + fib[i-2]); 
 	//@ ensures (\forall int i; 2 <= i && i < fib.length; (\forall int j; 2 <= j && j < i; fib[j] < fib[i]));
-	public void fibCompute() 
-	{
+	public void fibCompute() {
 		int index = 2;
 		//@ maintaining 2 <= index && index <= fib.length;
                 //@ maintaining (\forall int i; 2 <= i && i < index; fib[i] == fib[i-1] + fib[i-2]);

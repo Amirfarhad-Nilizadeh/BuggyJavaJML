@@ -1,8 +1,8 @@
 
-StudentEnrollment.java:190: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:182: ) in method lateEnrollment
+StudentEnrollment.java:179: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:173: ) in method lateEnrollment
     public void lateEnrollment() 
                 ^
-StudentEnrollment.java:182: warning: Associated declaration: StudentEnrollment.java:190: 
-    //@   ensures this.tuitionBalance == \old (tuitionBalance) + enrollmentCredits * costPerCredit + enrollmentCredits * latePerCredit;
-          ^
+StudentEnrollment.java:173: warning: Associated declaration: StudentEnrollment.java:179: 
+      @   	ensures this.tuitionBalance == \old (tuitionBalance) + enrollmentCredits * costPerCredit + enrollmentCredits * latePerCredit;
+          	^
 2 warnings

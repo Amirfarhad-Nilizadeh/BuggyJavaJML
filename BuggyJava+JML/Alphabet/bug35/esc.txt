@@ -1,9 +1,7 @@
-
-
-Alphabet.java:158: warning: The prover cannot establish an assertion (InvariantExit: Alphabet.java:14: ) in method setDigit
-   private /*@ spec_public @*/ void setDigit() 
-                                    ^
-Alphabet.java:14: warning: Associated declaration: Alphabet.java:158: 
-   //@ private invariant digit_set ==> digit == ('0' <= c && c <= '9');
-               ^
+Alphabet.java:187: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:184: ) in method getDigit_set
+	return !digit_set; // return digit_set;
+	^
+Alphabet.java:184: warning: Associated declaration: Alphabet.java:187: 
+     @   ensures \result == digit_set; @*/
+         ^
 2 warnings

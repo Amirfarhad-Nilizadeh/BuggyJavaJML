@@ -1,7 +1,7 @@
-Absolute.java:13: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:7: ) in method Absolute
+Absolute.java:11: warning: The prover cannot establish an assertion (Postcondition: Absolute.java:6: ) in method Absolute
 			return ((short)-num== 0 ? (short)1 : (short)0);//(short)-num;	
 			^
-Absolute.java:7: warning: Associated declaration: Absolute.java:13: 
-	  @    ensures \result == -num; 
+Absolute.java:6: warning: Associated declaration: Absolute.java:11: 
+	  @    ensures \result == -num; @*/
 	       ^
 2 warnings

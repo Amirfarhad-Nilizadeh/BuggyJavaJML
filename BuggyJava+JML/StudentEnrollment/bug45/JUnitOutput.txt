@@ -1,4 +1,6 @@
-test18(JUnitStudentEnrollment): null
-test19(JUnitStudentEnrollment): null
-test20(JUnitStudentEnrollment): null
+test11(JUnitStudentEnrollment): Balance is not correct
+test18(JUnitStudentEnrollment): Balance is not correct
+test26(JUnitStudentEnrollment): Balance is not correct
+test32(JUnitStudentEnrollment): Balance is not correct
+test6(JUnitStudentEnrollment): Balance is not correct
 false

@@ -1,0 +1,4 @@
+StackQueue.java:185: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method enter
+            			queue[rear] = data; 
+            			     ^
+1 warning

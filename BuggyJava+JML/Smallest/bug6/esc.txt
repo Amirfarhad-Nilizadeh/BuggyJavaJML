@@ -1,7 +1,7 @@
-Smallest.java:14: warning: The prover cannot establish an assertion (LoopDecreases) in method Smallest
-        //@ decreases a.length - index;
-            ^
-Smallest.java:11: warning: The prover cannot establish an assertion (LoopInvariant) in method Smallest
+Smallest.java:9: warning: The prover cannot establish an assertion (LoopInvariant) in method Smallest
         //@ maintaining 0 <= index && index <= a.length;
+            ^
+Smallest.java:12: warning: The prover cannot establish an assertion (LoopDecreases) in method Smallest
+        //@ decreases a.length - index;
             ^
 2 warnings

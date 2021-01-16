@@ -1,0 +1,10 @@
+StackQueue.java:152: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:149: ) in method getElem
+        		return arr[i] == 0 ? 1 : 0; //return arr[i]; 
+        		^
+StackQueue.java:149: warning: Associated declaration: StackQueue.java:152: 
+    	   	//@ 	ensures \result == arr[i];
+    	   	    	^
+StackQueue.java:361: warning: There is no feasible path to program point at program exit in method StackQueue.stackDivision(StackQueue.Stack)
+    	public int stackDivision(Stack stack) 
+    	           ^
+3 warnings

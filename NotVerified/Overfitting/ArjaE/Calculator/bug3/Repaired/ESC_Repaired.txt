@@ -1,0 +1,19 @@
+Calculator.java:36: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:7: ) in method calculate
+	if (!(num2 != 0 && num2 != 0)) return 0;
+	                               ^
+Calculator.java:7: warning: Associated declaration: Calculator.java:36: 
+      @    ensures \result == num1 + num2;
+           ^
+Calculator.java:36: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:31: ) in method calculate
+	if (!(num2 != 0 && num2 != 0)) return 0;
+	                               ^
+Calculator.java:31: warning: Associated declaration: Calculator.java:36: 
+      @    ensures \result == -1;
+           ^
+Calculator.java:36: warning: The prover cannot establish an assertion (Postcondition: Calculator.java:17: ) in method calculate
+	if (!(num2 != 0 && num2 != 0)) return 0;
+	                               ^
+Calculator.java:17: warning: Associated declaration: Calculator.java:36: 
+      @    ensures \result == num1 - num2;
+           ^
+6 warnings

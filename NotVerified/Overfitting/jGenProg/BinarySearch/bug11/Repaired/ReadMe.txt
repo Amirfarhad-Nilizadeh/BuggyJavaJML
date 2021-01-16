@@ -1,0 +1,1 @@
+This repaired program is correct for almost all inputs. However, when array length is equal to the "Integer MAX Value" and the value of "key" is larger than all of the array elements, then an overflow will happen. 

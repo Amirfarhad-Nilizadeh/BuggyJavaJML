@@ -1,0 +1,23 @@
+
+BankAccount.java:85: warning: The prover cannot establish an assertion (Assignable: BankAccount.java:83: ) in method isValid:  balance
+		balance=_balance;
+		       ^
+BankAccount.java:83: warning: Associated declaration: BankAccount.java:85: 
+	/*@ spec_public pure @*/ boolean isValid(int _balance, int _amount)
+	                ^
+
+BankAccount.java:85: warning: The prover cannot establish an assertion (Assignable: BankAccount.java:83: ) in method isValid:  balance
+		balance=_balance;
+		       ^
+BankAccount.java:83: warning: Associated declaration: BankAccount.java:85: 
+	/*@ spec_public pure @*/ boolean isValid(int _balance, int _amount)
+	                ^
+
+
+BankAccount.java:87: warning: The prover cannot establish an assertion (Assignable: BankAccount.java:83: ) in method isValid:  balance
+			balance=_balance;
+			       ^
+BankAccount.java:83: warning: Associated declaration: BankAccount.java:87: 
+	/*@ spec_public pure @*/ boolean isValid(int _balance, int _amount)
+	                ^
+6 warnings

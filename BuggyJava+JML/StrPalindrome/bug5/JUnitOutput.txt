@@ -1,0 +1,11 @@
+test(JUnitStrPalindrome): expected:<true> but was:<false>
+test1(JUnitStrPalindrome): expected:<false> but was:<true>
+test2(JUnitStrPalindrome): expected:<true> but was:<false>
+test3(JUnitStrPalindrome): expected:<false> but was:<true>
+test4(JUnitStrPalindrome): expected:<true> but was:<false>
+test5(JUnitStrPalindrome): expected:<false> but was:<true>
+test6(JUnitStrPalindrome): expected:<true> but was:<false>
+test7(JUnitStrPalindrome): expected:<false> but was:<true>
+test8(JUnitStrPalindrome): expected:<true> but was:<false>
+test9(JUnitStrPalindrome): expected:<false> but was:<true>
+false

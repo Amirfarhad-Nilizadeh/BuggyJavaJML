@@ -1,7 +1,0 @@
-Time.java:175: warning: The prover cannot establish an assertion (Postcondition: Time.java:172: ) in method isTimeZero
-         return (convertToSeconds() != 0);//return (convertToSeconds() == 0);
-         ^
-Time.java:172: warning: Associated declaration: Time.java:175: 
-    //@ ensures \result == (convertToSeconds() == 0);
-        ^
-2 warnings

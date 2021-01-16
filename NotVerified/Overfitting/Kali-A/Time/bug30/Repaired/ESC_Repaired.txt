@@ -1,0 +1,26 @@
+Time.java:209: warning: The prover cannot establish an assertion (Postcondition: Time.java:203: ) in method equals
+		return true;
+		^
+Time.java:203: warning: Associated declaration: Time.java:209: 
+    /*@    	ensures \result <==> (this.hour == ((Time) o).hour)
+           	^
+Time.java:209: warning: The prover cannot establish an assertion (Postcondition: Time.java:200: ) in method equals
+		return true;
+		^
+Time.java:200: warning: Associated declaration: Time.java:209: 
+    //@    	ensures !\result;
+           	^
+
+Time.java:150: warning: The prover cannot establish an assertion (Assignable: Time.java:141: ) in method timer:  \everything
+            decr();
+                ^
+Time.java:141: warning: Associated declaration: Time.java:150: 
+    //@ assignable second, minute, hour;
+        ^
+Time.java:143: warning: The prover cannot establish an assertion (Postcondition: Time.java:142: ) in method timer
+    public void timer()
+                ^
+Time.java:142: warning: Associated declaration: Time.java:143: 
+    //@ ensures convertToSeconds() == 0;
+        ^
+8 warnings

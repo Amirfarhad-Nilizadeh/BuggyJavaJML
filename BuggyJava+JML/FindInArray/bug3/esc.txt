@@ -1,7 +1,7 @@
-FindInArray.java:42: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:39: ) in method getArr
+FindInArray.java:40: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:37: ) in method getArr
 	return (this.arr[i] == 0 ? 1 : 0);//return this.arr[i];
 	^
-FindInArray.java:39: warning: Associated declaration: FindInArray.java:42: 
+FindInArray.java:37: warning: Associated declaration: FindInArray.java:40: 
     //@ ensures \result == this.arr[i];	
         ^
 2 warnings

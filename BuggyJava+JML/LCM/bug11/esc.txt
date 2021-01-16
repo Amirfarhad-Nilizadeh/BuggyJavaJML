@@ -2,6 +2,6 @@ LCM.java:6: warning: The prover cannot establish an assertion (Postcondition: LC
     public static int div(int n, int d) { return (n%d == 0 ? 1 : 0);} // n%d; }
                                           ^
 LCM.java:4: warning: Associated declaration: LCM.java:6: 
-    //@ ensures \result == n%d;
-        ^
+      @    ensures \result == n%d;
+           ^
 2 warnings

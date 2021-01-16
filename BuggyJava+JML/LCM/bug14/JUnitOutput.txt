@@ -1,0 +1,6 @@
+test11(JUnitLCM): expected:<-1> but was:<0>
+test15(JUnitLCM): expected:<-1> but was:<0>
+test21(JUnitLCM): expected:<-1> but was:<0>
+test27(JUnitLCM): expected:<-1> but was:<0>
+test5(JUnitLCM): expected:<-1> but was:<0>
+false

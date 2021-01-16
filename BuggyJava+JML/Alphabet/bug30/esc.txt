@@ -1,9 +1,9 @@
 
 
-Alphabet.java:146: warning: The prover cannot establish an assertion (InvariantExit: Alphabet.java:20: ) in method setLowercase
-   private /*@ spec_public @*/ void setLowercase() 
+Alphabet.java:149: warning: The prover cannot establish an assertion (InvariantExit: Alphabet.java:14: ) in method setDigit
+   private /*@ spec_public @*/ void setDigit() 
                                     ^
-Alphabet.java:20: warning: Associated declaration: Alphabet.java:146: 
-   //@ private invariant lowercase_set ==> (lowercase == ('a' <= c && c <= 'z'));
+Alphabet.java:14: warning: Associated declaration: Alphabet.java:149: 
+   //@ private invariant digit_set ==> digit == ('0' <= c && c <= '9');
                ^
 2 warnings

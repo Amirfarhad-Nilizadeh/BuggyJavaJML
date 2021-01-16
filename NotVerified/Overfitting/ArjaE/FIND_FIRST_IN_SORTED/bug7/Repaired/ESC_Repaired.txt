@@ -1,0 +1,13 @@
+FIND_FIRST_IN_SORTED.java:13: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method find_first_in_sorted
+	//@ maintaining 0 <= lo && lo <= arr.length; 
+	    ^
+FIND_FIRST_IN_SORTED.java:16: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method find_first_in_sorted
+        //@ maintaining (\forall int i; 0 <= i && i < lo; arr[i] < x);
+            ^
+FIND_FIRST_IN_SORTED.java:21: warning: The prover cannot establish an assertion (Postcondition: FIND_FIRST_IN_SORTED.java:7: ) in method find_first_in_sorted
+                return mid;
+                ^
+FIND_FIRST_IN_SORTED.java:7: warning: Associated declaration: FIND_FIRST_IN_SORTED.java:21: 
+    //@ ensures 0 <= \result && \result < arr.length ==> arr[\result] == x && (\forall int i; 0 <= i && i < \result; arr[i] != x);
+        ^
+4 warnings

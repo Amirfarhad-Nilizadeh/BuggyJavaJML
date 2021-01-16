@@ -1,0 +1,7 @@
+StackQueue.java:462: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:458: ) in method qDivideStack
+		return (Q.peek() / stack.peek()) > 0 ? 1 : 0;//return (Q.peek() / stack.peek()) == 0 ? 1 : 0; //return Q.peek() / stack.peek();
+		^
+StackQueue.java:458: warning: Associated declaration: StackQueue.java:462: 
+          @ ensures \result == Q.peek() / stack.peek();
+            ^
+2 warnings

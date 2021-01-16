@@ -1,0 +1,7 @@
+TransposeMatrix.java:28: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method transposeMat:  overflow in int sum
+              for (int d = 0; d <= m; d++) {//for (int d = 0; d < m; d++) {
+                                       ^
+TransposeMatrix.java:25: warning: The prover cannot establish an assertion (LoopInvariant) in method transposeMat
+              //@ maintaining 0 <= d && d <= m;
+                  ^
+2 warnings

@@ -3,9 +3,9 @@
 
 
 Alphabet.java:88: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:82: ) in method isDigit
-	return !digit; //return digit;
+	return !digit; // return digit;
 	^
 Alphabet.java:82: warning: Associated declaration: Alphabet.java:88: 
-     @   ensures digit_set && \result == digit; @*/
+     @   ensures digit_set && \result == digit; 
          ^
 2 warnings

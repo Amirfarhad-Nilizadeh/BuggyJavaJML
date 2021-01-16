@@ -1,0 +1,16 @@
+StackQueue.java:185: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method enter
+            			queue[rear] = data; 
+            			     ^
+StackQueue.java:193: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StackQueue.java:170: ) in method enter
+  					throw new IllegalArgumentException();
+  					^
+StackQueue.java:170: warning: Associated declaration: StackQueue.java:193: 
+    		/*@ public normal_behavior
+    		           ^
+StackQueue.java:300: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:294: ) in method isFull
+    		        	return true; // return false;
+    		        	^
+StackQueue.java:294: warning: Associated declaration: StackQueue.java:300: 
+    		//@   ensures \result <==>  MAX == rear;
+    		      ^
+5 warnings

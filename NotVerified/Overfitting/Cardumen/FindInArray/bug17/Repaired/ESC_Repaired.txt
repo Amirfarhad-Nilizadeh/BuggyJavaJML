@@ -1,0 +1,7 @@
+FindInArray.java:81: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:77: ) in method isMoreThanOneKey
+	return 0 <= first;
+	^
+FindInArray.java:77: warning: Associated declaration: FindInArray.java:81: 
+    //@ ensures \result <==> findLast() != findFirst();
+        ^
+2 warnings

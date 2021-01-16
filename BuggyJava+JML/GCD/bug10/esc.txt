@@ -1,10 +1,7 @@
-GCD.java:58: warning: The prover cannot establish an assertion (LoopDecreasesNonNegative) in method gcd
-		//@ decreases num1 - i; 
+GCD.java:59: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method gcd
+		//@ maintaining result <= num1 && result <= num2;
 		    ^
-GCD.java:64: warning: The prover cannot establish an assertion (Postcondition: GCD.java:19: ) in method gcd
-		return result;
-		^
-GCD.java:19: warning: Associated declaration: GCD.java:64: 
-	  @    ensures (\forall int i; \result < i && i <= smaller; div(smaller,i) == 0 ==> div(greater,i) != 0);
-	       ^
-3 warnings
+error: An internal JML error occurred, possibly recoverable.  Please report the bug with as much information as you can.
+  Reason: Unexpected result when querying SMT solver for reason for an unknown result: (error "Error writing to solver: (get-info :reason-unknown) java.io.IOException: Broken pipe")
+1 error
+1 warning

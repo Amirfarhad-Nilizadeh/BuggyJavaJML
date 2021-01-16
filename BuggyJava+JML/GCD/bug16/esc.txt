@@ -1,7 +1,10 @@
-GCD.java:50: warning: The prover cannot establish an assertion (Postcondition: GCD.java:25: ) in method gcd
-			return ((num1 > num2) ? num1 : num2 == 0 ? 1 : 0);//(num1 > num2) ? num1 : num2;
-			^
-GCD.java:25: warning: Associated declaration: GCD.java:50: 
-	  @    ensures \result == tnum2;
+GCD.java:70: warning: The prover cannot establish an assertion (Postcondition: GCD.java:29: ) in method gcd
+		return result;
+		^
+GCD.java:29: warning: Associated declaration: GCD.java:70: 
+	  @    ensures (\forall int i; \result < i && i <= smaller; div(smaller,i) == 0 ==> div(greater,i) != 0);
 	       ^
-2 warnings
+GCD.java:64: warning: The prover cannot establish an assertion (LoopDecreasesNonNegative) in method gcd
+		//@ decreases num1 - i; 
+		    ^
+3 warnings

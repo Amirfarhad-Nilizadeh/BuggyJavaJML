@@ -1,0 +1,7 @@
+Time.java:44: warning: The prover cannot establish an assertion (ExceptionalPostcondition: Time.java:32: ) in method setSecond
+            throw new IllegalArgumentException();
+            ^
+Time.java:32: warning: Associated declaration: Time.java:44: 
+    /*@      public normal_behavior
+                    ^
+2 warnings

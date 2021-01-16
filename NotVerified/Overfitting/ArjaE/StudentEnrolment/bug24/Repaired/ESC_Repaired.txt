@@ -1,0 +1,28 @@
+
+StudentEnrollment.java:185: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:177: ) in method lateEnrollment:  tuitionBalance
+        	tuitionBalance = getTuition() + cost;
+        	               ^
+StudentEnrollment.java:177: warning: Associated declaration: StudentEnrollment.java:185: 
+      @   	assignable \nothing;
+          	^
+
+StudentEnrollment.java:179: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:175: ) in method lateEnrollment
+    public void lateEnrollment() 
+                ^
+StudentEnrollment.java:175: warning: Associated declaration: StudentEnrollment.java:179: 
+      @      public exceptional_behavior
+                    ^
+
+StudentEnrollment.java:179: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:12: ) in method lateEnrollment
+    public void lateEnrollment() 
+                ^
+StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:179: 
+    /*@ public invariant tuitionBalance <= 
+               ^
+StudentEnrollment.java:187: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:168: ) in method lateEnrollment
+		throw new IllegalArgumentException();
+		^
+StudentEnrollment.java:168: warning: Associated declaration: StudentEnrollment.java:187: 
+    /*@      public normal_behavior
+                    ^
+8 warnings

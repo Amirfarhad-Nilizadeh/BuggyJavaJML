@@ -1,0 +1,86 @@
+Time.java:213: warning: The prover cannot establish an assertion (Postcondition: Time.java:204: ) in method equals
+        return this.hour == t.hour && this.minute == t.minute && this.second == t.second;
+        ^
+Time.java:204: warning: Associated declaration: Time.java:213: 
+    /*@    	ensures \result <==> (this.hour == ((Time) o).hour)
+           	^
+Time.java:212: warning: The prover cannot establish an assertion (ExceptionalPostcondition: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: ) in method equals
+        Time t=new Time(this.hour,this.minute,this.second); // Time t = (Time) o;
+               ^
+/home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: warning: Associated declaration: Time.java:212: 
+      @   public normal_behavior
+                 ^
+
+Time.java:109: warning: The prover cannot establish an assertion (Assignable: Time.java:107: ) in method getHour:  hour
+	hour--;
+	    ^
+Time.java:107: warning: Associated declaration: Time.java:109: 
+    public /*@ pure @*/ int getHour() 
+               ^
+Time.java:96: warning: The prover cannot establish an assertion (Postcondition: Time.java:93: ) in method getSecond
+        return (second == 0 ? 1 : 0);//return second;
+        ^
+Time.java:93: warning: Associated declaration: Time.java:96: 
+    //@ ensures \result == second;
+        ^
+
+Time.java:227: warning: The prover cannot establish an assertion (Assignable: Time.java:216: ) in method trustedDifference:  second
+	start.reset();
+	           ^
+Time.java:216: warning: Associated declaration: Time.java:227: 
+    //@ requires stop.later_than(start) || stop.equals(start);		
+        ^
+
+
+Time.java:227: warning: The prover cannot establish an assertion (Assignable: Time.java:216: ) in method trustedDifference:  minute
+	start.reset();
+	           ^
+Time.java:216: warning: Associated declaration: Time.java:227: 
+    //@ requires stop.later_than(start) || stop.equals(start);		
+        ^
+
+
+
+Time.java:227: warning: The prover cannot establish an assertion (Assignable: Time.java:216: ) in method trustedDifference:  hour
+	start.reset();
+	           ^
+Time.java:216: warning: Associated declaration: Time.java:227: 
+    //@ requires stop.later_than(start) || stop.equals(start);		
+        ^
+
+
+
+
+
+
+Time.java:248: warning: The prover cannot establish an assertion (Postcondition: Time.java:222: ) in method trustedDifference
+        return(diff);
+        ^
+Time.java:222: warning: Associated declaration: Time.java:248: 
+    //@ ensures diff_hours == \result.hour;
+        ^
+
+
+
+
+
+
+Time.java:248: warning: The prover cannot establish an assertion (Postcondition: Time.java:224: ) in method trustedDifference
+        return(diff);
+        ^
+Time.java:224: warning: Associated declaration: Time.java:248: 
+    //@ ensures diff_seconds == \result.second;
+        ^
+
+
+
+
+
+
+Time.java:248: warning: The prover cannot establish an assertion (Postcondition: Time.java:223: ) in method trustedDifference
+        return(diff);
+        ^
+Time.java:223: warning: Associated declaration: Time.java:248: 
+    //@ ensures diff_minutes == \result.minute;
+        ^
+20 warnings

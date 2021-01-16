@@ -1,1 +1,22 @@
-true
+test10(JUnitStudentEnrollment): Balance is not correct
+test12(JUnitStudentEnrollment): Balance is not correct
+test14(JUnitStudentEnrollment): Balance is not correct
+test15(JUnitStudentEnrollment): Balance is not correct
+test16(JUnitStudentEnrollment): Balance is not correct
+test17(JUnitStudentEnrollment): Balance is not correct
+test21(JUnitStudentEnrollment): Balance is not correct
+test22(JUnitStudentEnrollment): Balance is not correct
+test23(JUnitStudentEnrollment): Balance is not correct
+test24(JUnitStudentEnrollment): Balance is not correct
+test27(JUnitStudentEnrollment): Balance is not correct
+test28(JUnitStudentEnrollment): Balance is not correct
+test29(JUnitStudentEnrollment): Balance is not correct
+test30(JUnitStudentEnrollment): Balance is not correct
+test(JUnitStudentEnrollment): Balance is not correct
+test1(JUnitStudentEnrollment): Balance is not correct
+test2(JUnitStudentEnrollment): Balance is not correct
+test3(JUnitStudentEnrollment): Balance is not correct
+test7(JUnitStudentEnrollment): Balance is not correct
+test8(JUnitStudentEnrollment): Balance is not correct
+test9(JUnitStudentEnrollment): Balance is not correct
+false

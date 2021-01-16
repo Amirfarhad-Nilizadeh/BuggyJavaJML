@@ -1,0 +1,11 @@
+test(JUnitOddEven): expected:<true> but was:<false>
+test1(JUnitOddEven): expected:<false> but was:<true>
+test2(JUnitOddEven): expected:<true> but was:<false>
+test3(JUnitOddEven): expected:<false> but was:<true>
+test4(JUnitOddEven): expected:<true> but was:<false>
+test5(JUnitOddEven): expected:<false> but was:<true>
+test6(JUnitOddEven): expected:<true> but was:<false>
+test7(JUnitOddEven): expected:<false> but was:<true>
+test8(JUnitOddEven): expected:<true> but was:<false>
+test9(JUnitOddEven): expected:<false> but was:<true>
+false

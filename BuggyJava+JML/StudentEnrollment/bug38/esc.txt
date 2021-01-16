@@ -1,15 +1,15 @@
 
-StudentEnrollment.java:263: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:253: ) in method payTuitionWithCreditCard
-    /*@ spec_public @*/ private void payTuitionWithCreditCard(int payment) 
+StudentEnrollment.java:246: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:12: ) in method payTuitionWithCreditCard
+    private /*@ spec_public @*/ void payTuitionWithCreditCard(int payment) 
                                      ^
-StudentEnrollment.java:253: warning: Associated declaration: StudentEnrollment.java:263: 
-    //@   ensures tuitionBalance == \old(tuitionBalance - _payment);
-          ^
-
-StudentEnrollment.java:263: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:12: ) in method payTuitionWithCreditCard
-    /*@ spec_public @*/ private void payTuitionWithCreditCard(int payment) 
-                                     ^
-StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:263: 
+StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:246: 
     /*@ public invariant tuitionBalance <= 
                ^
+
+StudentEnrollment.java:246: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:238: ) in method payTuitionWithCreditCard
+    private /*@ spec_public @*/ void payTuitionWithCreditCard(int payment) 
+                                     ^
+StudentEnrollment.java:238: warning: Associated declaration: StudentEnrollment.java:246: 
+      @   	ensures tuitionBalance == \old(tuitionBalance - _payment);
+          	^
 4 warnings

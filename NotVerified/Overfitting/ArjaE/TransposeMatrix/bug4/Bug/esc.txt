@@ -1,0 +1,4 @@
+TransposeMatrix.java:31: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method transposeMat
+                  transpose[c][d] = matrix[d][c];
+                              ^
+1 warning

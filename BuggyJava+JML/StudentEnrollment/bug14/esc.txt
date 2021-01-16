@@ -1,7 +1,7 @@
-StudentEnrollment.java:124: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:121: ) in method getLateRegistrations
-        return !this.lateRegistration;//return this.lateRegistration;
+StudentEnrollment.java:117: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:114: ) in method getLateRegistrations
+        return !this.lateRegistration; // return this.lateRegistration;
         ^
-StudentEnrollment.java:121: warning: Associated declaration: StudentEnrollment.java:124: 
+StudentEnrollment.java:114: warning: Associated declaration: StudentEnrollment.java:117: 
     //@   ensures \result == this.lateRegistration;
           ^
 2 warnings

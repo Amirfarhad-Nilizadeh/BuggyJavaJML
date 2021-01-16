@@ -1,20 +1,20 @@
-
-
-BubbleSort.java:22: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
-	    //@ maintaining (\forall int k; 0 <= k && k < j; arr[k] <= arr[j]);
-	        ^
-BubbleSort.java:28: warning: The prover cannot establish an assertion (Precondition: SwapNumbers.java:9: ) in method bubbleSort
-		    swap.swapArray(j, j - 1, arr);//swap.SwapArray(j, j + 1, arr); 
-		                  ^
-SwapNumbers.java:9: warning: Associated declaration: BubbleSort.java:28: 
-	public void swapArray(int x, int y,  int array[]) {
+BubbleSort.java:23: warning: The prover cannot establish an assertion (Precondition: SwapInArray.java:6: ) in method bubbleSort
+		    s.swap(j, j - 1, arr); // s.swap(j, j + 1, arr); 
+		          ^
+SwapInArray.java:6: warning: Associated declaration: BubbleSort.java:23: 
+	public void swap(int x, int y,  int array[]) {
 	            ^
-SwapNumbers.java:4: warning: Precondition conjunct is false: 0 <= y
-        //@ requires 0 <= x && x < array.length && 0 <= y && y < array.length; 
+SwapInArray.java:2: warning: Precondition conjunct is false: 0 <= y
+        /*@ requires 0 <= x && x < array.length && 0 <= y && y < array.length; 
                                                      ^
 
 
-BubbleSort.java:21: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+BubbleSort.java:18: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
+	    //@ maintaining (\forall int k; 0 <= k && k < j; arr[k] <= arr[j]);
+	        ^
+
+
+BubbleSort.java:17: warning: The prover cannot establish an assertion (LoopInvariant) in method bubbleSort
 	    //@ maintaining 0 < j ==> arr[j-1] <= arr[j];
 	        ^
 5 warnings

@@ -1,0 +1,4 @@
+StackQueue.java:130: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method isContain
+        		//@ maintaining -1 <= index && index <= top; 
+        		    ^
+1 warning

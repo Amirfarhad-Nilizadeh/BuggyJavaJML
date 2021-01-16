@@ -1,0 +1,17 @@
+FindInArray.java:75: warning: The prover cannot establish an assertion (Precondition: FindInArray.java:38: ) in method findFirst
+  		if (getArr(index) == getKey())   
+  		          ^
+FindInArray.java:38: warning: Associated declaration: FindInArray.java:75: 
+    /*@ pure @*/ int getArr(int i) 
+                     ^
+FindInArray.java:36: warning: Precondition conjunct is false: 0 <= i
+    //@ requires 0 <= i && i < arr.length;
+                   ^
+
+FindInArray.java:83: warning: The prover cannot establish an assertion (Assignable: FindInArray.java:81: ) in method isMoreThanOneKey:  this.key
+	setKey(key);
+	      ^
+FindInArray.java:81: warning: Associated declaration: FindInArray.java:83: 
+    //@ ensures \result <==> findLast() != findFirst();
+        ^
+5 warnings

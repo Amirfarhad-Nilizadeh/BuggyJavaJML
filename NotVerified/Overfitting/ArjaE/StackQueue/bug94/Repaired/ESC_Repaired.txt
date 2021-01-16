@@ -1,0 +1,9 @@
+StackQueue.java:747: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:361: ) in method driverQStack
+			output=stackDivision(stack);
+			                    ^
+StackQueue.java:361: warning: Associated declaration: StackQueue.java:747: 
+    	public int stackDivision(Stack stack) 
+    	           ^
+StackQueue.java:354: warning: Precondition conjunct is false: stack.getElem(stack.top - 1) != 0
+      	  @ requires stack.getElem(stack.top - 1) != 0;
+      	                                          ^

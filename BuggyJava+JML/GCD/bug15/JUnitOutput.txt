@@ -1,0 +1,16 @@
+test12(JUnitGCD): / by zero
+test13(JUnitGCD): / by zero
+test15(JUnitGCD): / by zero
+test16(JUnitGCD): / by zero
+test18(JUnitGCD): / by zero
+test19(JUnitGCD): / by zero
+test20(JUnitGCD): / by zero
+test21(JUnitGCD): / by zero
+test22(JUnitGCD): / by zero
+test1(JUnitGCD): / by zero
+test3(JUnitGCD): / by zero
+test4(JUnitGCD): / by zero
+test7(JUnitGCD): / by zero
+test8(JUnitGCD): / by zero
+test9(JUnitGCD): / by zero
+false

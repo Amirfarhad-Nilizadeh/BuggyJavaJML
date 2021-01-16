@@ -1,7 +1,7 @@
-Time.java:262: warning: The prover cannot establish an assertion (Postcondition: Time.java:256: ) in method difference
+Time.java:259: warning: The prover cannot establish an assertion (Postcondition: Time.java:253: ) in method difference
 		 return null;
 		 ^
-Time.java:256: warning: Associated declaration: Time.java:262: 
+Time.java:253: warning: Associated declaration: Time.java:259: 
     public /*@ pure @*/ Time difference(Time start, Time stop)
                              ^
 2 warnings

@@ -1,0 +1,4 @@
+BinarySearch.java:12: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method Binary:  int multiply overflow
+            int mid =  high * 2;//int mid =  high / 2;
+                            ^
+1 warning

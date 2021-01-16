@@ -1,0 +1,15 @@
+
+Time.java:90: warning: The prover cannot establish an assertion (Assignable: Time.java:87: ) in method getTime:  minute
+	minute=0;
+	      ^
+Time.java:87: warning: Associated declaration: Time.java:90: 
+    public /*@ pure @*/ Time getTime()
+               ^
+
+Time.java:91: warning: The prover cannot establish an assertion (Postcondition: Time.java:86: ) in method getTime
+	return t;
+	^
+Time.java:86: warning: Associated declaration: Time.java:91: 
+    //@ ensures this.equals(\result) && this != \result;
+        ^
+4 warnings

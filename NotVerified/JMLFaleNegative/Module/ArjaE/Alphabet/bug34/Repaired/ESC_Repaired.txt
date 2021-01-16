@@ -1,0 +1,12 @@
+
+
+
+
+
+Alphabet.java:55: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:48: ) in method isAlphabetic:  uppercase
+	uppercase=('A' <= c && c <= 'Z');
+	         ^
+Alphabet.java:48: warning: Associated declaration: Alphabet.java:55: 
+     @   assignable alphabetic_set, alphabetic;
+         ^
+2 warnings

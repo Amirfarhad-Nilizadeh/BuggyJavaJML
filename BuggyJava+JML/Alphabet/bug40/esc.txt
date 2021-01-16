@@ -1,7 +1,0 @@
-Alphabet.java:198: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:195: ) in method getDigit_set
-	return !digit_set; //return digit_set;
-	^
-Alphabet.java:195: warning: Associated declaration: Alphabet.java:198: 
-   //@   ensures \result == digit_set;
-         ^
-2 warnings

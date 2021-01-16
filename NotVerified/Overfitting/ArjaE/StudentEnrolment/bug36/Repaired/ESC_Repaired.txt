@@ -1,0 +1,19 @@
+
+StudentEnrollment.java:250: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method payTuitionWithCreditCard:  underflow in int sum
+        tuitionBalance+=penalty; //payment += penalty; //payment -= penalty;
+                      ^
+
+StudentEnrollment.java:250: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:244: ) in method payTuitionWithCreditCard:  tuitionBalance
+        tuitionBalance+=penalty; //payment += penalty; //payment -= penalty;
+                      ^
+StudentEnrollment.java:244: warning: Associated declaration: StudentEnrollment.java:250: 
+      @   	assignable \nothing;
+          	^
+
+StudentEnrollment.java:251: warning: The prover cannot establish an assertion (InvariantLeaveCaller: StudentEnrollment.java:12: ) in method payTuitionWithCreditCard:  (Caller: StudentEnrollment.payTuitionWithCreditCard(int), Callee: StudentEnrollment.validPayment(int))
+        if (validPayment(payment)) {
+                        ^
+StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:251: 
+    /*@ public invariant tuitionBalance <= 
+               ^
+5 warnings

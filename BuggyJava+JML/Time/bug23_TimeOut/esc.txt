@@ -1,0 +1,15 @@
+
+Time.java:124: warning: The prover cannot establish an assertion (Postcondition: Time.java:123: ) in method decr
+    public void decr()
+                ^
+Time.java:123: warning: Associated declaration: Time.java:124: 
+    //@   	ensures convertToSeconds() == \old(convertToSeconds() - 1);
+          	^
+
+Time.java:124: warning: The prover cannot establish an assertion (InvariantExit: Time.java:6: ) in method decr
+    public void decr()
+                ^
+Time.java:6: warning: Associated declaration: Time.java:124: 
+    /*@ public invariant 0 <= second && second < 60;
+               ^
+4 warnings

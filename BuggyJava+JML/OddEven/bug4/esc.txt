@@ -1,0 +1,7 @@
+OddEven.java:11: warning: The prover cannot establish an assertion (Postcondition: OddEven.java:8: ) in method isOdd
+         	return x%2 == 0; // return x%2 != 0;
+         	^
+OddEven.java:8: warning: Associated declaration: OddEven.java:11: 
+    	 //@ ensures !\result <==> x%2 == 0;
+    	     ^
+2 warnings
