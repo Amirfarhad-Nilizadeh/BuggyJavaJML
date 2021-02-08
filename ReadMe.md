@@ -16,11 +16,11 @@ Repaired programs cannot be verified with OpenJML for two main reasons.
 
 1) The repaired program is overfitted. It means the repaired program is not correct based on the correct version of the programs' expected behavior, but it satisfies the test suite, which is provided with JUnitTests.  
 
-2) It is a JML False Negative. It is possible that JML specification mistakenly considers a correct repaired program as overfitted. This happened for only about 4.15% of generated patches. We classified these false negatives into three classes: 1) Structural 2) Modularity 3) Overflow.
+2) It is a JML False Negative. It is possible that JML specification mistakenly considers a correct repaired program as overfitted. This happened for only about 4.68% of generated patches. We classified these false negatives into three classes: 1) Structural 2) Modular 3) Overflow.
 
 # TimeComplexityOrder
 
-Our results show that the order of time complexity can change and increase dramatically by using current dynamic APR tools. It happened for seven repaired programs in our study. Increasing the order of time complexity is not a test overfitting problem in theory because the expected behavior is still correct. However, it could be a significant issue in practice by changing the program's character (changing binary search to a linear search).
+Our results show that the order of time complexity can change and increase dramatically by using current dynamic APR tools. It happened for seven programs in our study. Increasing the order of time complexity is not a test overfitting problem in theory because the expected behavior is still correct. However, it could be a significant issue in practice by changing the program's character (changing binary search to a linear search).
 
 
 # Usage
