@@ -2,8 +2,8 @@
     public class PrimeNumbers
     {
         /*@ private normal_behavior  
-	  @    requires 1 < n;
-          @    requires d != 0;
+	  @    requires 2 <= n;
+          @    requires 2 <= d;
 	  @    ensures \result ==> n%d == 0; 
           @    pure function @*/
         private /*@ spec_public @*/ static boolean div(int n, int d) { return (n%d == 0 ? false : true);}//n%d == 0; }

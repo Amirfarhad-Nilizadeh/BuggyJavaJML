@@ -1,1 +1,0 @@
-One of the changes fixed the bug, but two other changes assign the "_balance" to "balance" in a pure method. It can consider as a bug as it can change the balance, and the method is protected. Nevertheless, we consider it as a correct patch as _balance must have the value of balance all the time. 

@@ -13,7 +13,7 @@ public class FIND_IN_SORTED {
         if (start == end) {
             return -1;
         }
-        int mid=start + (end - end) * 2;; // int mid = start + (end - start) / 2;
+        int mid=start + (end - end) * 2; // int mid = start + (end - start) / 2;
         if (x < arr[mid]) {
             return binsearch(arr, x, start, mid);
         } else if (x > arr[mid]) {

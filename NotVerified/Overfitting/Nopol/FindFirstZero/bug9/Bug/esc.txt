@@ -1,0 +1,7 @@
+FindFirstZero.java:8: warning: The prover cannot establish an assertion (Postcondition: FindFirstZero.java:2: ) in method FindFirstZero
+            		return 0; // return -1;
+            		^
+FindFirstZero.java:2: warning: Associated declaration: FindFirstZero.java:8: 
+	 //@ ensures x.length == 0 ==> \result == -1;
+	     ^
+2 warnings

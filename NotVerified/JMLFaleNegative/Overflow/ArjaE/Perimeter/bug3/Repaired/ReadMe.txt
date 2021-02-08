@@ -1,0 +1,1 @@
+The "result=p.Perimeter(longNum);" statement is inserted before the switch. It does not change the final result, and the program is correct. However, overflow can happen, and OpenJML does not verify it. 

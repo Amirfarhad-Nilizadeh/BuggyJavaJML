@@ -1,1 +1,1 @@
-The first "switch" does not affect the final value of "output." However, based on specification, both underflow and overflow can happen in the "case '+': output=num1 - num2;" and OpenJML considers it a bug. 
+The first "switch" does not affect the final value of "output." However, based on specification, both underflow and overflow can happen in the "case '+': output=num1 - num2;" and OpenJML cannot verify it. 

@@ -1,0 +1,7 @@
+Alphabet.java:159: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:156: ) in method getAlphabetic_set
+	return !alphabetic_set; // return alphabetic_set;
+	^
+Alphabet.java:156: warning: Associated declaration: Alphabet.java:159: 
+     @   ensures \result == alphabetic_set; @*/
+         ^
+2 warnings

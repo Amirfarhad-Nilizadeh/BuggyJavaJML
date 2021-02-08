@@ -1,0 +1,30 @@
+Time.java:215: warning: The prover cannot establish an assertion (Precondition: Time.java:26: ) in method equals
+        Time t=new Time(this.hour,this.minute,this.second); // Time t = (Time) o;
+               ^
+Time.java:26: warning: Associated declaration: Time.java:215: 
+    public /*@ pure @*/ Time(int h, int m, int s) 
+                        ^
+Time.java:22: warning: Precondition conjunct is false: 0 <= s
+    //@ requires 0 <= s && s < 60;
+                   ^
+Time.java:215: warning: The prover cannot establish an assertion (ExceptionalPostcondition: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: ) in method equals
+        Time t=new Time(this.hour,this.minute,this.second); // Time t = (Time) o;
+               ^
+/home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: warning: Associated declaration: Time.java:215: 
+      @   public normal_behavior
+                 ^
+Time.java:216: warning: The prover cannot establish an assertion (Postcondition: Time.java:206: ) in method equals
+        return this.hour == t.hour && this.minute == t.minute && this.second >= t.second; // return this.hour == t.hour && this.minute == t.minute && this.second != t.second; //return this.hour == t.hour && this.minute == t.minute && this.second == t.second;
+        ^
+Time.java:206: warning: Associated declaration: Time.java:216: 
+    /*@    	ensures \result <==> (this.hour == ((Time) o).hour)
+           	^
+
+
+Time.java:249: warning: The prover cannot establish an assertion (Postcondition: Time.java:227: ) in method trustedDifference
+        return(diff);
+        ^
+Time.java:227: warning: Associated declaration: Time.java:249: 
+    //@ ensures diff_seconds == \result.second;
+        ^
+9 warnings

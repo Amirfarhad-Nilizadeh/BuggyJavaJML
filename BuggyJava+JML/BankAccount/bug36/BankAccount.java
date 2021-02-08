@@ -214,7 +214,7 @@ public class BankAccount
 	void foreignTransfer(int amount)
 	{
 		int penalty;
-		penalty = (amount/100)*5; //penalty = (amount/100)*5;
+		penalty = (amount/100)*5;
 		amount = amount + penalty;
 		if (isValid(amount)) {
 			if (isValid(balance, amount)) {

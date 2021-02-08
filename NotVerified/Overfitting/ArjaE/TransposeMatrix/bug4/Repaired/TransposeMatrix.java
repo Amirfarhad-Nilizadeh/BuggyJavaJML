@@ -26,7 +26,8 @@ public class TransposeMatrix {
               //@ maintaining (\forall int j; 0 <= j && j < d; transpose[c][j] == matrix[j][c]);
               //@ decreases m - d;
               for (int d = 0; d <= m; d++) {//for (int d = 0; d < m; d++) {
-		  if (d < transpose[c].length && c < transpose.length && c < matrix[d].length && d < matrix.length) transpose[c][d]=matrix[d][c];
+		  if (d < transpose[c].length && c < transpose.length && c < matrix[d].length && d < matrix.length) 
+			transpose[c][d]=matrix[d][c];
               }
           }
           return transpose;

@@ -1,0 +1,18 @@
+Alphabet.java:160: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:157: ) in method getAlphabetic_set
+	return !getVowel_set(); // return !alphabetic_set; // return alphabetic_set;
+	^
+Alphabet.java:157: warning: Associated declaration: Alphabet.java:160: 
+     @   ensures \result == alphabetic_set; @*/
+         ^
+
+
+
+
+
+Alphabet.java:77: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:70: ) in method isLowercase:  uppercase
+       uppercase=('A' <= c && c <= 'Z');
+                ^
+Alphabet.java:70: warning: Associated declaration: Alphabet.java:77: 
+      @   assignable lowercase_set, lowercase;
+          ^
+4 warnings
