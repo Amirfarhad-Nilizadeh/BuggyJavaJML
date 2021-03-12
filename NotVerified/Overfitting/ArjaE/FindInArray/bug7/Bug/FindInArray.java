@@ -31,14 +31,12 @@ class FindInArray {
     //@ ensures \result == this.key;
     /*@ pure @*/ int getKey() 
     {
-	setKey(key);
 	return this.key;
     }
     //@ requires 0 <= i && i < arr.length;
     //@ ensures \result == this.arr[i];	
     /*@ pure @*/ int getArr(int i) 
     {
-	if (!(this.arr != null)) return 0;
 	return this.arr[i];
     }
 
@@ -55,7 +53,7 @@ class FindInArray {
 	int index = size() - 1;
 	//@ maintaining -1 <= index && index < arr.length; 
 	//@ maintaining (\forall int i; index < i && i < arr.length; arr[i] != key);
-	while (0 <= index) {
+	while (0 > index) {//while (0 <= index) {
 		if (getArr(index) == getKey())
 			return index;
 		index--;
@@ -69,7 +67,7 @@ class FindInArray {
     /*@ pure @*/ int findFirst() {	
 	//@ maintaining 0 <= index && index <= arr.length;
 	//@ maintaining (\forall int i; 0 <= i && i < index; arr[i] != key);
-	for (int index=0; index <= findLast(); index++) {//for (int index = 0; index < size(); index++) {
+	for (int index = 0; index < size(); index++) {
 		if (getArr(index) == getKey())
 			return index;
 	}

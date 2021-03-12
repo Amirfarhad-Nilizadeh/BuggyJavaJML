@@ -3,7 +3,7 @@
      private static /*@ spec_public*/ int location;
 
       //@ assignable location;
-      //@ ensures \result == -1 ==>  (\forall int i; 0 <= i && i < array.length; array[i] != search);
+      //@ ensures \result == -1 <==>  (\forall int i; 0 <= i && i < array.length; array[i] != search);
       //@ ensures 0 <= \result && \result < array.length ==>  array[\result] == search;
       public static int linearSearch(int search, int array[]) {
 	int c;

@@ -1,9 +1,9 @@
 
 
-PrimeNumbers.java:57: warning: The prover cannot establish an assertion (Postcondition: PrimeNumbers.java:17: ) in method primeList
+PrimeNumbers.java:58: warning: The prover cannot establish an assertion (Postcondition: PrimeNumbers.java:18: ) in method primeList
 	return null;//primeArray; 
 	^
-PrimeNumbers.java:17: warning: Associated declaration: PrimeNumbers.java:57: 
+PrimeNumbers.java:18: warning: Associated declaration: PrimeNumbers.java:58: 
         public int[] primeList(int n)
                      ^
 2 warnings

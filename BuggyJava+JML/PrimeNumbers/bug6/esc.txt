@@ -1,11 +1,11 @@
 
 
-PrimeNumbers.java:34: warning: The prover cannot establish an assertion (LoopInvariant) in method primeList
+PrimeNumbers.java:35: warning: The prover cannot establish an assertion (LoopInvariant) in method primeList
              //@ maintaining j > 1 && j <= num/2 + 1;
                  ^
 
 
-PrimeNumbers.java:37: warning: The prover cannot establish an assertion (LoopDecreases) in method primeList
+PrimeNumbers.java:38: warning: The prover cannot establish an assertion (LoopDecreases) in method primeList
              //@ decreases num - j;
                  ^
 2 warnings

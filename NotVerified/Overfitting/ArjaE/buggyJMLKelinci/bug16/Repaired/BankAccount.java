@@ -128,7 +128,7 @@ public class BankAccount
 	//@ ensures previousTransaction == \old (previousTransaction);
 	void withdraw(int amount)
 	{
-		if (isValid(amount)) {
+		if (!isValid(amount)) {//if (isValid(amount)) {
 			if (isValid(balance, amount)) {
 				balance = balance - amount;
 				previousTransaction = -amount;
@@ -344,7 +344,7 @@ public class BankAccount
 			_interest = balance/100;
 			interest = _interest*2;
 		}
-		else if (balance < 300000) { // else if (balance <= 300000) {
+		else if (balance <= 300000) {
 			int _interest;
 			_interest = balance/100;
 			interest = _interest*3;
@@ -495,7 +495,12 @@ public class BankAccount
 			break;
 
 			case 2:
-			withdraw(amount);
+			if (isValid(amount)) {
+  				if (isValid(balance,amount)) {
+    					balance=balance - amount;
+    					previousTransaction=-amount;
+  				}
+			}
 			result = getBalance();
 			break;
 			

@@ -1,12 +1,12 @@
 
 
-PrimeNumbers.java:34: warning: The prover cannot establish an assertion (LoopInvariant) in method primeList
+PrimeNumbers.java:35: warning: The prover cannot establish an assertion (LoopInvariant) in method primeList
              //@ maintaining j > 1 && j <= num/2 + 1;
                  ^
 
 
 
-PrimeNumbers.java:25: warning: The prover cannot establish an assertion (LoopInvariant) in method primeList
+PrimeNumbers.java:26: warning: The prover cannot establish an assertion (LoopInvariant) in method primeList
 	    @ maintaining (\forall int i; 0 <= i && i < count-1; (\forall int k;  2 <= k && k <= primeArray[i]/2; !div(primeArray[i],k)));
 	      ^
 2 warnings

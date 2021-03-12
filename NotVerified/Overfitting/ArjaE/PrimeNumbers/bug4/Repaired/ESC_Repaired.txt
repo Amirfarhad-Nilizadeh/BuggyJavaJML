@@ -1,6 +1,14 @@
 
 
-PrimeNumbers.java:49: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method primeList
+PrimeNumbers.java:58: warning: The prover cannot establish an assertion (Postcondition: PrimeNumbers.java:17: ) in method primeList
+	return primeArray; 
+	^
+PrimeNumbers.java:17: warning: Associated declaration: PrimeNumbers.java:58: 
+	  @ ensures primeArray.length == n; @*/
+	    ^
+
+
+PrimeNumbers.java:50: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method primeList
                 primeArray[count - 1] = num;
                           ^
-1 warning
+3 warnings

@@ -1,0 +1,10 @@
+FindInArray.java:61: warning: The prover cannot establish an assertion (Precondition: FindInArray.java:38: ) in method findLast
+	if (getArr(index) == getKey()) return index;
+	          ^
+FindInArray.java:38: warning: Associated declaration: FindInArray.java:61: 
+    /*@ pure @*/ int getArr(int i) 
+                     ^
+FindInArray.java:36: warning: Precondition conjunct is false: 0 <= i
+    //@ requires 0 <= i && i <arr.length;
+                   ^
+3 warnings

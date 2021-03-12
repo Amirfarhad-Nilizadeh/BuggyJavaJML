@@ -1,16 +1,16 @@
+LinearSearch.java:14: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method linearSearch
+          if (array[c] == search) {
+                   ^
+LinearSearch.java:22: warning: The prover cannot establish an assertion (Postcondition: LinearSearch.java:6: ) in method linearSearch
+       return location;
+       ^
+LinearSearch.java:6: warning: Associated declaration: LinearSearch.java:22: 
+      //@ ensures \result == -1 <==>  (\forall int i; 0 <= i && i < array.length; array[i] != search);
+          ^
 LinearSearch.java:22: warning: The prover cannot establish an assertion (Postcondition: LinearSearch.java:7: ) in method linearSearch
        return location;
        ^
 LinearSearch.java:7: warning: Associated declaration: LinearSearch.java:22: 
       //@ ensures 0 <= \result && \result < array.length ==>  array[\result] == search;
           ^
-LinearSearch.java:22: warning: The prover cannot establish an assertion (Postcondition: LinearSearch.java:6: ) in method linearSearch
-       return location;
-       ^
-LinearSearch.java:6: warning: Associated declaration: LinearSearch.java:22: 
-      //@ ensures \result == -1 ==>  (\forall int i; 0 <= i && i < array.length; array[i] != search);
-          ^
-LinearSearch.java:14: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method linearSearch
-          if (array[c] == search) {
-                   ^
 5 warnings
