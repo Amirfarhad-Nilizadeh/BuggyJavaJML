@@ -38,6 +38,8 @@ public class StudentEnrollment {
     public void setTuitionBalance(int tuitionBalance)
     {
 	int maxTuitionBalance = maxSemesterCredits * costPerCredit + maxSemesterCredits * ((costPerCredit/100)*6);
+	if (getLateRegistrations()) lateEnrollment();
+ 	else regularEnrollment();
 	if (maxTuitionBalance < tuitionBalance) {
                 throw new IllegalArgumentException();
 	} else {
@@ -223,7 +225,7 @@ public class StudentEnrollment {
     private /*@ spec_public @*/ void payTuitionWithDebitCard(int payment) 
     {
         if (validPayment(payment)) {
-            tuitionBalance += payment; // tuitionBalance -= payment;
+            tuitionBalance-=payment; // tuitionBalance += payment; // tuitionBalance -= payment;
         } else {
             throw new IllegalArgumentException();
         }
@@ -273,7 +275,7 @@ public class StudentEnrollment {
     public void pay(int payment, boolean debit) 
     {
         if (debit) {
-            tuitionBalance-=payment;//payTuitionWithDebitCard(payment);
+            payTuitionWithDebitCard(payment);
         } else {
             payTuitionWithCreditCard(payment);
         }
