@@ -177,8 +177,8 @@ public class StackQueue {
       		  @ also
 
       		  @      requires isFull();
-		  @	 assignable \nothing;
-      		  @      signals_only IllegalArgumentException; @*/
+      		  @     signals_only IllegalArgumentException;
+      		@*/
    		public void enter(int data) 
     		{ 
        			if (!isFull()) { 
@@ -201,8 +201,8 @@ public class StackQueue {
 
       		  @ public exceptional_behavior
      		  @ 	requires isEmpty();
-		  @	assignable \nothing;
-      		  @     signals_only IllegalArgumentException; @*/
+      		  @   signals_only IllegalArgumentException;  	
+      		@*/
     		public int delete() 
     		{ 
         		if (!isEmpty()) { 
@@ -264,19 +264,16 @@ public class StackQueue {
     		//@   ensures 0 <= \result && \result < rear ==> queue[\result] == key;
     		//@   ensures \result == -1 ==> \forall int i; 0 <= i && i < rear; queue[i] != key;
     		public /*@ pure @*/ int search(int key)
-    		{
+    		{	rear++;
         		int index = 0;
         		//@ maintaining 0 <= index && index <= rear;
         		//@ maintaining \forall int i; 0 <= i && i < index; queue[i] != key;
         		while (index < rear) {
+				if (getElem(index) == key) {
+  					return index;
+				}
             			if (key == queue[index]) {
-					while (0 <= index) {
-  						if (getElem(index) == key) {
-    							return index;
-  						}
-  						index--;
-					}
-                			return index == 0 ? 1 : 0; //return index;
+                			return index == 0 ? 1 : 0; // return index;
             			}
             		index++;
         		}

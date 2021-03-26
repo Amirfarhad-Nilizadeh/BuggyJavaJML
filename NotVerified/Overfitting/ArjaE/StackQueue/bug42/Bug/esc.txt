@@ -1,7 +1,0 @@
-StackQueue.java:256: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:248: ) in method isContain
-        		 	       return false; //return true;
-        		 	       ^
-StackQueue.java:248: warning: Associated declaration: StackQueue.java:256: 
-    		//@   ensures !\result ==> \forall int i; 0 <= i && i < rear; queue[i] != key;
-    		      ^
-2 warnings

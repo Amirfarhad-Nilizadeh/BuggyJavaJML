@@ -1,16 +1,15 @@
-StackQueue.java:274: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:327: ) in method search
-  if (getElem(index) == key) {
-             ^
-StackQueue.java:327: warning: Associated declaration: StackQueue.java:274: 
-    		public /*@ pure @*/ int getElem(int i) 
-    		                        ^
-StackQueue.java:325: warning: Precondition conjunct is false: i < rear
-    		//@   requires 0 <= i && i < rear;
-    		                           ^
-StackQueue.java:279: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:264: ) in method search
-                			return index == 0 ? 1 : 0; //return index;
-                			^
-StackQueue.java:264: warning: Associated declaration: StackQueue.java:279: 
-    		//@   ensures 0 <= \result && \result < rear ==> queue[\result] == key;
-    		      ^
-5 warnings
+
+StackQueue.java:267: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:266: ) in method search:  rear
+    		{	rear++;
+    		 	    ^
+StackQueue.java:266: warning: Associated declaration: StackQueue.java:267: 
+    		public /*@ pure @*/ int search(int key)
+    		           ^
+
+StackQueue.java:272: warning: The prover cannot establish an assertion (InvariantLeaveCaller: StackQueue.java:160: ) in method search:  (Caller: StackQueue.Queue.search(int), Callee: StackQueue.Queue.getElem(int))
+				if (getElem(index) == key) {
+				           ^
+StackQueue.java:160: warning: Associated declaration: StackQueue.java:272: 
+    		//@ public invariant 0 <= rear && rear <= MAX;
+    		           ^
+4 warnings

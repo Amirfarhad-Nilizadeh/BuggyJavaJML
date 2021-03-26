@@ -1,0 +1,14 @@
+StackQueue.java:216: warning: The prover cannot establish an assertion (UndefinedTooLargeIndex) in method delete
+                			//@ assume queue[i+1] == temp[i+1];
+                			                ^
+
+StackQueue.java:213: warning: The prover cannot establish an assertion (LoopInvariant) in method delete
+              		  	@ maintaining 0 <= i && i < rear;
+              		  	  ^
+StackQueue.java:308: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:305: ) in method getFront
+       			return search(front) == 0 ? 1 : 0; // return front == 0 ? 1 : 0; // return front; 
+       			^
+StackQueue.java:305: warning: Associated declaration: StackQueue.java:308: 
+  		//@   ensures \result == front;
+  		      ^
+4 warnings

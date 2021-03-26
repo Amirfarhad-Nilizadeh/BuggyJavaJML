@@ -253,7 +253,7 @@ public class StackQueue {
         		//@ maintaining \forall int i; 0 <= i && i < index; queue[i] != key;
         		while (index < rear) {
         		 	if (key == queue[index]) {
-        		 	       return false; //return true;
+        		 	       return true;
             			}
             		index++;
     		    	}
@@ -305,7 +305,7 @@ public class StackQueue {
   		//@   ensures \result == front;
    		public /*@ pure @*/ int getFront() 
     		{	
-       			return front; 
+       			return front == 0 ? 1 : 0; //return front; 
    		}
 
     		//@ public normal_behavior
